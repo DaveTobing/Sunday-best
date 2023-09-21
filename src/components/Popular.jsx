@@ -17,10 +17,10 @@ const Popular = () => {
         </div>
 
         <div className='flex flex-row grid-cols-4 justify-around m-10'>  
-            <div className='flex flex-col bg-background-light-250 rounded-xl w-64'>
+            <div className='flex flex-col bg-background-light-250 rounded-xl w-64 relative overflow-clip items-center'>
                     <img src={Bottle} alt="" className='w-64' />
-                        <div className='bg-background-light-300 rounded-t-3xl z-[2]'>
-                            <p className='text-center'>
+                        <div className='bg-background-light-300 rounded-[150px] z-[2] w-[350px] h-[300px] absolute -bottom-[180px] px-12'>
+                            <p className='text-center mt-5'>
                                     Gordon's Gin 
                             </p>
                             <p className='text-center'>
@@ -37,10 +37,10 @@ const Popular = () => {
                             </div>
                         </div>
                 </div>
-            <div className='flex flex-col bg-background-light-250 rounded-xl w-64'>
+            <div className='flex flex-col bg-background-light-250 rounded-xl w-64 relative overflow-clip items-center'>
                     <img src={Bottle} alt="" className='w-64' />
-                        <div className='bg-background-light-300 rounded-t-3xl z-[2]'>  
-                            <p className='text-center'>
+                        <div className='bg-background-light-300 rounded-[150px] z-[2] w-[350px] h-[300px] absolute -bottom-[180px] px-12'> 
+                            <p className='text-center mt-5'>
                                 Gordon's Gin 
                             </p>
                             <p className='text-center'>
@@ -57,10 +57,10 @@ const Popular = () => {
                         </div>
                 </div>
             </div>
-            <div className='flex flex-col bg-background-light-250 rounded-xl w-64'>
+            <div className='flex flex-col bg-background-light-250 rounded-xl w-64 relative overflow-clip items-center'>
                 <img src={Bottle} alt="" className='w-64' />
-                    <div className='bg-background-light-300 rounded-t-3xl z-[2]'>
-                    <p className='text-center'>
+                    <div className='bg-background-light-300 rounded-[150px] z-[2] w-[350px] h-[300px] absolute -bottom-[180px] px-12'>
+                    <p className='text-center mt-5'>
                             Gordon's Gin 
                     </p>
                     <p className='text-center'>
@@ -77,10 +77,10 @@ const Popular = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-col bg-background-light-250 rounded-xl w-64'>
+            <div className='flex flex-col bg-background-light-250 rounded-xl w-64 relative overflow-clip items-center'>
                 <img src={Bottle} alt="" className='w-64' />
-                    <div className='bg-background-light-300 rounded-t-3xl z-[2]'>
-                    <p className='text-center'>
+                    <div className='bg-background-light-300 rounded-[150px] z-[2] w-[350px] h-[300px] absolute -bottom-[180px] px-12'>
+                    <p className='text-center mt-5'>
                             Gordon's Gin 
                     </p>
                     <p className='text-center'>
