@@ -8,7 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Hero = () => {
   return (
-    <Carousel showArrows={false} interval={10000} infiniteLoop={true} showStatus={false} showThumbs={false}>
+    <Carousel showArrows={false} autoPlay={true} interval={10000} infiniteLoop={true} showStatus={false} showThumbs={false}>
         <div className='bg-background-light-400 h-full grid-cols-2 flex flex-row justify-around'>
             <div className='flex flex-col justify-center gap-6 items-start'>
                 <h1 className='text-5xl text-[#1D1D1D]'>Offering a wide range of</h1>
