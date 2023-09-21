@@ -5,6 +5,7 @@ import Partnership from "./pages/Partnership";
 import Product from "./pages/Product";
 import Store from "./pages/Store";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Navbar";
 
 export const App = () => {
   return (

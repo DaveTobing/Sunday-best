@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import Phone from '../assets/phone.svg'
 import Instagram from '../assets/instagram.svg'
+import Search from '../assets/Search.svg'
 
 
 
 function Navbar() {
   return (
-    <div className="flex bg-background-light-300 h-3/5 flex-col justify-center">
+    <div className="flex bg-background-light-300 h-4/5 flex-col justify-center">
       <div className='flex m-12 justify-around'>
           <div className='bg-background-light-400 rounded-lg h-7 w-48'>
               <p className='text-light-300 text-center font-semibold'>21+ Legal Drinking Age</p>
