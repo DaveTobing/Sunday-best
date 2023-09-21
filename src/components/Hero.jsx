@@ -1,6 +1,7 @@
 import React from 'react'
 import image from '../assets/image1.png'
 import banner2 from '../assets/banner2.svg'
+import banner3 from '../assets/banner3.svg'
 import Rectangle from '../assets/Rectangle.svg'
 import { Link } from 'react-router-dom'
 import { Carousel } from 'react-responsive-carousel';
@@ -32,6 +33,10 @@ const Hero = () => {
 
         <div>
             <img src={banner2} alt="" />
+        </div>
+
+        <div>
+            <img src={banner3} alt="" />
         </div>
 
     </Carousel>

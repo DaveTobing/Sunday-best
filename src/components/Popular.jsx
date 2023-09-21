@@ -14,7 +14,8 @@ const Popular = () => {
                 spirits. All products 100% ORIGINAL
             </h2>
         </div>
-        <div>            
+        <div>  
+                      
         </div>
     </div>
   )

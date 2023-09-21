@@ -42,6 +42,9 @@ function Navbar() {
           <p className='text-4xl font-regular'>SundayBest.id</p>
       </div>
 
+      <div className='m-3'>
+      </div>
+
 
   
     </div>
