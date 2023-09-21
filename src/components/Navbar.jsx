@@ -13,24 +13,28 @@ function Navbar() {
           <div className='bg-background-light-400 rounded-lg h-7 w-48'>
               <p className='text-light-300 text-center font-semibold'>21+ Legal Drinking Age</p>
           </div>
-          <Link to= '/' className='font-semibold hover:underline' >Home</Link>
-          <Link to= '/' className='font-semibold hover:underline' >Product</Link>
+          <Link to= '/' className='font-semibold hover:underline border-red-500' >Home</Link>
+          <Link to= '/' className='font-semibold hover:underline ' >Product</Link>
           <img src={logo} className='' />
           <Link to= '/' className='font-semibold hover:underline' >Store</Link>
           <Link to= '/' className='font-semibold hover:underline' >Partnership</Link>
           <div className='flex flex-row'>
               <div>
-                <img src={Instagram} alt="" className='w-7 h-7'/>
+                <img src={Instagram} alt="" className='w-9 h-9'/>
               </div>
               <div>
-                <img src={Phone} alt="" className='w-6 h-7'/>
+                <img src={Phone} alt="" className='w-9 h-9'/>
               </div>
               <div className='flex flex-col'>
                 <p className='text-sm font-semibold'>0812 3456 7890</p>
                 <p className='text-sm font-semibold'>WA Only</p>
               </div>
-
           </div>
+      </div>
+
+      <div className='flex flex-row gap-64'>
+        <div className='underline bg-background-light-400 h-1 w-1/2 mx-auto rounded-lg'></div>
+        <div className='underline bg-background-light-400 h-1 w-1/2 mx-auto rounded-lg'></div>
       </div>
 
       <div className='flex justify-center'>
