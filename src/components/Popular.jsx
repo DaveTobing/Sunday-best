@@ -27,7 +27,7 @@ const Popular = () => {
                                     Premium Pink
                             </p>
                             <div className='underline bg-[#1D1D1D] h-0.5 w-1/2 mx-auto rounded-lg'></div>
-                            <div className='flex flex-row gap-32'>
+                            <div className='flex flex-row justify-around m-2'>
                                 <p>
                                     Rp299.000
                                 </p>
@@ -47,14 +47,14 @@ const Popular = () => {
                                 Premium Pink
                             </p>
                             <div className='underline bg-[#1D1D1D] h-0.5 w-1/2 mx-auto rounded-lg'></div>
-                            <div className='flex flex-row gap-32'>
+                            <div className='flex flex-row justify-around m-2'>
                                 <p>
                                     Rp299.000
                                 </p>
                                 <p>
                                     700 ml
                                 </p>
-                        </div>
+                            </div>
                 </div>
             </div>
             <div className='flex flex-col bg-background-light-250 rounded-xl w-64 relative overflow-clip items-center'>
@@ -67,13 +67,13 @@ const Popular = () => {
                             Premium Pink
                     </p>
                     <div className='underline bg-[#1D1D1D] h-0.5 w-1/2 mx-auto rounded-lg'></div>
-                    <div className='flex flex-row gap-32'>
-                        <p>
-                            Rp299.000
-                        </p>
-                        <p>
-                            700 ml
-                        </p>
+                    <div className='flex flex-row justify-around m-2'>
+                            <p>
+                                Rp299.000
+                            </p>
+                            <p>
+                                700 ml
+                            </p>
                     </div>
                 </div>
             </div>
@@ -87,13 +87,13 @@ const Popular = () => {
                             Premium Pink
                     </p>
                     <div className='underline bg-[#1D1D1D] h-0.5 w-1/2 mx-auto rounded-lg'></div>
-                    <div className='flex flex-row gap-32'>
-                        <p>
-                            Rp299.000
-                        </p>
-                        <p>
-                            700 ml
-                        </p>
+                    <div className='flex flex-row justify-around m-2'>
+                            <p>
+                                Rp299.000
+                            </p>
+                            <p>
+                                700 ml
+                            </p>
                     </div>
                 </div>
             </div>
