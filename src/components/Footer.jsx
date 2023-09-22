@@ -70,7 +70,7 @@ const Footer = () => {
             <div className="flex justify-start space-x-3">
               <img src={Instagram} alt="" />
               <img src={Facebook} alt="" />
-              <img src={Twitter} alt="" />
+              <img src={Twitter} alt=""/>
             </div>
           </div>
         </div>
