@@ -16,9 +16,9 @@ const Hero = () => {
                 <h1 className='text-5xl text-[#FEEB09] '>beers,</h1>
                 <h1 className='text-5xl text-[#FEEB09] '>wines,</h1>
                 <h1 className='text-5xl text-[#FEEB09] '>and spirits</h1>
-                <div className='bg-background-light-300 w-32 h-8 rounded-lg '>
-                    <Link to = '/'>
-                        <button className='font-bold mt-1'>Shop the Spirits</button>
+                <div className='bg-background-light-300 w-36 h-14 rounded-lg'>
+                    <Link to = '/Product'>
+                        <button className='font-bold mt-3.5'>Shop the Spirits</button>
                     </Link>
                 </div>
             </div>
