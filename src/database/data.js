@@ -8,6 +8,7 @@ const data = [
     Price: "Rp.299.000",
     size : "700ml",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
   {
     img: bottle,
@@ -16,6 +17,8 @@ const data = [
     Price: "Rp.299.000",
     size : "700ml",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+    
   },
   {
     img: bottle,
@@ -24,6 +27,7 @@ const data = [
     Price: "Rp.299.000",
     size : "700ml",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
   {
     img: bottle,
@@ -32,6 +36,7 @@ const data = [
     Price: "Rp.299.000",
     size : "700ml",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
   {
     img: bottle,
@@ -40,6 +45,7 @@ const data = [
     Price: "Rp.299.00",
     size : "700ml",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
   {
     img: bottle,
@@ -48,6 +54,7 @@ const data = [
     Price: "Rp.299.00",
     size : "700ml",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
 
   {
@@ -57,6 +64,7 @@ const data = [
     Price: "Rp.299.00",
     size : "700ml",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
 
   {
@@ -66,6 +74,7 @@ const data = [
     Price: "Rp.299.00",
     size : "700ml",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
 
   {
@@ -75,6 +84,7 @@ const data = [
     Price: "Rp.299.00",
     size : "700ml",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
 
   {
@@ -84,6 +94,7 @@ const data = [
     Price: "Rp.299.000",
     size : "700ml",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
   {
     img: bottle,
@@ -92,6 +103,7 @@ const data = [
     Price: "Rp.299.000",
     size : "700ml",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
   {
     img: bottle,
@@ -100,6 +112,7 @@ const data = [
     Price: "Rp.299.000",
     size : "700ml",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
   {
     img: bottle,
@@ -108,6 +121,7 @@ const data = [
     Price: "Rp.299.000",
     size : "700ml",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
   {
     img: bottle,
@@ -115,6 +129,7 @@ const data = [
     title2: "Premium Pink",
     Price: "Rp.299.00",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
 
   {
@@ -123,6 +138,7 @@ const data = [
     title2: "Premium Pink",
     Price: "Rp.299.00",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
   {
     img: bottle,
@@ -130,6 +146,7 @@ const data = [
     title2: "Premium Pink",
     Price: "Rp.299.00",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
   {
     img: bottle,
@@ -137,6 +154,7 @@ const data = [
     title2: "Premium Pink",
     Price: "Rp.299.00",
     company: "Australia Wine",
+    details: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
   },
 ];
 

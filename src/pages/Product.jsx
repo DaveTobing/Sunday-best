@@ -2,17 +2,20 @@ import React from 'react'
 import { Select } from '@chakra-ui/select'
 import Picture from '../assets/pict.svg'
 
-const Product = ({result}) => {
+
+export default function Product ({result}) {
+
+
   return (
-    <div>
+    <div className='mt-10'>
       <div className='grid grid-cols-6 flex-row'>
-      <div className='flex flex-col col-start-1 col-end-2 bg-background-light-200 m-3 rounded-lg h-48 w-48'>
+      <div className='flex flex-col col-start-1 col-end-2 bg-background-light-200 mx-6 rounded-lg h-48 w-48'>
         <p className='font-bold text-left p-2'>Products</p>
         <div className='underline bg-[#1D1D1D] h-0.5'>
         </div>
         <ul className='items-center p-2'>
           <li className='text-center p-2'>
-            Semua Produk
+            All Products
           </li>
           <li className='text-center p-2'>
             Soju Import
@@ -59,9 +62,5 @@ const Product = ({result}) => {
       </div>
     </div>
     </div>
-  
-
   )
 }
-
-export default Product

@@ -3,8 +3,6 @@ import Hero from "../components/Hero";
 import Popular from "../components/Popular";
 import New from '../components/New';
 import Testimoni from '../components/Testimoni';
-import Footer from '../components/Footer';
-
 
 const LandingPage = () => {
   return (

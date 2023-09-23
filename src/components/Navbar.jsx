@@ -18,7 +18,6 @@ export default function Navbar() {
     setShowModal(false);
   };
 
-
   return (
     <div className="flex bg-background-light-300 h-4/5 flex-col justify-center">
       <div className='flex m-12 justify-around'>
@@ -66,7 +65,7 @@ export default function Navbar() {
                 </div>
                 <div className='flex flex-col justify-center items-center'>
                   <h1 className='text-[#F1EA3E] font-bold text-2xl'>Store</h1>
-                  <h1 className='font-bold text-2xl'>Location</h1>
+                  <h1 className='font-bold text-2xl pl-2'>Location</h1>
                 </div>
                 <div className='justify-end'>
                     <FontAwesomeIcon icon={faXmark}  onClick={closeModal} style={{ fontSize: '1.5rem', color: '#01A2E7'}}/>

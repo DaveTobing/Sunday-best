@@ -55,7 +55,7 @@ function App ()  {
     }
 
     return filteredProducts.map(
-      ({img, title1, title2, Price, size}) => (
+      ({img, title1, title2, Price, size, details}) => (
         <Cards
           key={Math.random()}
           img={img}
@@ -63,6 +63,7 @@ function App ()  {
           title2={title2}
           Price={Price}
           size={size}
+          details={details}
         />
       )
     );
