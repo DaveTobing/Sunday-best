@@ -21,10 +21,6 @@ const Hero = () => {
                         <button className='font-bold mt-1'>Shop the Spirits</button>
                     </Link>
                 </div>
-                {/* <div className='justify-start'>
-                    <img src={Rectangle} alt="" />
-                    <img src={Rectangle} alt="" />
-                </div> */}
             </div>
             <div className='flex items-center'>
                 <img src={image} className='w-full h-4/6' />

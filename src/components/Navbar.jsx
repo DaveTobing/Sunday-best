@@ -15,7 +15,7 @@ function Navbar() {
               <p className='text-light-300 text-center font-semibold'>21+ Legal Drinking Age</p>
           </div>
           <Link to= '/' className='font-semibold hover:underline' >Home</Link>
-          <Link to= '/' className='font-semibold hover:underline ' >Product</Link>
+          <Link to= '/Product' className='font-semibold hover:underline ' >Product</Link>
           <img src={logo} className='' />
           <Link to= '/' className='font-semibold hover:underline' >Store</Link>
           <Link to= '/' className='font-semibold hover:underline' >Partnership</Link>

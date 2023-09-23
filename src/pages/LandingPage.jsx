@@ -17,7 +17,6 @@ const LandingPage = () => {
       <div className='bg-background-light-400 rounded-lg h-0.5 mx-32'>
       </div>
       <Testimoni/>
-      <Footer/>
     </div>
   )
 }
