@@ -22,13 +22,13 @@ export default function Navbar() {
     <div className="flex bg-background-light-300 h-4/5 flex-col justify-center">
       <div className='flex m-12 justify-around'>
           <div className='bg-background-light-400 rounded-lg h-7 w-48'>
-              <p className='text-light-300 text-center font-semibold'>21+ Legal Drinking Age</p>
+              <p className='text-light-300 text-center mt-0.5 font-semibold font-signika'>21+ Legal Drinking Age</p>
           </div>
-          <Link to= '/' className='font-semibold hover:underline' >Home</Link>
-          <Link to= '/product' className='font-semibold hover:underline ' >Product</Link>
+          <Link to= '/' className='font-semibold font-signika hover:underline' >Home</Link>
+          <Link to= '/product' className='font-semibold font-signika hover:underline ' >Product</Link>
           <img src={logo} className='' />
-          <Link to= '/' onClick={openModal} className='font-semibold hover:underline'>Store</Link>
-          <Link to= '/' className='font-semibold hover:underline' >Partnership</Link>
+          <Link to= '/' onClick={openModal} className='font-semibold font-signika hover:underline'>Store</Link>
+          <Link to= '/' className='font-semibold font-signika hover:underline' >Partnership</Link>
           <div className='flex flex-row'>
               <div>
                 <img src={Instagram} alt="" className='w-9 h-9'/>
@@ -37,8 +37,8 @@ export default function Navbar() {
                 <img src={Phone} alt="" className='w-9 h-9'/>
               </div>
               <div className='flex flex-col'>
-                <p className='text-sm font-semibold'>0812 3456 7890</p>
-                <p className='text-sm font-semibold'>WA Only</p>
+                <p className='text-sm font-semibold font-signika'>0812 3456 7890</p>
+                <p className='text-sm font-semibold font-signika'>WA Only</p>
               </div>
           </div>
       </div>
@@ -49,7 +49,7 @@ export default function Navbar() {
       </div>
 
       <div className='flex justify-center'>
-          <p className='text-4xl font-regular'>SundayBest.id</p>
+          <p className='text-4xl font-signika'>SundayBest.id</p>
       </div>
 
       <div className='m-3'>

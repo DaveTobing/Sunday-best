@@ -12,13 +12,13 @@ const Hero = () => {
     <Carousel showArrows={false} autoPlay={true} interval={10000} infiniteLoop={true} showStatus={false} showThumbs={false}>
         <div className='bg-background-light-400 h-full grid-cols-2 flex flex-row justify-around'>
             <div className='flex flex-col justify-center gap-6 items-start'>
-                <h1 className='text-5xl text-[#1D1D1D]'>Offering a wide range of</h1>
-                <h1 className='text-5xl text-[#FEEB09] '>beers,</h1>
-                <h1 className='text-5xl text-[#FEEB09] '>wines,</h1>
-                <h1 className='text-5xl text-[#FEEB09] '>and spirits</h1>
+                <h1 className='text-5xl text-[#1D1D1D] font-signika'>Offering a wide range of</h1>
+                <h1 className='text-5xl text-[#FEEB09] font-signika'>beers,</h1>
+                <h1 className='text-5xl text-[#FEEB09] font-signika'>wines,</h1>
+                <h1 className='text-5xl text-[#FEEB09] font-signika'>and spirits</h1>
                 <div className='bg-background-light-300 w-36 h-14 rounded-lg'>
                     <Link to = '/Product'>
-                        <button className='font-bold mt-3.5'>Shop the Spirits</button>
+                        <button className='font-bold mt-4 font-signika text-lg'>Shop the Spirits</button>
                     </Link>
                 </div>
             </div>
