@@ -4,13 +4,13 @@ import { useState } from "react"
 import LandingPage from "./pages/LandingPage";
 import Partnership from "./pages/Partnership";
 import Product from "./pages/Product";
-import Store from "./pages/Store";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Cards from "./components/Cards";
 import datas from "./database/data"
 
 function App ()  {
+
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   // ----------- Input Filter -----------
@@ -79,19 +79,14 @@ function App ()  {
               <LandingPage/>
             }/>
             <Route          
-            path="/Partnership"
+            path="/partnership"
             element={
               <Partnership/>
             }/>
             <Route          
-            path="/Product"
+            path="/product"
             element={
               <Product result = {result}/>
-            }/>
-            <Route          
-            path="/Store"
-            element={
-              <Store/>
             }/>
         </Routes>
       <Footer/>
