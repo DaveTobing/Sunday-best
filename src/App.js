@@ -9,10 +9,12 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Cards from "./components/Cards";
 import datas from "./database/data"
+import Cookies from 'js-cookie';
+
 
 function App ()  {
 
-  const [ageVerified, setAgeVerified] = useState(!!localStorage.getItem('ageVerified'));
+  const [ageVerified, setAgeVerified] = useState(!!Cookies.get('ageVerified'));
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   // ----------- Input Filter -----------
@@ -75,7 +77,10 @@ function App ()  {
   
   const verifyAge = () => {
     setAgeVerified(true);
-    localStorage.setItem('ageVerified', 'true');
+    // Instead of: localStorage.setItem('ageVerified', 'true');
+    // Set a cookie that expires in 30 minutes
+    Cookies.set('ageVerified', 'true', { expires: 1/48 }); 
+
   };
 
   // If age is not verified, show the warning page
