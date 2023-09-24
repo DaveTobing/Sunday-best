@@ -17,18 +17,18 @@ const Categories = () => {
     <div className='mx-32 mt-16'>
         <h1 className='font-bold font-signika text-3xl text-center uppercase'>Categories</h1>
         <div className='flex flex-wrap gap-4 mt-5'>
-            <img src={Soju} alt="" className='hover:scale-105 duration-300'/>
-            <img src={Sake} alt="" className='hover:scale-105 duration-300'/>
-            <img src={Wine} alt="" className='hover:scale-105 duration-300'/>
-            <img src={Brandy} alt="" className='hover:scale-105 duration-300'/>
-            <img src={Whisky} alt="" className='hover:scale-105 duration-300'/>
-            <img src={Gin} alt="" className='hover:scale-105 duration-300'/>
-            <img src={Vodka} alt="" className='hover:scale-105 duration-300'/>
-            <img src={Rum} alt="" className='hover:scale-105 duration-300'/>
-            <img src={Tequila} alt="" className='hover:scale-105 duration-300'/>
-            <img src={Cognac} alt="" className='hover:scale-105 duration-300'/>
-            <img src={Beers} alt="" className='hover:scale-105 duration-300'/>
-            <img src={Other} alt="" className='hover:scale-105 duration-300'/>
+            <img src={Soju} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Sake} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Wine} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Brandy} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer' />
+            <img src={Whisky} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Gin} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Vodka} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Rum} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Tequila} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Cognac} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Beers} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Other} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
         </div>
     </div>
   )

@@ -33,7 +33,7 @@ export default function Product ({result}) {
               </div>
               <div className='flex gap-16 mt-5' >
                 <h1 className='font-bold'>Sort</h1>
-                <Select placeholder='Filter'>
+                <Select placeholder='Filter' className='hover:cursor-pointer'>
                   <option value="Alphabet">Alphabet</option>
                   <option value="Price">Price</option>
                 </Select>

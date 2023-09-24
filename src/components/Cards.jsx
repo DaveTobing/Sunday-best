@@ -14,7 +14,7 @@ export default function Cards ({img, title1, title2, Price, size, details}) {
     };
   return (
     <div className='flex justify-around m-7' >  
-        <div className='flex flex-col bg-background-light-250 rounded-xl w-64 relative overflow-clip items-center hover:scale-110 duration-300' onClick={openModal}>
+        <div className='flex flex-col bg-background-light-250 rounded-xl w-64 relative overflow-clip items-center hover:scale-110 duration-300 hover:cursor-pointer' onClick={openModal}>
             <img src={img} alt="" className='w-64'/>
                 <div className='bg-background-light-300 rounded-[150px] w-[350px] h-[300px] absolute -bottom-[180px] px-12'>
                     <p className='text-center mt-5 font-medium'>
