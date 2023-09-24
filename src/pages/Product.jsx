@@ -47,8 +47,8 @@ export default function Product ({result}) {
 
     </div>
 
-    <div className='bg-black rounded-lg h-0.5 mx-32'>
-      </div>
+    {/* <div className='bg-black rounded-lg h-0.5 mx-32'>
+    </div> */}
 
     {/* <div className='flex m-10 relative justify-center'>
       <img src={Picture} alt="" />

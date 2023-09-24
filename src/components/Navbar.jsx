@@ -32,7 +32,9 @@ export default function Navbar() {
 
           <div className='justify-end flex flex-row items-center mx-10 gap-8'>
             <div>
+              <Link to='https://api.whatsapp.com/send/?phone=62818688448&text&type=phone_number&app_absent=0'>
                   <FontAwesomeIcon icon={faPhone} style= {{fontSize: '1.5rem'}}/>
+              </Link>
             </div>
             <div className=''>
                   <div className='flex flex-row'>
