@@ -1,0 +1,64 @@
+.warning-wrapper {
+    background-image: url('../assets/bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.warning-wrapper .content {
+    background-image: url('../assets/bg2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.warning-wrapper .logo {
+    margin-bottom: 20px;
+}
+
+.warning-wrapper h1 {
+    font-family: 'The Seasons';
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.warning-wrapper p {
+    font-family: 'The Seasons';
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.warning-wrapper .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.warning-wrapper button {
+    border: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.warning-wrapper button:hover {
+    background-color: #555;
+}
+
+.warning-wrapper .socials {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}

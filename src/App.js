@@ -1,6 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom'
 import { useState } from "react"
+import WarningPage from './pages/WarningPage';
 import LandingPage from "./pages/LandingPage";
 import Partnership from "./pages/Partnership";
 import Product from "./pages/Product";
@@ -11,6 +12,7 @@ import datas from "./database/data"
 
 function App ()  {
 
+  const [ageVerified, setAgeVerified] = useState(!!localStorage.getItem('ageVerified'));
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   // ----------- Input Filter -----------
@@ -70,6 +72,19 @@ function App ()  {
   }
 
   const result = filteredData(datas, selectedCategory, query);
+  
+  const verifyAge = () => {
+    setAgeVerified(true);
+    localStorage.setItem('ageVerified', 'true');
+  };
+
+  // If age is not verified, show the warning page
+  if (!ageVerified) {
+    return <WarningPage onVerify={verifyAge} />;
+  }
+
+  // Otherwise, render the main app content
+
   return (
     <BrowserRouter>
       <Navbar/>
