@@ -64,67 +64,55 @@ export default function Navbar() {
 
       {/* Modal */}
       {showModal && (
-          <div className="fixed inset-0 flex items-center justify-center z-[40] bg-gray-800 opacity-95 transition-opacity">
-            <div className="absolute bg-background-light-100 p-4 w-[800px] h-[500px] rounded-lg">
+          <div className="fixed inset-0 flex items-center justify-center z-[40]" 
+          style={{ 
+              backgroundColor: 'rgba(128, 128, 128, 0.7)', 
+              backdropFilter: 'blur(5px)'
+          }}>     
+            <div className="absolute p-4 w-[800px] h-[500px] rounded-lg" 
+            style={{ 
+                backgroundImage: "url('/bgl.png')",
+                backgroundSize: 'cover', 
+                backgroundRepeat: 'no-repeat', 
+                backgroundPosition: 'center',
+                backdropFilter: 'none',
+            }}>
               <div className='flex justify-between'>
                 <div className='pl-5'>
                 
                 </div>
                 <div className='flex flex-col justify-center items-center'>
                   <h1 className='text-[#F1EA3E] font-bold text-2xl'>Store</h1>
-                  <h1 className='font-bold text-2xl pl-2'>Location</h1>
+                  <h1 className='text-[#F1EA3E] font-bold text-2xl pl-2'>Location</h1>
                 </div>
                 <div className='justify-end'>
-                    <FontAwesomeIcon icon={faXmark}  onClick={closeModal} style={{ fontSize: '1.5rem', color: '#01A2E7'}}/>
+                <FontAwesomeIcon icon={faXmark} onClick={closeModal} 
+                style={{ 
+                    fontSize: '1.5rem', 
+                    color: '#FFFFFF', 
+                    cursor: 'pointer' 
+                }} />
                 </div>
               </div>
               <div className='grid grid-cols-2 mt-3'>
               <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15928.329487665482!2d98.709508!3d3.5685193!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031314ba64a0a6b%3A0x5fa98bc76021873c!2sMenteng%20Skate%20Park!5e0!3m2!1sen!2sid!4v1695482975125!5m2!1sen!2sid" 
-                width="350" 
-                height="350" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-
-                </iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.292501243615!2d106.7834317!3d-6.2210537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f587f268af27%3A0x66c596fc12810d0b!2sSUNDAYBESTID!5e0!3m2!1sen!2sid!4v1695556531819!5m2!1sen!2sid" width="350" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
-              <div className='flex flex-col justify-around'>
-                <div>
-                  <div className='flex flex-row gap-4 items-center'>
-                    <FontAwesomeIcon icon={faLocationDot} style= {{color:'#0175B8', fontSize: '1.5rem'}} />
-                    <h1 className='font-bold text-xl text-[#0175B8]'>Sunday Best Cibubur</h1>
+                <div className='flex flex-col justify-around'>
+                  <div>
+                    <div className='flex flex-row gap-4 items-center'>
+                      <FontAwesomeIcon icon={faLocationDot} style= {{color:'#F1EA3E', fontSize: '1.5rem'}} />
+                      <h1 className='text-[#F1EA3E] font-bold text-xl text-[#0175B8]'>Sunday Best Jakarta Selatan</h1>
+                    </div>
+                    <p className='text-[#FFFFFF]'>
+                    Grand ITC Permata Hijau
+                    Jl. Arteri Permata Hijau No.2, Grogol Utara, Kec. Kby. Lama,
+                    Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12210
+                    </p>
                   </div>
-                  <p>
-                  Jl. Jambore No.1, RW.7, Cibubur, Kec. Ciracas, 
-                  Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13720
-                  </p>
-                </div>
-                <div>
-                  <div className='flex flex-row gap-4 items-center'>
-                    <FontAwesomeIcon icon={faLocationDot} style= {{color:'#0175B8', fontSize: '1.5rem'}} />
-                    <h1 className='font-bold text-xl text-[#0175B8]'>Sunday Best Cibubur</h1>
-                  </div>
-                  <p>
-                  Jl. Jambore No.1, RW.7, Cibubur, Kec. Ciracas, 
-                  Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13720
-                  </p>
-                </div>
-                <div>
-                  <div className='flex flex-row gap-4 items-center'>
-                    <FontAwesomeIcon icon={faLocationDot} style= {{color:'#0175B8', fontSize: '1.5rem'}} />
-                    <h1 className='font-bold text-xl text-[#0175B8]'>Sunday Best Cibubur</h1>
-                  </div>
-                  <p>
-                  Jl. Jambore No.1, RW.7, Cibubur, Kec. Ciracas, 
-                  Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13720
-                  </p>
                 </div>
               </div>
-
             </div>
-            </div>
-
           </div>
         )}
   
