@@ -25,12 +25,12 @@ const Hero = () => {
                 <h1 className='text-6xl font-bold text-[#FEEB09] font-signika'>affordable prices</h1>
                 <div className='bg-background-light-300 w-36 h-14 rounded-lg'>
                     <Link to = '/Product'>
-                        <button className='font-bold mt-4 font-signika text-lg'>Shop the Spirits</button>
+                        <button className='font-bold mt-4 font-signika text-lg'>Shop the Liquors</button>
                     </Link>
                 </div>
             </div>
             <div className='flex items-center'>
-                <img src={image} className='w-full h-4/6' />
+                <img className='w-full h-4/6' />
             </div>
         </div>
 
