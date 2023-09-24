@@ -5,7 +5,7 @@ import Phone from '../assets/phone.svg'
 import Instagram from '../assets/instagram.svg'
 import Search from '../assets/Search.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faXmark, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar() {
   const[showModal, setShowModal] = useState(false)
@@ -19,41 +19,46 @@ export default function Navbar() {
   };
 
   return (
-    <div className="flex bg-background-light-300 h-4/5 flex-col justify-center">
-      <div className='flex m-12 justify-around'>
-          <div className='bg-background-light-400 rounded-lg h-7 w-48'>
-              <p className='text-light-300 text-center mt-0.5 font-semibold font-signika'>21+ Legal Drinking Age</p>
+    <div className="flex bg-background-light-300 flex-col justify-center">
+        <div className='flex flex-row mx-60 my-4 justify-between'>
+          <div className='flex flex-row items-center gap-8 justify-start'>
+            <div className='bg-background-light-400 rounded-lg h-7 w-48'>
+                <p className='text-light-300 text-center mt-0.5 font-semibold font-signika'>21+ Legal Drinking Age</p>
+            </div>
+            <Link to='https://www.instagram.com/sundaybestid/'>
+                <img src={Instagram} alt="" className='w-6 h-6'/>
+            </Link>
           </div>
-          <Link to= '/' className='font-semibold font-signika hover:underline' >Home</Link>
-          <Link to= '/product' className='font-semibold font-signika hover:underline ' >Product</Link>
-          <img src={logo} className='' />
-          <Link to= '/' onClick={openModal} className='font-semibold font-signika hover:underline'>Store</Link>
-          <Link to= '/' className='font-semibold font-signika hover:underline' >Partnership</Link>
-          <div className='flex flex-row'>
-              <div>
-                <img src={Instagram} alt="" className='w-9 h-9'/>
-              </div>
-              <div>
-                <img src={Phone} alt="" className='w-9 h-9'/>
-              </div>
-              <div className='flex flex-col'>
-                <p className='text-sm font-semibold font-signika'>0812 3456 7890</p>
-                <p className='text-sm font-semibold font-signika'>WA Only</p>
-              </div>
+
+          <div className='justify-end flex flex-row items-center mx-10 gap-8'>
+            <div>
+                  <FontAwesomeIcon icon={faPhone} style= {{fontSize: '1.5rem'}}/>
+            </div>
+            <div className=''>
+                  <div className='flex flex-row'>
+                      <p className='text-sm font-semibold font-signika'>+62 818-688-448 - WA ONLY</p>
+                  </div>
+            </div>
           </div>
-      </div>
+        </div>
 
-      <div className='flex flex-row gap-64'>
-        <div className='underline bg-background-light-400 h-1 w-1/2 mx-auto rounded-lg'></div>
-        <div className='underline bg-background-light-400 h-1 w-1/2 mx-auto rounded-lg'></div>
-      </div>
+        <div className='underline bg-background-light-400 h-[1.5px] w-full mx-auto rounded-lg'></div>
+        <div className='flex flex-row mx-60 my-4 justify-between items-center'>
+          <div className='flex flex-row items-center gap-4 justify-start'>
+            <img src={logo} className='w-14' />
+            <p className='font-semibold font-signika text-2xl'>SundayBest.id</p>
+          </div>
 
-      <div className='flex justify-center'>
-          <p className='text-4xl font-signika'>SundayBest.id</p>
-      </div>
-
-      <div className='m-3'>
-      </div>
+            <div className='flex gap-16'>
+              <Link to= '/' className='font-semibold font-signika uppercase hover:underline' >Home</Link>
+              <Link to= '/product' className='font-semibold font-signika uppercase hover:underline ' >Product</Link>
+              <Link to= '/' onClick={openModal} className='font-semibold uppercase font-signika hover:underline'>Store</Link>
+              <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Partnership</Link>
+            </div>
+            <div className='mx-10 gap-8'>
+              <img src={Search} alt="" />
+            </div>
+        </div>
 
       {/* Modal */}
       {showModal && (

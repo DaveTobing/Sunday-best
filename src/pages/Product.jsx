@@ -50,7 +50,7 @@ export default function Product ({result}) {
     <div className='bg-black rounded-lg h-0.5 mx-32'>
       </div>
 
-    <div className='flex m-10 relative justify-center'>
+    {/* <div className='flex m-10 relative justify-center'>
       <img src={Picture} alt="" />
       <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
         <p className="text-white text-4xl font-bold">
@@ -60,7 +60,7 @@ export default function Product ({result}) {
           discount up to 50%
         </p>
       </div>
-    </div>
+    </div> */}
     </div>
   )
 }
