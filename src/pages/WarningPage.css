@@ -14,23 +14,27 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 40px;
+    padding: 60px;  /* Increase padding for a bigger box */
     border-radius: 10px;
     text-align: center;
+    position: relative;  /* Add this to control position of children */
 }
 
 .warning-wrapper .logo {
-    margin-bottom: 20px;
+    position: absolute; /* Position logo absolutely within .content */
+    top: 26%;           /* Move it to the vertical center */
+    left: 50%;          /* Move it to the horizontal center */
+    transform: translate(-50%, -50%); /* Center the logo */
+    margin: 0;  /* Reset the margin */
 }
 
 .warning-wrapper h1 {
-    font-family: 'The Seasons';
     font-size: 24px;
     margin-bottom: 20px;
+    margin-top: 85px;  /* Add some margin to move content down */
 }
 
 .warning-wrapper p {
-    font-family: 'The Seasons';
     font-size: 16px;
     margin-bottom: 20px;
 }
