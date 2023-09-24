@@ -59,17 +59,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link>
-                    <p className='font-medium'>Privacy</p>
+                    <p className='font-medium'>Partnership</p>
                 </Link>
               </li>
               <li>
                 <Link>
                     <p className='font-medium'>FAQ</p>
-                </Link>
-              </li>
-              <li>
-                <Link onClick={openModal}>
-                    <p className='font-medium'>Shipping</p>
                 </Link>
               </li>
             </ul>
@@ -78,10 +73,14 @@ export default function Footer() {
             <h3 className="uppercase font-bold">Get In Touch</h3>
             <ul className="space-y-1">
               <li>
-                <p className='font-medium'>+62 818-688-448</p>
+                <Link to='https://api.whatsapp.com/send/?phone=62818688448&text&type=phone_number&app_absent=0'>
+                  <p className='font-medium'>+62 818-688-448</p>
+                </Link>
               </li>
               <li>
-                <p className='font-medium'>sundaybeststoreid@gmail.com</p>
+                <Link to='mailto:sundaybeststoreid@gmail.com?subject=Having%20Interest'>
+                  <p className='font-medium'>sundaybeststoreid@gmail.com</p>
+                </Link>
               </li>
             </ul>
           </div>
@@ -104,7 +103,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="py-6 text-sm text-center font-bold">© 2023 Sunday Best. ALL RIGHTS RESERVED.</div>
+      <div className="py-6 text-sm text-center font-bold">© 2023 SundayBest. ALL RIGHTS RESERVED.</div>
 
     {/* Modal */}
     {showModal && (
