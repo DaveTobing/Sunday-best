@@ -26,7 +26,7 @@ function App ()  {
   };
 
   const filteredItems = datas.filter(
-    (data) => data.title1.toLowerCase().indexOf(query.toLowerCase()) !== -1
+    (data) => data.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
 
   // ----------- Category Filtering -----------
@@ -48,27 +48,30 @@ function App ()  {
     }
 
     // Applying selected filter
-    if (selected) {
-      filteredProducts = filteredProducts.filter(
-        ({ category, color, company, newPrice, title }) =>
-          category === selected ||
-          color === selected ||
-          company === selected ||
-          newPrice === selected ||
-          title === selected
-      );
-    }
+    // if (selected) {
+    //   filteredProducts = filteredProducts.filter(
+    //     ({ category, color, company, newPrice, title }) =>
+    //       category === selected ||
+    //       color === selected ||
+    //       company === selected ||
+    //       newPrice === selected ||
+    //       title === selected
+    //   );
+    // }
 
     return filteredProducts.map(
-      ({img, title1, title2, Price, size, details}) => (
+      ({title, category, type, size, price, link_tokopedia, link_shopee, link_blibli, gambar}) => (
         <Cards
           key={Math.random()}
-          img={img}
-          title1={title1}
-          title2={title2}
-          Price={Price}
+          img={title}
+          category={category}
+          type={type}
           size={size}
-          details={details}
+          price = {price}
+          link_tokopedia = {link_tokopedia}
+          link_shopee = {link_shopee}
+          link_blibli = {link_blibli}
+          gambar = {gambar}
         />
       )
     );
