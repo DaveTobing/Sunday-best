@@ -63,7 +63,8 @@ function App ()  {
       ({title, category, type, size, price, link_tokopedia, link_shopee, link_blibli, gambar}) => (
         <Cards
           key={Math.random()}
-          img={title}
+          img={gambar}
+          title={title}
           category={category}
           type={type}
           size={size}
