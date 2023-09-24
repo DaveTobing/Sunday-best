@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import Cards from "./components/Cards";
 import datas from "./database/data"
 import Cookies from 'js-cookie';
+import { ChakraProvider } from '@chakra-ui/react'
 
 
 function App ()  {
@@ -87,31 +88,32 @@ function App ()  {
   if (!ageVerified) {
     return <WarningPage onVerify={verifyAge} />;
   }
-
   // Otherwise, render the main app content
 
   return (
-    <BrowserRouter>
-      <Navbar/>
-        <Routes>
-          <Route          
-            path="/"
-            element={
-              <LandingPage/>
-            }/>
+    <ChakraProvider>
+      <BrowserRouter>
+        <Navbar/>
+          <Routes>
             <Route          
-            path="/partnership"
-            element={
-              <Partnership/>
-            }/>
-            <Route          
-            path="/product"
-            element={
-              <Product result = {result}/>
-            }/>
-        </Routes>
-      <Footer/>
-    </BrowserRouter>
+              path="/"
+              element={
+                <LandingPage/>
+              }/>
+              <Route          
+              path="/partnership"
+              element={
+                <Partnership/>
+              }/>
+              <Route          
+              path="/product"
+              element={
+                <Product result = {result}/>
+              }/>
+          </Routes>
+        <Footer/>
+      </BrowserRouter>
+    </ChakraProvider>
   )
 }
 
