@@ -102,7 +102,7 @@ export default function Navbar() {
                   <div>
                     <div className='flex flex-row gap-4 items-center'>
                       <FontAwesomeIcon icon={faLocationDot} style= {{color:'#F1EA3E', fontSize: '1.5rem'}} />
-                      <h1 className='text-[#F1EA3E] font-bold text-xl text-[#0175B8]'>Sunday Best Jakarta Selatan</h1>
+                      <h1 className='text-[#F1EA3E] font-bold text-xl'>Sunday Best Jakarta Selatan</h1>
                     </div>
                     <p className='text-[#FFFFFF]'>
                     Grand ITC Permata Hijau
