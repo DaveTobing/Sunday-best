@@ -21,7 +21,7 @@ const Hero = () => {
         >
             <div className='flex flex-col justify-center gap-6 items-start'>
                 <h1 className='text-5xl font-semibold text-[#1D1D1D] font-signika'>Offering the best quality of</h1>
-                <h1 className='text-6xl font-bold text-[#FEEB09] font-signika'>liqours at the most</h1>
+                <h1 className='text-6xl font-bold text-[#FEEB09] font-signika'>liquors at the most</h1>
                 <h1 className='text-6xl font-bold text-[#FEEB09] font-signika'>affordable prices</h1>
                 <div className='bg-background-light-300 w-36 h-14 rounded-lg'>
                     <Link to = '/Product'>
