@@ -9,7 +9,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Hero = () => {
   return (
-    <Carousel showArrows={false} autoPlay={true} interval={10000} infiniteLoop={true} showStatus={false} showThumbs={false}>
+    <Carousel showArrows={false} autoPlay={true} interval={20000} infiniteLoop={true} showStatus={false} showThumbs={false}>
         <div 
             className='bg-background-light-400 h-full grid-cols-2 flex flex-row justify-around'
             style={{ 

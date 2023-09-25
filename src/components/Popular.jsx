@@ -1,18 +1,25 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Bottle from '../assets/bottle.svg'
+import { DarkModeContext } from '../context/darkmode'
+
 
 const Popular = () => {
+const [theme, setTheme] = useContext(DarkModeContext)
   return (
-    <div className='flex flex-col justify-center h-4/5 bg-background-light-200'>
+    <div className={`
+    ${theme ? "bg-background-dark-400" : "bg-background-light-200" } flex flex-col justify-center h-4/5 `} 
+    >
         <div className='m-10'>
-            <h1 className='text-center font-bold text-4xl'>
+            <h1
+                className={`
+                    ${theme ? "text-light-450" : "text-light-600" } font-bold font-signika text-5xl text-center uppercase mb-4`} 
+                >
                 Our Popular Booze
             </h1>
-            <h2 className='text-center text-lg'>
-                Offering a wide range of beers,wines and
-            </h2>
-            <h2 className='text-center text-lg'>
-                spirits. All products 100% ORIGINAL
+           
+            <h2  className={`
+                ${theme ? "text-light-100" : "text-light-600" } font-bold font-signika text-xl text-center uppercase `} >
+                Offering a wide range of beers,wines and <br /> spirits. All products 100% ORIGINAL
             </h2>
         </div>
 

@@ -1,14 +1,25 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
-import Phone from '../assets/phone.svg'
 import Instagram from '../assets/instagram.svg'
 import Search from '../assets/Search.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faXmark, faLocationDot, faPhone, faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
+import { DarkModeContext } from '../context/darkmode'
 
 export default function Navbar() {
+  const [theme, setTheme] = useContext(DarkModeContext)
+
   const[showModal, setShowModal] = useState(false)
+  
+  const handleDarkMode = () => {
+    if (theme === true){
+      setTheme(false)
+    }
+    else{
+      setTheme(true)
+    }
+  };
 
   const openModal = () => {
     setShowModal(true);
@@ -19,11 +30,18 @@ export default function Navbar() {
   };
 
   return (
-    <div className="flex bg-background-light-300 flex-col justify-center">
+    <div
+    className={`
+          ${theme ? "bg-background-light-400" : "bg-background-light-300"} flex flex-col justify-center`} 
+      >
         <div className='flex flex-row mx-60 my-4 justify-between'>
           <div className='flex flex-row items-center gap-8 justify-start'>
-            <div className='bg-background-light-400 rounded-lg h-7 w-48'>
-                <p className='text-light-300 text-center mt-0.5 font-semibold font-signika'>21+ Legal Drinking Age</p>
+            <div className={`
+                ${theme ? "bg-background-light-300" : "bg-background-light-400"} rounded-lg h-7 w-48`} 
+                >   
+                <p className={`
+                ${theme ? "text-light-500" : "text-light-300"} text-center mt-0.5 font-semibold font-signika`} 
+                > 21+ Legal Drinking Age</p> 
             </div>
             <Link to='https://www.instagram.com/sundaybestid/'>
                 <img src={Instagram} alt="" className='w-6 h-6'/>
@@ -44,7 +62,11 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className='underline bg-background-light-400 h-[1.5px] w-full mx-auto rounded-lg'></div>
+        <div
+         className={`
+         ${theme ? "bg-background-light-300" : "bg-background-light-400"} underline h-[1.5px] w-full mx-auto rounded-lg '`}  
+        >
+        </div>
         <div className='flex flex-row mx-60 my-4 justify-between items-center'>
           <div className='flex flex-row items-center gap-4 justify-start'>
             <img src={logo} className='w-14' />
@@ -57,9 +79,14 @@ export default function Navbar() {
               <Link to= '/' onClick={openModal} className='font-semibold uppercase font-signika hover:underline'>Store</Link>
               <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Partnership</Link>
             </div>
-            <div className='mx-10 gap-8'>
+            <div className='mx-10 gap-8 flex flex-row'>
               <img src={Search} alt="" />
+              {theme ? 
+                <FontAwesomeIcon icon={faMoon} style={{fontSize: '3rem', color:'#000'}} onClick={handleDarkMode} className='hover: cursor-pointer'/>:
+                <FontAwesomeIcon icon={faSun} style={{fontSize: '2rem', color:'#000'}} onClick={handleDarkMode} className='hover: cursor-pointer'/> 
+              }
             </div>
+
         </div>
 
       {/* Modal */}

@@ -10,11 +10,11 @@ import Footer from "./components/Footer";
 import Cards from "./components/Cards";
 import datas from "./database/data"
 import Cookies from 'js-cookie';
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider} from '@chakra-ui/react'
+import { DarkModeProvider } from './context/darkmode'
 
 
 function App ()  {
-
   const [ageVerified, setAgeVerified] = useState(!!Cookies.get('ageVerified'));
   const [selectedCategory, setSelectedCategory] = useState(null);
 
@@ -34,11 +34,6 @@ function App ()  {
     setSelectedCategory(event.target.value);
   };
 
-  // ------------ Sort Filtering -----------
-  const handleClick = (event) => {
-    setSelectedCategory(event.target.value);
-  };
-
   function filteredData(products, selected, query) {
     let filteredProducts = products;
 
@@ -48,16 +43,13 @@ function App ()  {
     }
 
     // Applying selected filter
-    // if (selected) {
-    //   filteredProducts = filteredProducts.filter(
-    //     ({ category, color, company, newPrice, title }) =>
-    //       category === selected ||
-    //       color === selected ||
-    //       company === selected ||
-    //       newPrice === selected ||
-    //       title === selected
-    //   );
-    // }
+    if (selected) {
+      filteredProducts = filteredProducts.filter(
+        ({ category, type }) =>
+          category === selected ||
+          type === selected
+      );
+    }
 
     return filteredProducts.map(
       ({title, category, type, size, price, link_tokopedia, link_shopee, link_blibli, gambar}) => (
@@ -96,29 +88,31 @@ function App ()  {
 
   return (
     <ChakraProvider>
-      <BrowserRouter>
-        <Navbar/>
-          <Routes>
-            <Route          
-              path="/"
-              element={
-                <LandingPage/>
-              }/>
+      <DarkModeProvider>
+          <BrowserRouter>
+          <Navbar/>
+            <Routes>
               <Route          
-              path="/partnership"
-              element={
-                <Partnership/>
-              }/>
-              <Route          
-              path="/product"
-              element={
-                <Product result = {result}/>
-              }/>
-          </Routes>
-        <Footer/>
-      </BrowserRouter>
+                path="/"
+                element={
+                  <LandingPage/>
+                }/>
+                <Route          
+                path="/partnership"
+                element={
+                  <Partnership/>
+                }/>
+                <Route          
+                path="/product"
+                element={
+                  <Product result = {result} handleChange = {handleChange}/>
+                }/>
+            </Routes>
+          <Footer/>
+        </BrowserRouter>
+      </DarkModeProvider>
     </ChakraProvider>
   )
 }
 
-export default App;
+export default App ;

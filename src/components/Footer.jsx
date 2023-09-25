@@ -7,7 +7,7 @@ import Facebook from '../assets/Facebook.svg'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 
 export default function Footer() {
@@ -34,19 +34,43 @@ export default function Footer() {
         <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
           <div className="space-y-3">
             <h3 className="font-bold uppercase ">Categories</h3>
-            <ul className="space-y-1">
-              {/* <li>
-                <Link to= '/' className='font-semibold font-signika uppercase hover:underline' >Home</Link>
+            <ul className="space-y-1 grid grid-cols-3 items-center">
+              <li>
+                <Link to= '/' className='font-semibold font-signika uppercase hover:underline' >Soju</Link>
               </li>
               <li>
-                <Link to= '/product' className='font-semibold font-signika uppercase hover:underline ' >Product</Link>
+                <Link to= '/' className='font-semibold font-signika uppercase hover:underline '>Sake</Link>
               </li>
               <li>
-                <Link to= '/' onClick={openModal} className='font-semibold uppercase font-signika hover:underline'>Store</Link>
+                <Link to= '/' className='font-semibold uppercase font-signika hover:underline'>Wine</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Partnership</Link>
-              </li> */}
+                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Brandy</Link>
+              </li>
+              <li>
+                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Whisky</Link>
+              </li>
+              <li>
+                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Gin</Link>
+              </li>
+              <li>
+                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Vodka</Link>
+              </li>
+              <li>
+                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Rum</Link>
+              </li>
+              <li>
+                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Tequila</Link>
+              </li>
+              <li>
+                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Cognac</Link>
+              </li>
+              <li>
+                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Beers</Link>
+              </li>
+              <li>
+                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Others</Link>
+              </li>
             </ul>
           </div>
           <div className="space-y-3">
@@ -67,9 +91,14 @@ export default function Footer() {
                     <p className='font-medium'>FAQ</p>
                 </Link>
               </li>
+              <li>
+                <Link onClick={openModal}>
+                    <p className='font-medium'>How to Order</p>
+                </Link>
+              </li>
             </ul>
           </div>
-          <div className="space-y-3">
+          <div className="space-y-">
             <h3 className="uppercase font-bold">Get In Touch</h3>
             <ul className="space-y-1">
               <li>
