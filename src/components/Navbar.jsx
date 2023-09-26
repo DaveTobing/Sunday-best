@@ -108,7 +108,7 @@ export default function Navbar() {
                 <FontAwesomeIcon icon={faMoon} style={{fontSize: '3rem', color:'#000'}} onClick={handleDarkMode} className='hover: cursor-pointer'/>:
                 <FontAwesomeIcon icon={faSun} style={{fontSize: '2rem', color:'#000'}} onClick={handleDarkMode} className='hover: cursor-pointer'/> 
               }
-              <div onClick={handleNav} className=' md:hidden w-full flex items-center justify-end'>
+              <div onClick={handleNav} className='hover:cursor-pointer md:hidden w-full flex items-center justify-end'>
                 {nav ?  <FontAwesomeIcon icon={faXmark} style={{ fontSize: '2rem', color: '#000' }} /> :  <FontAwesomeIcon icon={faBars} style={{ fontSize: '2rem', color: '#000' }} /> }
               </div>
             </div>
@@ -135,7 +135,7 @@ export default function Navbar() {
               backgroundColor: 'rgba(128, 128, 128, 0.7)', 
               backdropFilter: 'blur(5px)'
           }}>     
-            <div className="absolute p-4 w-[800px] h-[500px] rounded-lg" 
+            <div className="w-[350px] h-[450px] absolute p-4 md:w-[800px] md:h-[500px] rounded-lg" 
             style={{ 
                 backgroundImage: "url('/bgl.png')",
                 backgroundSize: 'cover', 
@@ -160,26 +160,44 @@ export default function Navbar() {
                 }} />
                 </div>
               </div>
-              <div className='grid grid-cols-2 mt-3'>
-              <div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.292501243615!2d106.7834317!3d-6.2210537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f587f268af27%3A0x66c596fc12810d0b!2sSUNDAYBESTID!5e0!3m2!1sen!2sid!4v1695556531819!5m2!1sen!2sid" width="350" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-                <div className='flex flex-col'>
-                  
-                    <div className='flex justify-center'>
-                      <img src={logo} alt="" />
+              <div className='grid grid-rows-2 md:grid-cols-2 mt-2'>
+                  <div className='hidden md:inline-block'>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.292501243615!2d106.7834317!3d-6.2210537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f587f268af27%3A0x66c596fc12810d0b!2sSUNDAYBESTID!5e0!3m2!1sen!2sid!4v1695556531819!5m2!1sen!2sid" 
+                        width="350" 
+                        height="350" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                  </div> 
+                  <div className='inline-bloc md:hidden'>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.292501243615!2d106.7834317!3d-6.2210537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f587f268af27%3A0x66c596fc12810d0b!2sSUNDAYBESTID!5e0!3m2!1sen!2sid!4v1695556531819!5m2!1sen!2sid" 
+                        width="320" 
+                        height="150" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                  </div>
+                <div className='flex grid-cols-2 items-center flex-col '>
+                    <div className=''>
+                      <img src={logo} alt="" className='w-16 h-16'/>
                     </div>
-                    <p className='font=semibold text-light-200'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae placeat illum numquam perferendis, architecto at facere earum! e, consequuntur illum ipsum provident.</p>
-                    <div className='flex flex-row gap-4 items-center pt-[80px]'>
+                    <div>
+                      <p className='font=semibold text-light-200'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae placeat illum numquam perferendis, architecto at facere earum! e, consequuntur illum ipsum provident.</p>
+                    </div>
+                    
+                    <div className='hidden md:flex flex-row gap-4 items-center pt-[80px]'>
                       <FontAwesomeIcon icon={faLocationDot} style= {{color:'#F1EA3E', fontSize: '1.5rem'}} />
                       <h1 className='text-[#F1EA3E] font-bold text-xl'>Sunday Best Jakarta Selatan</h1>
                     </div>
-                    <p className='text-[#FFFFFF]'>
-                    Grand ITC Permata Hijau
-                    Jl. Arteri Permata Hijau No.2, Grogol Utara, Kec. Kby. Lama,
-                    Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12210
+                    <p className='text-[#FFFFFF] hidden md:inline-block '>
+                        Grand ITC Permata Hijau
+                        Jl. Arteri Permata Hijau No.2, Grogol Utara, Kec. Kby. Lama,
+                        Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12210
                     </p>
-                  
                 </div>
               </div>
             </div>
