@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Select } from '@chakra-ui/select'
-import { Checkbox, CheckboxGroup } from '@chakra-ui/react'
+import { Checkbox } from '@chakra-ui/react'
 import { Stack } from '@chakra-ui/react'
 import { DarkModeContext } from '../context/darkmode'
 
