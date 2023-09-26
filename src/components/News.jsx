@@ -4,7 +4,7 @@ import { DarkModeContext } from '../context/darkmode'
 const News = () => {
   const [theme, setTheme] = useContext(DarkModeContext)
   return (
-    <div className='mx-32 mt-16'>
+    <div className='flex flex-col justify-center'>
       <div className='flex flex-col justify-center items-center mx-48'>
         <h1
         className={`

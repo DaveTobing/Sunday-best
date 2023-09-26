@@ -3,7 +3,6 @@ import {BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-rout
 import { useState } from "react"
 import WarningPage from './pages/WarningPage';
 import LandingPage from "./pages/LandingPage";
-import Partnership from "./pages/Partnership";
 import Product from "./pages/Product";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -96,11 +95,6 @@ function App ()  {
                 path="/"
                 element={
                   <LandingPage/>
-                }/>
-                <Route          
-                path="/partnership"
-                element={
-                  <Partnership/>
                 }/>
                 <Route          
                 path="/product"

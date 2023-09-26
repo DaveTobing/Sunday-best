@@ -23,7 +23,7 @@ const [theme, setTheme] = useContext(DarkModeContext)
             </h2>
         </div>
 
-        <div className='flex flex-row grid-cols-4 justify-around m-10'>  
+        <div className='flex flex-col items-center md:flex-row grid-cols-4 justify-around m-10'>  
             <div className='flex flex-col bg-background-light-250 rounded-xl w-64 relative overflow-clip items-center'>
                     <img src={Bottle} alt="" className='w-64' />
                         <div className='bg-background-light-300 rounded-[150px] w-[350px] h-[300px] absolute -bottom-[180px] px-12'>
