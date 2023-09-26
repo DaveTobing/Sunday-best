@@ -10,7 +10,8 @@ import { DarkModeContext } from '../context/darkmode'
 export default function Navbar() {
   const [theme, setTheme] = useContext(DarkModeContext)
 
-  const[showModal, setShowModal] = useState(false)
+  const[showPartner, setshowPartner] = useState(false)
+  const[showStore, setShowStore] = useState(false)
   
   const handleDarkMode = () => {
     if (theme === true){
@@ -21,12 +22,20 @@ export default function Navbar() {
     }
   };
 
-  const openModal = () => {
-    setShowModal(true);
+  const openStore = () => {
+    setShowStore(true)
   };
 
-  const closeModal = () => {
-    setShowModal(false);
+  const closeStore = () => {
+    setShowStore(false)
+  };
+
+  const openPartner = () => {
+    setshowPartner(true);
+  };
+
+  const closePartner = () => {
+    setshowPartner(false);
   };
 
   return (
@@ -76,8 +85,8 @@ export default function Navbar() {
             <div className='flex gap-16'>
               <Link to= '/' className='font-semibold font-signika uppercase hover:underline' >Home</Link>
               <Link to= '/product' className='font-semibold font-signika uppercase hover:underline ' >Product</Link>
-              <Link to= '/' onClick={openModal} className='font-semibold uppercase font-signika hover:underline'>Store</Link>
-              <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Partnership</Link>
+              <Link to= '/' onClick={openStore} className='font-semibold uppercase font-signika hover:underline'>Store</Link>
+              <Link to= '/' onClick= {openPartner}className='font-semibold uppercase font-signika hover:underline' >Partnership</Link>
             </div>
             <div className='mx-10 gap-8 flex flex-row'>
               <img src={Search} alt="" />
@@ -89,8 +98,8 @@ export default function Navbar() {
 
         </div>
 
-      {/* Modal */}
-      {showModal && (
+      {/* Store Modal */}
+      {showStore && (
           <div className="fixed inset-0 flex items-center justify-center z-[40]" 
           style={{ 
               backgroundColor: 'rgba(128, 128, 128, 0.7)', 
@@ -113,7 +122,7 @@ export default function Navbar() {
                   <h1 className='text-[#F1EA3E] font-bold text-2xl pl-2'>Location</h1>
                 </div>
                 <div className='justify-end'>
-                <FontAwesomeIcon icon={faXmark} onClick={closeModal} 
+                <FontAwesomeIcon icon={faXmark} onClick={closeStore} 
                 style={{ 
                     fontSize: '1.5rem', 
                     color: '#FFFFFF', 
@@ -125,9 +134,13 @@ export default function Navbar() {
               <div>
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.292501243615!2d106.7834317!3d-6.2210537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f587f268af27%3A0x66c596fc12810d0b!2sSUNDAYBESTID!5e0!3m2!1sen!2sid!4v1695556531819!5m2!1sen!2sid" width="350" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
-                <div className='flex flex-col justify-around'>
-                  <div>
-                    <div className='flex flex-row gap-4 items-center'>
+                <div className='flex flex-col'>
+                  
+                    <div className='flex justify-center'>
+                      <img src={logo} alt="" />
+                    </div>
+                    <p className='font=semibold text-light-200'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae placeat illum numquam perferendis, architecto at facere earum! e, consequuntur illum ipsum provident.</p>
+                    <div className='flex flex-row gap-4 items-center pt-[80px]'>
                       <FontAwesomeIcon icon={faLocationDot} style= {{color:'#F1EA3E', fontSize: '1.5rem'}} />
                       <h1 className='text-[#F1EA3E] font-bold text-xl'>Sunday Best Jakarta Selatan</h1>
                     </div>
@@ -136,7 +149,64 @@ export default function Navbar() {
                     Jl. Arteri Permata Hijau No.2, Grogol Utara, Kec. Kby. Lama,
                     Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12210
                     </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
+      {/* Partner Modal */}
+      {showPartner && (
+          <div className="fixed inset-0 flex items-center justify-center z-[40]" 
+          style={{ 
+              backgroundColor: 'rgba(128, 128, 128, 0.7)', 
+              backdropFilter: 'blur(5px)'
+          }}>     
+            <div className="absolute p-4 w-[800px] h-[500px] rounded-lg" 
+            style={{ 
+                backgroundImage: "url('/bgl.png')",
+                backgroundSize: 'cover', 
+                backgroundRepeat: 'no-repeat', 
+                backgroundPosition: 'center',
+                backdropFilter: 'none',
+            }}>
+              <div className='flex justify-between'>
+                <div className='pl-5'>
+                
+                </div>
+                <div className='flex flex-col justify-center items-center'>
+                  <h1 className='text-[#F1EA3E] font-bold text-2xl pl-2'>Partnership</h1>
+                </div>
+                <div className='justify-end'>
+                <FontAwesomeIcon icon={faXmark} onClick={closePartner} 
+                style={{ 
+                    fontSize: '1.5rem', 
+                    color: '#FFFFFF', 
+                    cursor: 'pointer' 
+                }} />
+                </div>
+              </div>
+              <div className='grid grid-cols-2 mt-12'>
+                  <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.292501243615!2d106.7834317!3d-6.2210537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f587f268af27%3A0x66c596fc12810d0b!2sSUNDAYBESTID!5e0!3m2!1sen!2sid!4v1695556531819!5m2!1sen!2sid" width="350" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
+                <div className='flex flex-col'>
+                  
+                    <div className='flex justify-center'>
+                      <img src={logo} alt="" />
+                    </div>
+                    <p className='font=semibold text-light-200'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae placeat illum numquam perferendis, architecto at facere earum! e, consequuntur illum ipsum provident.</p>
+                    <div className='flex flex-row gap-4 items-center pt-[80px]'>
+                      <FontAwesomeIcon icon={faLocationDot} style= {{color:'#F1EA3E', fontSize: '1.5rem'}} />
+                      <h1 className='text-[#F1EA3E] font-bold text-xl'>Sunday Best Jakarta Selatan</h1>
+                    </div>
+                    <p className='text-[#FFFFFF]'>
+                    Grand ITC Permata Hijau
+                    Jl. Arteri Permata Hijau No.2, Grogol Utara, Kec. Kby. Lama,
+                    Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12210
+                    </p>
+                  
                 </div>
               </div>
             </div>

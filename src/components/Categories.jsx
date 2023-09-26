@@ -17,7 +17,7 @@ const Categories = () => {
   const [theme, setTheme] = useContext(DarkModeContext)
   return (
    
-    <div className='mx-32 mt-16'>
+    <div className='justify-center md:mx-32 mt-16'>
       <div className='flex flex-col justify-center items-center mx-48'>
         <h1
         className={`
@@ -33,7 +33,7 @@ const Categories = () => {
 
       </div>
 
-        <div className='flex flex-wrap gap-4 mt-5'>
+        <div className=' md:flex flex-wrap gap-4 mt-5'>
             <img src={Soju} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
             <img src={Sake} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
             <img src={Wine} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
