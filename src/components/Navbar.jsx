@@ -49,7 +49,7 @@ export default function Navbar() {
     className={`
           ${theme ? "bg-background-light-400" : "bg-background-light-300"} flex flex-col justify-center`} 
       >
-        <div className='flex flex-row justify-between md:mx-60 my-2'>
+        <div className='flex flex-row justify-between mx-4 md:mx-60 my-2'>
           <div className='flex flex-row items-center gap-8 justify-start'>
             <div className={`
                 ${theme ? "bg-background-light-300" : "bg-background-light-400"} rounded-lg h-7 w-48`} 
@@ -91,10 +91,10 @@ export default function Navbar() {
          ${theme ? "bg-background-light-300" : "bg-background-light-400"} underline h-[1.5px] w-full mx-auto rounded-lg '`}  
         >
         </div>
-        <div className='flex flex-row mx- md: mx-60 my-2 justify-between items-center'>
-          <div className='hidden md:flex flex-row items-center gap-4 justify-start'>
+        <div className='flex flex-row mx-4 md:mx-60 my-2 justify-between items-center'>
+          <div className='flex flex-row items-center gap-4 justify-start'>
             <img src={logo} className='w-14' />
-            <p className='font-semibold font-signika text-2xl'>SundayBest.id</p>
+            <p className='hidden md:font-semibold font-signika text-2xl'>SundayBest.id</p>
           </div>
             <div className='hidden md:flex gap-16'>
               <Link to= '/' className='font-semibold font-signika uppercase hover:underline' >Home</Link>
@@ -102,18 +102,16 @@ export default function Navbar() {
               <Link to= '/' onClick={openStore} className='font-semibold uppercase font-signika hover:underline'>Store</Link>
               <Link to= '/' onClick= {openPartner}className='font-semibold uppercase font-signika hover:underline' >Partnership</Link>
             </div>
-            <div className='mx-0 md:mx-10 gap-8 flex flex-row'>
+            <div className='mx-0 pr-4 md:mx-10 md:pr-0 gap-8 flex flex-row'>
               <img src={Search} alt="" />
               {theme ? 
                 <FontAwesomeIcon icon={faMoon} style={{fontSize: '3rem', color:'#000'}} onClick={handleDarkMode} className='hover: cursor-pointer'/>:
                 <FontAwesomeIcon icon={faSun} style={{fontSize: '2rem', color:'#000'}} onClick={handleDarkMode} className='hover: cursor-pointer'/> 
               }
-              <div onClick={handleNav} className='md:hidden w-full flex items-center justify-end'>
+              <div onClick={handleNav} className=' md:hidden w-full flex items-center justify-end'>
                 {nav ?  <FontAwesomeIcon icon={faXmark} style={{ fontSize: '2rem', color: '#000' }} /> :  <FontAwesomeIcon icon={faBars} style={{ fontSize: '2rem', color: '#000' }} /> }
               </div>
             </div>
-
-
         </div>
 
         
