@@ -6,7 +6,6 @@ import Search from '../assets/Search.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faLocationDot, faPhone, faMoon, faSun, faBars } from '@fortawesome/free-solid-svg-icons'
 import { DarkModeContext } from '../context/darkmode'
-import { useSelector, useDispatch } from 'react-redux';
 
 export default function Navbar() {
   const [theme, setTheme] = useContext(DarkModeContext)
