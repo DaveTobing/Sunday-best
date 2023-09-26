@@ -248,7 +248,7 @@ export default function Navbar() {
                                   referrerpolicy="no-referrer-when-downgrade">
                               </iframe>
                             </div> 
-                            <div className='inline-bloc md:hidden'>
+                            <div className='inline-block md:hidden'>
                               <iframe 
                                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.292501243615!2d106.7834317!3d-6.2210537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f587f268af27%3A0x66c596fc12810d0b!2sSUNDAYBESTID!5e0!3m2!1sen!2sid!4v1695556531819!5m2!1sen!2sid" 
                                   width="320" 
@@ -258,7 +258,7 @@ export default function Navbar() {
                                   referrerpolicy="no-referrer-when-downgrade">
                               </iframe>
                             </div>
-                          <div className='flex grid-cols-2 items-center flex-col '>
+                          <div className='flex grid-cols-2 items-center justify-center flex-col '>
                               <div className=''>
                                 <img src={logo} alt="" className='w-16 h-16'/>
                               </div>
