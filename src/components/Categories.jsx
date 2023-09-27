@@ -18,7 +18,7 @@ const Categories = () => {
   return (
    
     <div className=''>
-      <div className='flex flex-col justify-center items-center mx-48'>
+      <div className='flex flex-col justify-center items-center mx-48 my-6'>
         <h1
         className={`
         ${theme ? "text-light-450" : "text-light-600" } font-bold font-signika text-5xl uppercase mb-4`} 

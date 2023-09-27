@@ -1,9 +1,8 @@
-import bottle from '../assets/bottle.svg'
 
 const data = [
   {
   title: "Chum Apple", 
-  category: "SOJU'",
+  category: "SOJU",
   type: "SOJU IMPORT", 
   size: "360mL", 
   price: "Rp79.000", 
