@@ -21,15 +21,16 @@ const Hero = () => {
                 minHeight: '160px',
             }}
         >
-            <div className='flex flex-col items-start mt-4 md:justify-center md:gap-6 md:mt-0'>
+            <div className='flex flex-col items-start mt-4 md:justify-center md:gap-6 md:mt-0 hover:cursor-default'>
                 <h1 className='text-lg md:text-5xl font-semibold text-[#1D1D1D] font-signika'>Offering the best quality of</h1>
                 <h1 className='text-lg md:text-6xl font-bold text-[#FEEB09] font-signika'>liquors at the most</h1>
                 <h1 className='text-lg md:text-6xl font-bold text-[#FEEB09] font-signika'>affordable prices</h1>
-                <div className='bg-background-light-300 w-32 h-8 md:w-36 md:h-14 rounded-lg '>
-                    <Link to = '/Product'>
-                        <button className='font-bold font-signika text-sm mt-1.5 md:text-lg md:mt-3.5'>Shop the Liquors</button>
-                    </Link>
-                </div>
+                <Link to = '/Product'>
+                    <div className='bg-background-light-300 w-32 h-8 md:w-36 md:h-14 rounded-lg '>
+                            <button className='font-bold font-signika text-sm mt-1.5 md:text-lg md:mt-3.5'>Shop the Liquors</button>
+                    </div>
+                </Link>
+
             </div>
             <div className='flex items-center'>
                 <img className='w-full md:h-4/6' />

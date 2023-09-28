@@ -103,17 +103,18 @@ export default function Product () {
     <div className={`
     ${theme ? "bg-background-dark-400" : "bg-background-light-200" } pt-16`} 
       >
-        <div className='grid grid-cols-6 flex-row'>
-          <div className='flex flex-col col-start-1 col-end-2 md:mx-6 rounded-lg h-full md:w-full w-32 mx-3'>
+        <div className='grid md:grid-cols-6 flex-row'>
+          <div className='flex flex-col md:col-start-1 md:col-end-2 md:mx-6 rounded-lg h-full md:w-full w-32 mx-3'>
             <p className={`
               ${theme ? "text-light-450" : "text-light-600" } font-bold text-left`} 
-              >Products
+              >Categories
             </p>
               {checkboxes.map(parent => (
               <div key={parent.id}>
                 <Checkbox
+                  size='sm'
                   className={`
-                  ${theme ? "text-light-450" : "text-light-600" } font-semibold `}
+                  ${theme ? "text-light-450" : "text-light-600" } font-semibold`}
                   isChecked={checkedItems[parent.id]}
                   isIndeterminate={
                     parent.children.some(childId => checkedItems[childId]) &&
@@ -122,10 +123,12 @@ export default function Product () {
                   onChange={(e) =>(setParentAndChildren(parent, e.target.checked))}
                 >
                   {parent.id}
+                  
                 </Checkbox>
                 <Stack pl={6} mt={1} spacing={1}>
                   {parent.children.map(childId => (
                     <Checkbox
+                    size='sm'
                     className={`
                     ${theme ? "text-light-450" : "text-light-600" } font-semibold`}
                       key={childId}
@@ -140,30 +143,28 @@ export default function Product () {
             ))}
           </div>
           <div className='col-start-2 col-end-7'>
-              <div className=''>
-                <div className='flex md:flex-row justify-between md:mr-12 '>
-                  <div className=''>
-                      <h1 className={`
-                      ${theme ? "text-light-450" : "text-light-600" } font-bold`}> 
-                    All Products</h1>
-                  </div>
-                  <div className='flex gap-16 items-center md:justify-end' >
-                      <h1 className={`
-                        ${theme ? "text-light-450" : "text-light-600" } font-bold`}> Sort
-                      </h1>
-                      <Select 
-                      placeholder='Filter' 
-                      value={sortOption}
-                      onChange={(e) => setSortOption(e.target.value)}
+              <div className='flex ml-6 justify-between md:flex-row md:mr-12'>
+                <div className=''>
+                    <h1 className={`
+                    ${theme ? "text-light-450" : "text-light-600" } text-sm font-bold mt-2 md:text-xl`}> 
+                Products</h1>
+                </div>
+                <div className='flex md:gap-16 items-center md:justify-end' >
+                    <h1 className={`
+                      ${theme ? "text-light-450" : "text-light-600" } text-sm font-bold md:text-xl`}> Sort
+                    </h1>
+                    <Select 
+                    placeholder='Filter' 
+                    value={sortOption}
+                    onChange={(e) => setSortOption(e.target.value)}
 
-                      className={`
-                        ${theme ? "text-light-450 bg-background-dark-400" : "text-light-600 bg-background-light-200" } hover:cursor-pointer`}>
-                          <option value = "Desc">Alphabet: Z-A</option>
-                          <option value = "Asc">Alphabet: A-Z</option>
-                          <option value=  "High">Price: High-Low</option>
-                          <option value = "Low">Price: Low-high</option>
-                      </Select>
-                  </div>
+                    className={`
+                      ${theme ? "text-light-450 bg-background-dark-400" : "text-light-600 bg-background-light-200" } hover:cursor-pointer`}>
+                        <option value = "Desc">Alphabet: Z-A</option>
+                        <option value = "Asc">Alphabet: A-Z</option>
+                        <option value=  "High">Price: High-Low</option>
+                        <option value = "Low">Price: Low-high</option>
+                    </Select>
                 </div>
               </div>
               <div className='flex flex-col md:flex-row w-full flex-wrap'>

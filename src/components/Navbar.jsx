@@ -105,7 +105,7 @@ export default function Navbar() {
             <div className='mx-0 pr-4 md:mx-10 md:pr-0 gap-8 flex flex-row'>
               <img src={Search} alt="" />
               {theme ? 
-                <FontAwesomeIcon icon={faMoon} style={{fontSize: '3rem', color:'#000'}} onClick={handleDarkMode} className='hover: cursor-pointer'/>:
+                <FontAwesomeIcon icon={faMoon} style={{fontSize: '2rem', color:'#000'}} onClick={handleDarkMode} className='hover: cursor-pointer'/>:
                 <FontAwesomeIcon icon={faSun} style={{fontSize: '2rem', color:'#000'}} onClick={handleDarkMode} className='hover: cursor-pointer'/> 
               }
               <div onClick={handleNav} className='hover:cursor-pointer md:hidden w-full flex items-center justify-end'>
@@ -116,7 +116,6 @@ export default function Navbar() {
 
         
         {/* mobile menu */}
-
         <div className={nav ?         `
           ${theme ? "bg-background-light-400" : "bg-background-light-300"} fixed left-0 top-0 w-[60%] h-full ease-in-out duration-500 flex flex-col z-[2]` : 'fixed left-[-100%]' }>
         <div className='flex flex-col items-center gap-16 mt-7'>

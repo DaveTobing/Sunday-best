@@ -5,7 +5,7 @@ const News = () => {
   const [theme, setTheme] = useContext(DarkModeContext)
   return (
     <div className='flex flex-col justify-center'>
-      <div className='flex flex-col justify-center items-center mx-48'>
+      <div className='flex flex-col justify-center items-center md:mx-48'>
         <h1
         className={`
         ${theme ? "text-light-450" : "text-light-600" } font-bold font-signika text-2xl md:text-5xl uppercase mb-4`} 

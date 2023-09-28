@@ -26,7 +26,7 @@ export default function Footer() {
             <div className="flex items-center justify-center w-12 h-12 rounded-full ml-10">
               <img src={Logo} alt="" />
             </div>
-            <span className="self-center text-2xl font-semibold">Sunday Best</span>
+            <span className="self-center text-2xl font-semibold font-signika">Sunday Best</span>
           </div>
         </div>
         <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
@@ -34,64 +34,64 @@ export default function Footer() {
             <h3 className="font-bold uppercase ">Categories</h3>
             <ul className="space-y-1 grid grid-cols-3 items-center">
               <li>
-                <Link to= '/' className='font-semibold font-signika uppercase hover:underline' >Soju</Link>
+                <Link to= '/' className='font-semibold font-signika hover:underline' >Soju</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold font-signika uppercase hover:underline '>Sake</Link>
+                <Link to= '/' className='font-semibold font-signika hover:underline '>Sake</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold uppercase font-signika hover:underline'>Wine</Link>
+                <Link to= '/' className='font-semibold font-signika hover:underline'>Wine</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Brandy</Link>
+                <Link to= '/' className='font-semibold font-signika hover:underline' >Brandy</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Whisky</Link>
+                <Link to= '/' className='font-semibold font-signika hover:underline' >Whisky</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Gin</Link>
+                <Link to= '/' className='font-semibold font-signika hover:underline' >Gin</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Vodka</Link>
+                <Link to= '/' className='font-semibold font-signika hover:underline' >Vodka</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Rum</Link>
+                <Link to= '/' className='font-semibold font-signika hover:underline' >Rum</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Tequila</Link>
+                <Link to= '/' className='font-semibold font-signika hover:underline' >Tequila</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Cognac</Link>
+                <Link to= '/' className='font-semibold font-signika hover:underline' >Cognac</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Beers</Link>
+                <Link to= '/' className='font-semibold font-signika hover:underline' >Beers</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold uppercase font-signika hover:underline' >Others</Link>
+                <Link to= '/' className='font-semibold font-signika hover:underline' >Others</Link>
               </li>
             </ul>
           </div>
           <div className="space-y-3">
-            <h3 className=" uppercase font-bold">About Us</h3>
+            <h3 className="uppercase font-bold">About Us</h3>
             <ul className="space-y-1">
               <li>
                 <Link>
-                    <p className='font-medium'>News</p>
+                    <p className='font-semibold'>News</p>
                 </Link>
               </li>
               <li>
                 <Link>
-                    <p className='font-medium'>Partnership</p>
+                    <p className='font-semibold'>Partnership</p>
                 </Link>
               </li>
               <li>
                 <Link>
-                    <p className='font-medium'>FAQ</p>
+                    <p className='font-semibold'>FAQ</p>
                 </Link>
               </li>
               <li>
                 <Link onClick={openModal}>
-                    <p className='font-medium'>How to Order</p>
+                    <p className='font-semibold'>How to Order</p>
                 </Link>
               </li>
             </ul>
@@ -101,12 +101,12 @@ export default function Footer() {
             <ul className="space-y-1">
               <li>
                 <Link to='https://api.whatsapp.com/send/?phone=62818688448&text&type=phone_number&app_absent=0'>
-                  <p className='font-medium'>+62 818-688-448</p>
+                  <p className='font-semibold'>+62 818-688-448</p>
                 </Link>
               </li>
               <li>
                 <Link to='mailto:sundaybeststoreid@gmail.com?subject=Having%20Interest'>
-                  <p className='font-medium'>sundaybeststoreid@gmail.com</p>
+                  <p className='font-semibold'>sundaybeststoreid@gmail.com</p>
                 </Link>
               </li>
             </ul>
