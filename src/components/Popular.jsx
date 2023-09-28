@@ -12,13 +12,13 @@ const [theme, setTheme] = useContext(DarkModeContext)
         <div className='m-10'>
             <h1
                 className={`
-                    ${theme ? "text-light-450" : "text-light-600" } md: text-5xl font-bold font-signika text-center uppercase mb-4`} 
+                    ${theme ? "text-light-450" : "text-light-600" } text-2xl md:text-5xl font-bold font-signika text-center uppercase mb-4`} 
                 >
                 Our Popular Booze
             </h1>
            
             <h2  className={`
-                ${theme ? "text-light-100" : "text-light-600" } font-bold font-signika text-xl text-center uppercase `} >
+                ${theme ? "text-light-100" : "text-light-600" } font-semibold font-signika text-lg md:text-xl text-center uppercase `} >
                 Offering a wide range of beers,wines and <br /> spirits. All products 100% ORIGINAL
             </h2>
         </div>

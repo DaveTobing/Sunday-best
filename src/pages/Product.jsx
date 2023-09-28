@@ -5,10 +5,13 @@ import { Stack } from '@chakra-ui/react'
 import { DarkModeContext } from '../context/darkmode'
 import datas from '../database/data'
 import Cards from '../components/Cards'
+import { useParams } from 'react-router-dom'
 
 
-export default function Product ({result}) {
+export default function Product () {
   const [theme, setTheme] = useContext(DarkModeContext)
+
+  const {category} = useParams
   
   const checkboxes = [
     { id: 'BEERS', children: [] },
