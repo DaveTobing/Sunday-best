@@ -24,7 +24,7 @@ export default function Cards ({title, category, type, price, size, link_tokoped
                     <div className='underline bg-[#1D1D1D] h-0.5 w-1/2 mx-auto rounded-lg'></div>
                     <div className='flex flex-row justify-around m-2 font-signika'>
                         <p>
-                            {price}
+                            Rp{price}
                         </p>
                         <p>
                             {size}
@@ -58,7 +58,7 @@ export default function Cards ({title, category, type, price, size, link_tokoped
                 <h1 className='font-bold text-xl text-[#0175B8] font-signika'>{title}</h1>
               </div>
               <div className='m-2 justify-between flex flex-row'>
-                <p className='text-[#F1EA3E] text-xl font-medium font-signika'>{price}</p>
+                <p className='text-[#F1EA3E] text-xl font-medium font-signika'>Rp{price}</p>
                 <p className='text-[#0175B8] text-xl font-medium font-signika'>{size}</p>
               </div>
             </div>

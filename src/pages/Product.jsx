@@ -9,8 +9,7 @@ import Cards from '../components/Cards'
 
 export default function Product ({result}) {
   const [theme, setTheme] = useContext(DarkModeContext)
-  let [categoryFilters, setcategoryFilters] = useState(new Set());
-
+  
   const checkboxes = [
     { id: 'BEERS', children: [] },
     { id: 'COGNAG', children: [] },
@@ -25,6 +24,7 @@ export default function Product ({result}) {
     { id: 'WHISKY', children: [] },
   ];
 
+  let [categoryFilters, setcategoryFilters] = useState(new Set());
 
   function updateFilters(checked, categoryFilter) {
     if (checked)
@@ -40,7 +40,8 @@ export default function Product ({result}) {
   const filteredProducts = datas.filter((product) => {
     if (categoryFilters.size === 0) {
       return true;
-    } else {
+    } 
+    else {
       return (
         categoryFilters.has(product.category) ||
         categoryFilters.has(product.type) ||
@@ -48,7 +49,6 @@ export default function Product ({result}) {
       );
     }
   });
-
 
   const initialState = checkboxes.reduce((acc, parent) => {
     acc[parent.id] = false;
@@ -76,6 +76,24 @@ export default function Product ({result}) {
     setCheckedItems({ ...checkedItems, [childId]: isChecked })
     updateFilters(isChecked, childId)
   }
+
+  const [sortOption, setSortOption] = useState();
+
+  // Sort filteredProducts based on the selected option
+  const sortedProducts = [...filteredProducts]; // Create a copy of the array to avoid mutating the original data
+
+  if (sortOption === 'Asc'){
+    // Default to 'Alphabet: A-Z' sorting
+    sortedProducts.sort((a, b) => a.title.localeCompare(b.title));
+  }
+  else if (sortOption === 'Desc') {
+    sortedProducts.sort((a, b) => b.title.localeCompare(a.title));
+  } else if (sortOption === 'High') {
+    sortedProducts.sort((a, b) => b.price - a.price);
+  } else if (sortOption === 'Low') {
+    sortedProducts.sort((a, b) => a.price - b.price);
+  } 
+
 
 
   return (
@@ -130,16 +148,23 @@ export default function Product ({result}) {
                       <h1 className={`
                         ${theme ? "text-light-450" : "text-light-600" } font-bold`}> Sort
                       </h1>
-                      <Select placeholder='Filter' className={`
-                      ${theme ? "text-light-450 bg-background-dark-400" : "text-light-600 bg-background-light-200" } hover:cursor-pointer`}>
-                        <option value="Alphabet">Alphabet</option>
-                        <option value="Price">Price</option>
-                    </Select>
+                      <Select 
+                      placeholder='Filter' 
+                      value={sortOption}
+                      onChange={(e) => setSortOption(e.target.value)}
+
+                      className={`
+                        ${theme ? "text-light-450 bg-background-dark-400" : "text-light-600 bg-background-light-200" } hover:cursor-pointer`}>
+                          <option value = "Desc">Alphabet: Z-A</option>
+                          <option value = "Asc">Alphabet: A-Z</option>
+                          <option value=  "High">Price: High-Low</option>
+                          <option value = "Low">Price: Low-high</option>
+                      </Select>
                   </div>
                 </div>
               </div>
               <div className='flex flex-col md:flex-row w-full flex-wrap'>
-                {filteredProducts.map(
+                {sortedProducts.map(
                       ({title, category, type, size, price, link_tokopedia, link_shopee, link_blibli, gambar}) => (
                         <Cards
                           key={Math.random()}
@@ -148,7 +173,7 @@ export default function Product ({result}) {
                           category={category}
                           type={type}
                           size={size}
-                          price = {price}
+                          price = {price.toFixed(3)}
                           link_tokopedia = {link_tokopedia}
                           link_shopee = {link_shopee}
                           link_blibli = {link_blibli}
