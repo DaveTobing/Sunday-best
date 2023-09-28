@@ -14,61 +14,6 @@ import { DarkModeProvider } from './context/darkmode'
 
 function App ()  {
   const [ageVerified, setAgeVerified] = useState(!!Cookies.get('ageVerified'));
-  // const [selectedCategory, setSelectedCategory] = useState(null);
-
-  // ----------- Input Filter -----------
-  // const [query, setQuery] = useState("");
-
-  // const handleInputChange = (event) => {
-  //   setQuery(event.target.value);
-  // };
-
-  // const filteredItems = datas.filter(
-  //   (data) => data.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
-  // );
-
-  // // ----------- Category Filtering -----------
-  // const handleChange = (event) => {
-  //   setSelectedCategory(event.target.value);
-  // };
-
-  // function filteredData(products, selected, query) {
-  //   let filteredProducts = products;
-
-  //   // Filtering Input Items
-  //   if (query) {
-  //     filteredProducts = filteredItems;
-  //   }
-
-  //   // Applying selected filter
-  //   if (selected) {
-  //     filteredProducts = filteredProducts.filter(
-  //       ({ category, type }) =>
-  //         category === selected ||
-  //         type === selected
-  //     );
-  //   }
-
-  //   return filteredProducts.map(
-  //     ({title, category, type, size, price, link_tokopedia, link_shopee, link_blibli, gambar}) => (
-  //       <Cards
-  //         key={Math.random()}
-  //         img={gambar}
-  //         title={title}
-  //         category={category}
-  //         type={type}
-  //         size={size}
-  //         price = {price}
-  //         link_tokopedia = {link_tokopedia}
-  //         link_shopee = {link_shopee}
-  //         link_blibli = {link_blibli}
-  //         gambar = {gambar}
-  //       />
-  //     )
-  //   );
-  // }
-
-  // const result = filteredData(datas, selectedCategory, query);
   
   const verifyAge = () => {
     setAgeVerified(true);

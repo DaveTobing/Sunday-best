@@ -93,7 +93,9 @@ export default function Navbar() {
         </div>
         <div className='flex flex-row mx-4 md:mx-60 my-2 justify-between items-center'>
           <div className='flex flex-row items-center gap-4 justify-start'>
-            <img src={logo} className='w-14' />
+            <Link to='/'>
+              <img src={logo} className='w-14' />
+            </Link>
             <p className='hidden md:font-semibold font-signika text-2xl'>SundayBest.id</p>
           </div>
             <div className='hidden md:flex gap-16'>
