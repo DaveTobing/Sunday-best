@@ -103,8 +103,8 @@ export default function Product () {
     <div className={`
     ${theme ? "bg-background-light-200" : "bg-background-dark-400" } pt-16`} 
       >
-        <div className='grid md:grid-cols-6 flex-row'>
-          <div className='flex flex-col md:col-start-1 md:col-end-2 md:mx-6 rounded-lg h-full md:w-full w-32 mx-3'>
+        <div className='grid lg:grid-cols-6 flex-row'>
+          <div className='flex flex-col rounded-lg h-full w-32 mx-3 lg:w-full lg:col-start-1 lg:col-end-2 lg:mx-6 '>
             <p className={`
               ${theme ? "text-light-600" : "text-light-450" } font-bold text-left`} 
               >Categories
@@ -143,15 +143,15 @@ export default function Product () {
             ))}
           </div>
           <div className='col-start-2 col-end-7'>
-              <div className='flex ml-6 justify-between md:flex-row md:mr-12'>
-                <div className=''>
+              <div className='flex justify-between lg:flex-row lg:mr-12 lg:ml-6'>
+                <div className='mt-0.5'>
                     <h1 className={`
-                    ${theme ? "text-light-600" : "text-light-450" } text-sm font-bold mt-2 md:text-xl`}> 
+                    ${theme ? "text-light-600" : "text-light-450" } text-sm font-bold mt-2 lg:text-xl`}> 
                 Products</h1>
                 </div>
-                <div className='flex md:gap-16 items-center md:justify-end' >
+                <div className='flex lg:gap-16 items-center lg:justify-end' >
                     <h1 className={`
-                      ${theme ? "text-light-600" : "text-light-450" } text-sm font-bold md:text-xl`}> Sort
+                      ${theme ? "text-light-600" : "text-light-450" } text-sm font-bold lg:text-xl`}> Sort
                     </h1>
                     <Select 
                     placeholder='Filter' 
@@ -167,7 +167,7 @@ export default function Product () {
                     </Select>
                 </div>
               </div>
-              <div className='flex flex-col md:flex-row w-full flex-wrap'>
+              <div className='flex flex-col lg:flex-row w-full flex-wrap'>
                 {sortedProducts.map(
                       ({title, category, type, size, price, link_tokopedia, link_shopee, link_blibli, gambar}) => (
                         <Cards

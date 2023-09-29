@@ -12,18 +12,18 @@ const [theme, setTheme] = useContext(DarkModeContext)
         <div className='m-10'>
             <h1
                 className={`
-                    ${theme ? "text-light-600" : "text-light-450" } text-2xl md:text-5xl font-bold font-signika text-center uppercase mb-4`} 
+                    ${theme ? "text-light-600" : "text-light-450" } text-2xl lg:text-5xl font-bold font-signika text-center uppercase mb-4`} 
                 >
                 Our Popular Booze
             </h1>
            
             <h2  className={`
-                ${theme ? "text-light-600" : "text-light-100" } font-semibold font-signika text-lg md:text-xl text-center uppercase `} >
+                ${theme ? "text-light-600" : "text-light-100" } font-semibold font-signika text-lg lg:text-xl text-center uppercase `} >
                 Offering a wide range of beers,wines and <br /> spirits. All products 100% ORIGINAL
             </h2>
         </div>
 
-        <div className='flex flex-col items-center md:flex-row grid-cols-4 justify-around m-10 gap-4'>  
+        <div className='flex flex-col items-center lg:flex-row grid-cols-4 justify-around m-10 gap-4'>  
             <div className='flex flex-col bg-background-light-250 rounded-xl w-64 relative overflow-clip items-center'>
                     <img src={Bottle} alt="" className='w-64' />
                         <div className='bg-background-light-300 rounded-[150px] w-[350px] h-[300px] absolute -bottom-[180px] px-12'>

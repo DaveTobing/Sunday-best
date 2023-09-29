@@ -14,13 +14,13 @@ const LandingPage = () => {
       <Hero/>
       <Categories/>
       <div className={`
-          ${theme ? "bg-background-light-400" : "bg-background-light-300" } rounded-lg h-0.5 mx-16 md:mx-32 my-16 `} 
+          ${theme ? "bg-background-light-400" : "bg-background-light-300" } rounded-lg h-0.5 mx-16 lg:mx-32 my-16 `} 
       >
       </div>
       <Popular/>
 
       <div className={`
-          ${theme ? "bg-background-light-400" : "bg-background-light-300" } rounded-lg h-0.5 mx-16 md:mx-32 my-16 `} 
+          ${theme ? "bg-background-light-400" : "bg-background-light-300" } rounded-lg h-0.5 mx-16 lg:mx-32 my-16 `} 
         >
       </div>
       <News/>
