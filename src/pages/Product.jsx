@@ -101,12 +101,12 @@ export default function Product () {
 
   return (
     <div className={`
-    ${theme ? "bg-background-dark-400" : "bg-background-light-200" } pt-16`} 
+    ${theme ? "bg-background-light-200" : "bg-background-dark-400" } pt-16`} 
       >
         <div className='grid md:grid-cols-6 flex-row'>
           <div className='flex flex-col md:col-start-1 md:col-end-2 md:mx-6 rounded-lg h-full md:w-full w-32 mx-3'>
             <p className={`
-              ${theme ? "text-light-450" : "text-light-600" } font-bold text-left`} 
+              ${theme ? "text-light-600" : "text-light-450" } font-bold text-left`} 
               >Categories
             </p>
               {checkboxes.map(parent => (
@@ -114,7 +114,7 @@ export default function Product () {
                 <Checkbox
                   size='sm'
                   className={`
-                  ${theme ? "text-light-450" : "text-light-600" } font-semibold`}
+                  ${theme ? "text-light-600" : "text-light-450" } font-semibold`}
                   isChecked={checkedItems[parent.id]}
                   isIndeterminate={
                     parent.children.some(childId => checkedItems[childId]) &&
@@ -130,7 +130,7 @@ export default function Product () {
                     <Checkbox
                     size='sm'
                     className={`
-                    ${theme ? "text-light-450" : "text-light-600" } font-semibold`}
+                    ${theme ? "text-light-600" : "text-light-450" } font-semibold`}
                       key={childId}
                       isChecked={checkedItems[childId]}
                       onChange={(e) =>handleChildrenCheckbox(childId, e.target.checked)}
@@ -146,12 +146,12 @@ export default function Product () {
               <div className='flex ml-6 justify-between md:flex-row md:mr-12'>
                 <div className=''>
                     <h1 className={`
-                    ${theme ? "text-light-450" : "text-light-600" } text-sm font-bold mt-2 md:text-xl`}> 
+                    ${theme ? "text-light-600" : "text-light-450" } text-sm font-bold mt-2 md:text-xl`}> 
                 Products</h1>
                 </div>
                 <div className='flex md:gap-16 items-center md:justify-end' >
                     <h1 className={`
-                      ${theme ? "text-light-450" : "text-light-600" } text-sm font-bold md:text-xl`}> Sort
+                      ${theme ? "text-light-600" : "text-light-450" } text-sm font-bold md:text-xl`}> Sort
                     </h1>
                     <Select 
                     placeholder='Filter' 
@@ -159,7 +159,7 @@ export default function Product () {
                     onChange={(e) => setSortOption(e.target.value)}
 
                     className={`
-                      ${theme ? "text-light-450 bg-background-dark-400" : "text-light-600 bg-background-light-200" } hover:cursor-pointer`}>
+                      ${theme ? "text-light-600 bg-background-light-200" : "text-light-450 bg-background-dark-400" } hover:cursor-pointer`}>
                         <option value = "Desc">Alphabet: Z-A</option>
                         <option value = "Asc">Alphabet: A-Z</option>
                         <option value=  "High">Price: High-Low</option>

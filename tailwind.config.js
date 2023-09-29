@@ -47,6 +47,6 @@ module.exports = {
       brightness: ['responsive', 'hover', 'focus'],
     }
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 

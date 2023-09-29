@@ -5,7 +5,7 @@ import React from 'react'
 const DarkModeContext = createContext();
 
 function DarkModeProvider ({children}) {
-    const [theme, setTheme] = useState(false)  
+    const [theme, setTheme] = useState(true)  
 
   return (
     <DarkModeContext.Provider value={[theme, setTheme]}>
