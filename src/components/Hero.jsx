@@ -1,5 +1,4 @@
 import React from 'react'
-import image from '../assets/image1.png'
 import banner2 from '../assets/banner2.svg'
 import banner3 from '../assets/banner3.svg'
 import bg3 from '../assets/bg3.png';  // <-- Importing the bg3 image

@@ -6,7 +6,7 @@ import blibli from '../assets/blibli_logo.svg'
 import tokopedia from '../assets/tokopedia_logo.svg'
 import shopee from '../assets/shopee_logo.svg'
 
-export default function Cards ({title, category, type, price, size, link_tokopedia, link_shopee, link_blibli, gambar}) {
+export default function Cards ({title, price, size, link_tokopedia, link_shopee, link_blibli, gambar}) {
     const[showModal, setShowModal] = useState(false)
 
     const openModal = () => {

@@ -6,7 +6,6 @@ import LandingPage from "./pages/LandingPage";
 import Product from "./pages/Product";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import datas from "./database/data"
 import Cookies from 'js-cookie';
 import { ChakraProvider} from '@chakra-ui/react'
 import { DarkModeProvider } from './context/darkmode'

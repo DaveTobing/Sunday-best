@@ -1,17 +1,16 @@
 import React, { useState, useContext } from 'react'
 import { Select } from '@chakra-ui/select'
-import { Checkbox } from '@chakra-ui/react'
+import { Checkbox, InputGroup, InputLeftElement } from '@chakra-ui/react'
 import { Stack } from '@chakra-ui/react'
 import { DarkModeContext } from '../context/darkmode'
 import datas from '../database/data'
 import Cards from '../components/Cards'
-import { useParams } from 'react-router-dom'
-
+import { Input } from '@chakra-ui/react'
+import { Search2Icon } from '@chakra-ui/icons'
+import data from '../database/data'
 
 export default function Product () {
   const [theme, setTheme] = useContext(DarkModeContext)
-
-  const {category} = useParams
   
   const checkboxes = [
     { id: 'BEERS', children: [] },
@@ -27,6 +26,8 @@ export default function Product () {
     { id: 'WHISKY', children: [] },
   ];
 
+  // Category Filter
+
   let [categoryFilters, setcategoryFilters] = useState(new Set());
 
   function updateFilters(checked, categoryFilter) {
@@ -40,7 +41,7 @@ export default function Product () {
       });
   }
 
-  const filteredProducts = datas.filter((product) => {
+  let filteredProducts = datas.filter((product) => {
     if (categoryFilters.size === 0) {
       return true;
     } 
@@ -80,8 +81,22 @@ export default function Product () {
     updateFilters(isChecked, childId)
   }
 
-  const [sortOption, setSortOption] = useState();
 
+  // Search Filter
+
+  const [query, setQuery] = useState("");
+
+  const SearchItems = datas.filter(
+    (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
+  );
+
+  if (query){
+    filteredProducts = SearchItems // Create a copy of the array to avoid mutating the original data
+  }
+
+  //Sorting
+
+  const [sortOption, setSortOption] = useState();
   // Sort filteredProducts based on the selected option
   const sortedProducts = [...filteredProducts]; // Create a copy of the array to avoid mutating the original data
 
@@ -96,7 +111,6 @@ export default function Product () {
   } else if (sortOption === 'Low') {
     sortedProducts.sort((a, b) => a.price - b.price);
   } 
-
 
 
   return (
@@ -143,8 +157,18 @@ export default function Product () {
             ))}
           </div>
           <div className='col-start-2 col-end-7'>
-              <div className='flex justify-between lg:flex-row lg:mr-12 lg:ml-6'>
+              <div className='flex flex-col justify-between md:flex-row lg:mr-12 lg:ml-6'>
                 <div className=''>
+                <InputGroup>
+                  <InputLeftElement pointerEvents='none'>
+                    <Search2Icon color='gray.300' />
+                  </InputLeftElement>
+                  <Input 
+                  placeholder='Search' 
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  />
+                </InputGroup>
                 </div>
                 <div className='flex lg:gap-16 items-center lg:justify-end' >
                     <h1 className={`
