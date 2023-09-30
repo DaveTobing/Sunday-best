@@ -144,10 +144,7 @@ export default function Product () {
           </div>
           <div className='col-start-2 col-end-7'>
               <div className='flex justify-between lg:flex-row lg:mr-12 lg:ml-6'>
-                <div className='mt-0.5'>
-                    <h1 className={`
-                    ${theme ? "text-light-600" : "text-light-450" } text-sm font-bold mt-2 lg:text-xl`}> 
-                Products</h1>
+                <div className=''>
                 </div>
                 <div className='flex lg:gap-16 items-center lg:justify-end' >
                     <h1 className={`

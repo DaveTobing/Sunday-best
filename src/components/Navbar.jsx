@@ -150,17 +150,16 @@ export default function Navbar() {
             }}>
               <div className='flex justify-between'>
                 <div className='pl-5'>
-                
                 </div>
                 <div className='flex flex-col justify-center items-center'>
-                  <h1 className='text-[#F1EA3E] font-bold text-2xl'>Store</h1>
-                  <h1 className='text-[#F1EA3E] font-bold text-2xl pl-2'>Location</h1>
+                  <h1 className='text-[#F1EA3E] font-bold text-2xl font-signika'>Store</h1>
+                  <h1 className='font-bold text-2xl pl-2 font-signika'>Location</h1>
                 </div>
                 <div className='justify-end'>
                 <FontAwesomeIcon icon={faXmark} onClick={closeStore} 
                 style={{ 
                     fontSize: '1.5rem', 
-                    color: '#FFFFFF', 
+                    color: '#F1EA3E', 
                     cursor: 'pointer' 
                 }} />
                 </div>
@@ -229,14 +228,14 @@ export default function Navbar() {
                           
                           </div>
                           <div className='flex flex-col justify-center items-center'>
-                            <h1 className='text-[#F1EA3E] font-bold text-2xl'>Partnership</h1>
-                            <h1 className='text-[#F1EA3E] font-bold text-2xl pl-2'>test</h1>
+                            <h1 className='text-[#F1EA3E] font-bold text-2xl font-signika'>Partnership</h1>
+                            <h1 className='font-bold text-2xl pl-2 font-signika'>test</h1>
                           </div>
                           <div className='justify-end'>
                           <FontAwesomeIcon icon={faXmark} onClick={closePartner} 
                           style={{ 
                               fontSize: '1.5rem', 
-                              color: '#FFFFFF', 
+                              color: '#F1EA3E', 
                               cursor: 'pointer' 
                           }} />
                           </div>

@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import blibli from '../assets/blibli_logo.svg'
+import tokopedia from '../assets/tokopedia_logo.svg'
+import shopee from '../assets/shopee_logo.svg'
 
 export default function Cards ({title, category, type, price, size, link_tokopedia, link_shopee, link_blibli, gambar}) {
     const[showModal, setShowModal] = useState(false)
@@ -35,8 +38,19 @@ export default function Cards ({title, category, type, price, size, link_tokoped
 
     {/* Modal */}
     {showModal && (
-      <div className="fixed inset-0 flex items-center justify-center z-[40] bg-gray-800 opacity-95 transition-opacity">
-        <div className="absolute bg-background-light-100 p-4 w-[300px] h-[500px] rounded-lg md:w-[800px]">
+      <div className="fixed inset-0 flex items-center justify-center z-[40]"
+        style={{ 
+              backgroundColor: 'rgba(128, 128, 128, 0.7)', 
+              backdropFilter: 'blur(5px)'
+          }}>     
+        <div className="w-[300px] h-[550px] absolute p-4 lg:w-[800px] lg:h-[500px] rounded-lg" 
+        style={{ 
+            backgroundImage: "url('/bgl.png')",
+            backgroundSize: 'cover', 
+            backgroundRepeat: 'no-repeat', 
+            backgroundPosition: 'center',
+            backdropFilter: 'none',
+        }}>
           <div className='flex justify-between'>
             <div className='pl-6'>
             </div>
@@ -45,36 +59,39 @@ export default function Cards ({title, category, type, price, size, link_tokoped
               <h1 className='font-bold text-2xl pl-1 font-signika'>Product</h1>
             </div>
             <div className='justify-end'>
-              <FontAwesomeIcon icon={faXmark}  onClick={closeModal} style={{ fontSize: '1.5rem', color: '#01A2E7'}}/>
+              <FontAwesomeIcon icon={faXmark}  onClick={closeModal} style={{ fontSize: '1.5rem', color: '#F1EA3E',  cursor: 'pointer' }}/>
             </div>
           </div>
-          <div className='grid grid-rows-2 mt-3 md:grid-cols-2 '>
-            <div className='ml-[80px]'>
+          <div className='grid grid-rows-2 mt-3 md:grid-cols-2 gap-4'>
+            <div className='ml-[80px] md:ml-5'>
               <img src={gambar} alt="" className='w-32 rounded-lg md:w-72 md:h-96' />
             </div>
-            <div className='flex flex-col justify-around mt-[-20px] ml-[30px]'>
-              <div className='bg-[#1D1D1D] bg-opacity-20 rounded-lg w-[230px] md:w-[380px] h-[80px]'>
-                <div className='flex flex-row gap-4 items-center justify-start m-2'>
+            <div className='flex flex-col justify-around mt-[-20px] ml-[15px] gap-2 md:ml-0 md:0'>
+              <div className='bg-[#1D1D1D] bg-opacity-20 rounded-lg w-[250px] h-[60px] md:w-[380px] md:h-[80px]'>
+                <div className='flex flex-row items-center justify-center jus md:justify-start md:m-2'>
                   <h1 className='font-bold text-xl text-[#0175B8] font-signika'>{title}</h1>
                 </div>
-                <div className='m-2 justify-between flex flex-row'>
+                <div className='flex flex-row m-0 justify-around md:m-2 md:justify-between '>
                   <p className='text-[#F1EA3E] text-xl font-medium font-signika'>Rp{price}</p>
-                  <p className='text-[#0175B8] text-xl font-medium font-signika'>{size}</p>
+                  <p className='text-[#F1EA3E] text-xl font-medium font-signika'>{size}</p>
                 </div>
               </div>
               <Link to={link_tokopedia}>
-                <button className='bg-[#1D1D1D] bg-opacity-20 rounded-lg w-[230px] md:w-[380px] h-[50px] text-[#0175B8] font-bold text-xl font-signika hover:cursor-pointer'>
-                    Buy now at Tokopedia
+                <button className='flex flex-row items-center justify-around bg-[#387136] rounded-lg w-[250px] md:w-[380px] h-[50px] text-[#6ECC6B] font-bold md:text-xl font-signika hover:cursor-pointer '>
+                  <img src={tokopedia} alt="" className='w-12'/>
+                    <p className='mr-3'>Buy now at Tokopedia</p>
                 </button>
               </Link>
               <Link to={link_shopee}>
-                <button className='bg-[#1D1D1D] bg-opacity-20 rounded-lg w-[230px] md:w-[380px] h-[50px] text-[#0175B8] font-bold text-xl font-signika hover:cursor-pointer'>
-                    Buy now at Shopee
+                <button className='flex flex-row items-center justify-around bg-[#9F492E] rounded-lg w-[250px] md:w-[380px] h-[50px] text-[#FF8761] font-bold md:text-xl font-signika hover:cursor-pointer '>
+                  <img src={shopee} alt="" className='w-10 mt-4'/>
+                    <p className='mr-1'>Buy now at Shopee</p>
                 </button>
               </Link>
               <Link to={link_blibli}>
-                <button className='bg-[#1D1D1D] bg-opacity-20 rounded-lg w-[230px] md:w-[380px] h-[50px] text-[#0175B8] font-bold text-xl font-signika hover:cursor-pointer'>
-                    Buy now at Blibli
+                <button className='flex flex-row items-center justify-around bg-[#176189] rounded-lg w-[250px] md:w-[380px] h-[50px] text-[#30B6FF] font-bold md:text-xl font-signika hover:cursor-pointer '>
+                    <img src={blibli} alt="" className='w-[80px] md:w-[90px]'/>
+                    <p className='mr-3'>Buy now at Blibli</p>
                 </button>
               </Link>
             </div>
