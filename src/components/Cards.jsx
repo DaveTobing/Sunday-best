@@ -21,15 +21,15 @@ export default function Cards ({title, price, size, link_tokopedia, link_shopee,
         <div className='flex flex-col bg-background-light-250 rounded-xl w-[160px] md:w-64 relative overflow-clip items-center hover:scale-105 duration-300 hover:cursor-pointer' onClick={openModal}>
             <img src={gambar} alt="" className='w-64 h-88'/>
                 <div className='bg-background-light-300 rounded-[150px] w-[350px] h-[300px] -bottom-[200px] absolute md:-bottom-[180px] px-12'>
-                    <p className='text-center mt-5 font-medium font-signika'>
+                    <p className='text-center mt-5 font-bold font-signika'>
                             {title} 
                     </p>
                     <div className='underline bg-[#1D1D1D] h-0.5 w-1/2 mx-auto rounded-lg'></div>
-                    <div className='flex flex-row justify-around my-3 mx-8 lg:mx-2 font-signika'>
-                        <p>
+                    <div className='flex flex-row justify-around my-3 mx-8 lg:mx-2'>
+                        <p className='font-signika font-semibold'>
                             Rp{price}
                         </p>
-                        <p>
+                        <p className='font-signika font-semibold'>
                             {size}
                         </p>
                     </div>
@@ -72,8 +72,8 @@ export default function Cards ({title, price, size, link_tokopedia, link_shopee,
                   <h1 className='font-bold text-xl text-[#0175B8] font-signika'>{title}</h1>
                 </div>
                 <div className='flex flex-row m-0 justify-around md:m-2 md:justify-between '>
-                  <p className='text-[#F1EA3E] text-xl font-medium font-signika'>Rp{price}</p>
-                  <p className='text-[#F1EA3E] text-xl font-medium font-signika'>{size}</p>
+                  <p className='text-[#F1EA3E] text-xl font-semibold font-signika'>Rp{price}</p>
+                  <p className='text-[#F1EA3E] text-xl font-semibold font-signika'>{size}</p>
                 </div>
               </div>
               <Link to={link_tokopedia}>
