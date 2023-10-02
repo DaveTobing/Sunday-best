@@ -21,9 +21,9 @@ const Hero = () => {
             }}
         >
             <div className='flex flex-col items-start mt-7 md:justify-center md:gap-6 lg:mt-0 hover:cursor-default'>
-                <h1 className='text-md md:text-3xl lg:text-5xl font-semibold text-[#1D1D1D] font-signika'>Offering the best quality of</h1>
-                <h1 className='text-md md:text-3xl lg:text-6xl font-bold text-[#FEEB09] font-signika'>liquors at the most</h1>
-                <h1 className='text-md md:text-3xl lg:text-6xl font-bold text-[#FEEB09] font-signika'>affordable prices</h1>
+                <h1 className='text-lg md:text-3xl lg:text-5xl font-semibold text-[#1D1D1D] font-signika'>Offering the best quality of</h1>
+                <h1 className='text-lg md:text-3xl lg:text-6xl font-bold text-[#FEEB09] font-signika'>liquors at the most</h1>
+                <h1 className='text-lg md:text-3xl lg:text-6xl font-bold text-[#FEEB09] font-signika'>affordable prices</h1>
                 <Link to = '/Product'>
                     <div className='bg-background-light-300 w-32 h-8 lg:w-36 lg:h-14 rounded-lg '>
                             <button className='font-bold font-signika text-sm mt-1.5 lg:text-lg lg:mt-3.5'>Shop the Liquors</button>

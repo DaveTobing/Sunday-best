@@ -4,6 +4,7 @@ import { useState } from "react"
 import WarningPage from './pages/WarningPage';
 import LandingPage from "./pages/LandingPage";
 import Product from "./pages/Product";
+import Partnership from "./pages/Partnership";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Cookies from 'js-cookie';
@@ -43,6 +44,11 @@ function App ()  {
                 path="/product"
                 element={
                   <Product/>
+                }/>
+                <Route          
+                path="/partnership"
+                element={
+                  <Partnership/>
                 }/>
             </Routes>
           <Footer/>
