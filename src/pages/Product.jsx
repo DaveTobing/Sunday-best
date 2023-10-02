@@ -118,9 +118,9 @@ export default function Product () {
     ${theme ? "bg-background-light-200" : "bg-background-dark-400" } pt-16`} 
       >
         <div className='grid lg:grid-cols-6 flex-row'>
-          <div className='flex flex-col rounded-lg h-full w-32 mx-3 lg:w-full lg:col-start-1 lg:col-end-2 lg:mx-6 '>
+          <div className='flex flex-col rounded-lg h-[950px] lg:h-[750px] w-32 mx-3 lg:w-full lg:col-start-1 lg:col-end-2 lg:mx-6 border-solid border-2 border-light-500'>
             <p className={`
-              ${theme ? "text-light-600" : "text-light-450" } font-bold text-left`} 
+              ${theme ? "text-light-600" : "text-light-450" } font-bold text-left mb-3`} 
               >Categories
             </p>
               {checkboxes.map(parent => (

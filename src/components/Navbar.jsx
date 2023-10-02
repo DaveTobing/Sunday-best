@@ -104,7 +104,7 @@ export default function Navbar() {
               <Link to= '/' className='font-semibold font-signika uppercase hover:underline' >Home</Link>
               <Link to= '/product' className='font-semibold font-signika uppercase hover:underline ' >Product</Link>
               <Link to= '/' onClick={openStore} className='font-semibold uppercase font-signika hover:underline'>Store</Link>
-              <Link to= '/' onClick= {openPartner}className='font-semibold uppercase font-signika hover:underline' >Partnership</Link>
+              <Link to= '/partnership' className='font-semibold uppercase font-signika hover:underline' >Partnership</Link>
             </div>
             <div className='mx-0 pr-4 lg:mx-10 lg:pr-0 gap-6 flex flex-row'>
               {/* <img src={Search} alt="" /> */}
@@ -130,7 +130,7 @@ export default function Navbar() {
               <Link to= '/' className='font-semibold font-signika uppercase hover:underline' >Home</Link>
               <Link to= '/product' className='font-semibold font-signika uppercase hover:underline ' >Product</Link>
               <Link to= '/' onClick={openStore} className='font-semibold uppercase font-signika hover:underline'>Store</Link>
-              <Link to= '/' onClick= {openPartner}className='font-semibold uppercase font-signika hover:underline' >Partnership</Link>
+              <Link to= '/partnership' className='font-semibold uppercase font-signika hover:underline' >Partnership</Link>
             </div>
         </div>
 
@@ -211,7 +211,7 @@ export default function Navbar() {
         )}
 
       {/* Partner Modal */}
-      {showPartner && (
+      {/* {showPartner && (
                     <div className="fixed inset-0 flex items-center justify-center z-[40]" 
                     style={{ 
                         backgroundColor: 'rgba(128, 128, 128, 0.7)', 
@@ -284,7 +284,7 @@ export default function Navbar() {
                         </div>
                       </div>
                     </div>
-        )}
+        )} */}
   
     </div>
 
