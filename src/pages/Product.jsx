@@ -118,9 +118,9 @@ export default function Product () {
     ${theme ? "bg-background-light-200" : "bg-background-dark-400" } pt-16`} 
       >
         <div className='grid lg:grid-cols-6 flex-row'>
-          <div className='flex flex-col rounded-lg h-[950px] lg:h-[750px] w-32 mx-3 lg:w-full lg:col-start-1 lg:col-end-2 lg:mx-6 border-solid border-2 border-light-500'>
+          <div className={` bg-gradient-to-r from-light-300 to-light-450 flex flex-col rounded-lg h-[980px] lg:h-[700px] w-32 mx-3 lg:w-5/6 lg:col-start-1 lg:col-end-2 lg:mx-6 border-solid border-2 `}>
             <p className={`
-              ${theme ? "text-light-600" : "text-light-450" } font-bold text-left mb-3`} 
+             text-light-600 font-bold text-left font-signika mb-3`} 
               >Categories
             </p>
               {checkboxes.map(parent => (
@@ -128,7 +128,7 @@ export default function Product () {
                 <Checkbox
                   size='sm'
                   className={`
-                  ${theme ? "text-light-600" : "text-light-450" } font-semibold`}
+                  text-light-600 font-semibold font-signika`}
                   isChecked={checkedItems[parent.id]}
                   isIndeterminate={
                     parent.children.some(childId => checkedItems[childId]) &&
@@ -144,7 +144,7 @@ export default function Product () {
                     <Checkbox
                     size='sm'
                     className={`
-                    ${theme ? "text-light-600" : "text-light-450" } font-semibold`}
+                    text-light-600 font-semibold font-signika`}
                       key={childId}
                       isChecked={checkedItems[childId]}
                       onChange={(e) =>handleChildrenCheckbox(childId, e.target.checked)}
@@ -157,8 +157,9 @@ export default function Product () {
             ))}
           </div>
           <div className='col-start-2 col-end-7'>
-              <div className='flex flex-col justify-between md:flex-row lg:mr-12 lg:ml-6'>
-                <div className=''>
+              <div className='flex flex-col justify-between md:flex-row lg:mr-12 lg:ml-7'>
+                <div className={` 
+                ${theme ? "text-black" : "text-white" } font-signika`}>
                 <InputGroup>
                   <InputLeftElement pointerEvents='none'>
                     <Search2Icon color='gray.300' />
@@ -172,7 +173,7 @@ export default function Product () {
                 </div>
                 <div className='flex lg:gap-16 items-center lg:justify-end' >
                     <h1 className={`
-                      ${theme ? "text-light-600" : "text-light-450" } text-sm font-bold lg:text-xl`}> Sort
+                      ${theme ? "text-light-600" : "text-light-450" } text-sm font-bold lg:text-xl font-signika`}> Sort
                     </h1>
                     <Select 
                     placeholder='Filter' 
@@ -180,7 +181,7 @@ export default function Product () {
                     onChange={(e) => setSortOption(e.target.value)}
 
                     className={`
-                      ${theme ? "text-light-600 bg-background-light-200" : "text-light-450 bg-background-dark-400" } hover:cursor-pointer`}>
+                      ${theme ? "text-light-600 bg-background-light-200" : "text-light-450 bg-background-dark-400" } hover:cursor-pointer font-signika`}>
                         <option value = "Desc">Alphabet: Z-A</option>
                         <option value = "Asc">Alphabet: A-Z</option>
                         <option value=  "High">Price: High-Low</option>
