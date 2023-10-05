@@ -9,6 +9,7 @@ module.exports = {
       },
       fontFamily: {
         signika: ["Signika", "sans"],
+        lora: ["Lora", "serif"],
       },
       colors: {
         light: {

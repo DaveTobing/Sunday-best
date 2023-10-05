@@ -5,6 +5,11 @@ import WarningPage from './pages/WarningPage';
 import LandingPage from "./pages/LandingPage";
 import Product from "./pages/Product";
 import Partnership from "./pages/Partnership";
+import Article1 from "./components/Article1";
+import Article2 from "./components/Article2";
+import Article3 from "./components/Article3";
+import Article4 from "./components/Article4";
+import Article5 from "./components/Article5";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Cookies from 'js-cookie';
@@ -38,6 +43,11 @@ function App ()  {
             <Route path='/' element={<LandingPage />} />
             <Route path='/product' component={Product} element={<Product />} />
             <Route path='/partnership' element={<Partnership />} />
+            <Route path='/Article1' element={<Article1 />} />
+            <Route path='/Article2' element={<Article2 />} />
+            <Route path='/Article3' element={<Article3 />} />
+            <Route path='/Article4' element={<Article4 />} />
+            <Route path='/Article5' element={<Article5 />} />
           </Routes>
           <Footer />
         </BrowserRouter>

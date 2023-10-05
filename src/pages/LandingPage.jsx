@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Hero from "../components/Hero";
 import Popular from "../components/Popular";
-import News from '../components/News';
+import Article from './Article';
 import Categories from '../components/Categories';
 import { DarkModeContext } from '../context/darkmode';
 
@@ -61,7 +61,7 @@ const LandingPage = () => {
           ${theme ? "bg-background-light-400" : "bg-background-light-300" } rounded-lg h-0.5 mx-16 lg:mx-32 my-16 `} 
         >
       </div>
-      <News/>
+      <Article/>
     </div>
   )
 }

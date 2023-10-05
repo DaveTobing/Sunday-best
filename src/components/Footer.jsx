@@ -31,43 +31,43 @@ export default function Footer() {
         </div>
         <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
           <div className="space-y-3">
-            <h3 className="font-bold uppercase ">Categories</h3>
+            <h3 className="font-bold uppercase">Categories</h3>
             <ul className="space-y-1 grid grid-cols-3 items-center">
               <li>
-                <Link to= '/' className='font-semibold font-signika hover:underline' >Soju</Link>
+                <Link to= '/' className='font-semibold hover:underline' >Soju</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold font-signika hover:underline '>Sake</Link>
+                <Link to= '/' className='font-semibold hover:underline '>Sake</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold font-signika hover:underline'>Wine</Link>
+                <Link to= '/' className='font-semibold hover:underline'>Wine</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold font-signika hover:underline' >Brandy</Link>
+                <Link to= '/' className='font-semibold hover:underline' >Brandy</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold font-signika hover:underline' >Whisky</Link>
+                <Link to= '/' className='font-semibold hover:underline' >Whisky</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold font-signika hover:underline' >Gin</Link>
+                <Link to= '/' className='font-semibold hover:underline' >Gin</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold font-signika hover:underline' >Vodka</Link>
+                <Link to= '/' className='font-semibold hover:underline' >Vodka</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold font-signika hover:underline' >Rum</Link>
+                <Link to= '/' className='font-semibold hover:underline' >Rum</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold font-signika hover:underline' >Tequila</Link>
+                <Link to= '/' className='font-semibold hover:underline' >Tequila</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold font-signika hover:underline' >Cognac</Link>
+                <Link to= '/' className='font-semibold hover:underline' >Cognac</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold font-signika hover:underline' >Beers</Link>
+                <Link to= '/' className='font-semibold hover:underline' >Beers</Link>
               </li>
               <li>
-                <Link to= '/' className='font-semibold font-signika hover:underline' >Others</Link>
+                <Link to= '/' className='font-semibold hover:underline' >Others</Link>
               </li>
             </ul>
           </div>
@@ -81,17 +81,17 @@ export default function Footer() {
               </li>
               <li>
                 <Link>
-                    <p className='font-semibold'>Partnership</p>
+                    <p className='font-semibold '>Partnership</p>
                 </Link>
               </li>
               <li>
                 <Link>
-                    <p className='font-semibold'>FAQ</p>
+                    <p className='font-semibold '>FAQ</p>
                 </Link>
               </li>
               <li>
                 <Link onClick={openModal}>
-                    <p className='font-semibold'>How to Order</p>
+                    <p className='font-semibold '>How to Order</p>
                 </Link>
               </li>
             </ul>

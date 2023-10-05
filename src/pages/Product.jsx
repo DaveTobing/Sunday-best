@@ -122,13 +122,16 @@ export default function Product (temp) {
     ${theme ? "bg-background-light-200" : "bg-background-dark-400" } pt-16`} 
       >
         <div className='grid lg:grid-cols-6 flex-row'>
-          <div className={` bg-background-light-300 flex flex-col rounded-lg h-[980px] lg:h-[700px] w-32 mx-3 lg:w-5/6 lg:col-start-1 lg:col-end-2 lg:mx-6 border-solid border-2 `}>
-            <p className={`
-             text-light-600 font-bold text-left font-signika mb-3`} 
-              >Categories
-            </p>
+          <div className={` bg-background-light-300 flex flex-col rounded-lg h-[1050px] md:h-[1050px] 2xl:h-[750px] w-32 mx-3 lg:w-5/6 lg:col-start-1 lg:col-end-2 lg:mx-6 border-solid border-2 `}>
+            <div className='flex justify-center'>
+              <p className={`
+              text-light-600 font-bold text-left text-xl font-signika mb-3 `} 
+                >Categories
+              </p>
+            </div>
+
               {checkboxes.map(parent => (
-              <div key={parent.id}>
+              <div key={parent.id} className='pl-2'>
                 <Checkbox
                   size='sm'
                   className={`
