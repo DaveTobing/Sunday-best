@@ -35,57 +35,53 @@ const Categories = () => {
       </div>
 
         <div className='flex flex-wrap justify-center gap-4 mt-5'>
-          <Link to='/product'>
+          <Link>
               <img src={Soju} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to='/product/sake'>
+          <Link>
               <img src={Sake} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to='/product'>
+          <Link>
             <img src={Wine} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to='/product'>
+          <Link>
             <img src={Brandy} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer' />
           </Link>
 
-          <Link to='/product'>
+          <Link>
             <img src={Whisky} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to='/product'>
+          <Link>
             <img src={Gin} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to='/product'>
+          <Link>
             <img src={Vodka} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
-
           </Link>
 
-          <Link to='/product/rum'>
+          <Link>
             <img src={Rum} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to='/product'>
+          <Link>
             <img src={Tequila} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to='/product'>
+          <Link>
             <img src={Cognac} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to='/product'>
+          <Link>
             <img src={Beers} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to='/product'>
+          <Link>
             <img src={Other} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
-            
-
-
         </div>
     </div>
   )

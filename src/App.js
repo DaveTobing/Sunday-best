@@ -32,30 +32,18 @@ function App ()  {
   return (
     <ChakraProvider>
       <DarkModeProvider>
-          <BrowserRouter>
-          <Navbar/>
-            <Routes>
-              <Route          
-                path="/"
-                element={
-                  <LandingPage/>
-                }/>
-                <Route          
-                path="/product"
-                element={
-                  <Product/>
-                }/>
-                <Route          
-                path="/partnership"
-                element={
-                  <Partnership/>
-                }/>
-            </Routes>
-          <Footer/>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path='/' element={<LandingPage />} />
+            <Route path='/product' component={Product} element={<Product />} />
+            <Route path='/partnership' element={<Partnership />} />
+          </Routes>
+          <Footer />
         </BrowserRouter>
       </DarkModeProvider>
     </ChakraProvider>
-  )
+  );
 }
 
 export default App ;

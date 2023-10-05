@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import { Select } from '@chakra-ui/select'
 import { Checkbox, InputGroup, InputLeftElement } from '@chakra-ui/react'
 import { Stack } from '@chakra-ui/react'
@@ -7,9 +7,9 @@ import datas from '../database/data'
 import Cards from '../components/Cards'
 import { Input } from '@chakra-ui/react'
 import { Search2Icon } from '@chakra-ui/icons'
-import data from '../database/data'
 
-export default function Product () {
+export default function Product (temp) {
+  // const { ProductId } = temp.location.state;
   const [theme, setTheme] = useContext(DarkModeContext)
   
   const checkboxes = [
@@ -27,7 +27,6 @@ export default function Product () {
   ];
 
   // Category Filter
-
   let [categoryFilters, setcategoryFilters] = useState(new Set());
 
   function updateFilters(checked, categoryFilter) {
@@ -55,9 +54,9 @@ export default function Product () {
   });
 
   const initialState = checkboxes.reduce((acc, parent) => {
-    acc[parent.id] = false;
+    acc[parent.id] = temp === parent.id;
     parent.children.forEach(child => {
-      acc[child] = false;
+      acc[child] = temp === child;
     });
     return acc;
   }, {});
@@ -81,9 +80,7 @@ export default function Product () {
     updateFilters(isChecked, childId)
   }
 
-
   // Search Filter
-
   const [query, setQuery] = useState("");
 
   const SearchItems = datas.filter(
@@ -95,7 +92,6 @@ export default function Product () {
   }
 
   //Sorting
-
   const [sortOption, setSortOption] = useState();
   // Sort filteredProducts based on the selected option
   const sortedProducts = [...filteredProducts]; // Create a copy of the array to avoid mutating the original data
@@ -112,13 +108,21 @@ export default function Product () {
     sortedProducts.sort((a, b) => a.price - b.price);
   } 
 
+  // useEffect(() => {
+  //   if (temp) {
+  //     const newState = { ...checkedItems };
+  //     newState[ProductId] = true;
+  //     setCheckedItems(newState);
+  //   }
+  // }, [temp]);
+
 
   return (
     <div className={`
     ${theme ? "bg-background-light-200" : "bg-background-dark-400" } pt-16`} 
       >
         <div className='grid lg:grid-cols-6 flex-row'>
-          <div className={` bg-gradient-to-r from-light-300 to-light-450 flex flex-col rounded-lg h-[980px] lg:h-[700px] w-32 mx-3 lg:w-5/6 lg:col-start-1 lg:col-end-2 lg:mx-6 border-solid border-2 `}>
+          <div className={` bg-background-light-300 flex flex-col rounded-lg h-[980px] lg:h-[700px] w-32 mx-3 lg:w-5/6 lg:col-start-1 lg:col-end-2 lg:mx-6 border-solid border-2 `}>
             <p className={`
              text-light-600 font-bold text-left font-signika mb-3`} 
               >Categories
