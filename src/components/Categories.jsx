@@ -18,9 +18,9 @@ const Categories = () => {
   const [theme, setTheme] = useContext(DarkModeContext)
   return (
     <div className='bg-background-400'>
-      <div className='flex flex-col justify-center items-center lg:mx-48 my-6'>
+      <div className='flex flex-col justify-center items-center lg:mx-48'>
         <h1
-        className={`text-textcolor-600 font-bold font-signika text-2xl lg:text-5xl uppercase mb-4`} 
+        className={`text-textcolor-600 font-bold font-signika text-2xl lg:text-5xl uppercase mb-4 mt-4`} 
         >
         Categories
         </h1>

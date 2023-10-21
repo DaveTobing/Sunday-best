@@ -6,7 +6,7 @@ import { DarkModeContext } from '../context/darkmode'
 const Popular = () => {
 const [theme, setTheme] = useContext(DarkModeContext)
   return (
-    <div className={`flex flex-col justify-center h-screen `} >
+    <div className={`flex flex-col justify-center h-screen bg-background-150`} >
         <div className='m-10'>
             <h1
                 className={` text-2xl lg:text-5xl font-bold font-signika text-center uppercase mb-4`} 

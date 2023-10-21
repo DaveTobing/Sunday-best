@@ -7,7 +7,7 @@ import Categories from '../components/Categories';
 const LandingPage = () => {
   return (
     <div>
-      <Hero/>
+      <Hero/>  
       <Categories/>
       <Popular/>
       <Article/>

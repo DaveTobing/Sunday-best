@@ -18,9 +18,9 @@ export default function Cards ({title, price, size, link_tokopedia, link_shopee,
     };
   return (
     <div className='flex md:justify-around my-4 md:m-7' >  
-        <div className='flex flex-col bg-background-light-250 rounded-xl w-[160px] md:w-64 relative overflow-clip items-center hover:scale-105 duration-300 hover:cursor-pointer' onClick={openModal}>
+        <div className='flex flex-col rounded-xl w-[160px] md:w-64 relative overflow-clip items-center hover:scale-105 duration-300 hover:cursor-pointer' onClick={openModal}>
             <img src={gambar} alt="" className='w-64 h-88'/>
-                <div className='bg-background-light-300 rounded-[150px] w-[350px] h-[300px] -bottom-[200px] absolute md:-bottom-[180px] px-12'>
+                <div className='bg-background-300 w-[350px] h-[280px] -bottom-[200px] absolute md:-bottom-[180px] px-12'>
                     <p className='text-center mt-5 font-lora font-bold'>
                             {title} 
                     </p>
