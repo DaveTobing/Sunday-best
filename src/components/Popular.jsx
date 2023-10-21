@@ -6,15 +6,15 @@ import { DarkModeContext } from '../context/darkmode'
 const Popular = () => {
 const [theme, setTheme] = useContext(DarkModeContext)
   return (
-    <div className={`flex flex-col justify-center h-screen bg-background-150`} >
+    <div className={`flex flex-col justify-center bg-background-150`} >
         <div className='m-10'>
             <h1
-                className={` text-2xl lg:text-5xl font-bold font-signika text-center uppercase mb-4`} 
+                className={`text-xl lg:text-5xl font-bold text-center uppercase mb-4`} 
                 >
                 Our Popular Booze
             </h1>
            
-            <h2  className={`font-semibold font-signika text-lg lg:text-xl text-center uppercase `} >
+            <h2  className={`text-md lg:text-xl font-semibold text-center uppercase `} >
                 Your Premier Destination for Exceptional Spirits. <br />
                 Offering you wide range of liquor and spirits.
             </h2>
@@ -63,7 +63,7 @@ const [theme, setTheme] = useContext(DarkModeContext)
             </div>
         </div>
         <div className='flex justify-center'>
-            <div className='flex justify-center bg-background-750 w-32 h-14'>
+            <div className='flex justify-center bg-background-750 w-32 h-10 lg:h-14 mb-8'>
                 <button className='text-textcolor-400 text-lg font-bold'>Shop Now</button>
             </div>
         </div>

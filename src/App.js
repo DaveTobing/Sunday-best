@@ -51,7 +51,7 @@ function App ()  {
             <Route path='/Article4' element={<Article4 />} />
             <Route path='/Article5' element={<Article5 />} />
           </Routes>
-          <Footer />
+          <Footer/>
         </BrowserRouter>
       </DarkModeProvider>
     </ChakraProvider>
