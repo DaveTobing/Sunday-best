@@ -30,53 +30,53 @@ const Categories = () => {
           </h2>
         </div>
 
-        <div className='flex flex-wrap justify-center gap-4 mt-5'>
+        <div className='flex flex-wrap justify-center gap-4'>
           <Link>
-              <img src={Soju} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+              <img src={Soju} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
           <Link>
-              <img src={Sake} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+              <img src={Sake} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
           <Link>
-            <img src={Wine} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Wine} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
           <Link>
-            <img src={Brandy} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer' />
+            <img src={Brandy} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer' />
           </Link>
 
           <Link>
-            <img src={Whisky} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Whisky} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
           <Link>
-            <img src={Gin} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Gin} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
           <Link>
-            <img src={Vodka} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Vodka} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
           <Link>
-            <img src={Rum} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Rum} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
           <Link>
-            <img src={Tequila} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Tequila} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
           <Link>
-            <img src={Cognac} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Cognac} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
           <Link>
-            <img src={Beers} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Beers} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
           <Link>
-            <img src={Other} alt="" className='hover:scale-105 duration-300 hover:cursor-pointer'/>
+            <img src={Other} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
         </div>
     </div>

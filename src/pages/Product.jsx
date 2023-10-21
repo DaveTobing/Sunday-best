@@ -56,32 +56,35 @@ export default function Product () {
   }, [selectedFilters, query, sortOption]);
 
   return (
-    <div className='pt-16'>
-        <div className='grid lg:grid-cols-6 flex-row'>
-          <h1 className='mx-6 text-textcolor-400 font-bold text-3xl'>PRODUCT</h1>
-          <div className='flex flex-col rounded-lg h-[1050px] md:h-[1050px] 2xl:h-[750px] w-32 mx-3 mt-8 lg:w-5/6 lg:col-start-1 lg:col-end-2 lg:mx-6'>
-              <div>
-                {filter.map((category, idx) => (
-                  <>
-                    <button 
-                      onClick={() => handleFilterButtonClick(category)}
-                      className={`flex flex-col font-medium text-xl ${
-                        selectedFilters?.includes(category) ? "text-textcolor-300" : "text-textcolor-750"
-                      }`}
-                      key={`filters-${idx}`}
-                    >
-                      {category}
-                    </button>
-                    <div
-                      className={' bg-background-750 h-[2px]'}
+    <div className='lg:pt-16 pt-10'>
+        <div className='flex lg:grid lg:grid-cols-6 flex-row'>
+          <div>
+            <h1 className='mx-2 lg:mx-6 text-textcolor-400 font-bold lg:text-3xl text-xl'>PRODUCT</h1>
+            <div className='mx-2 flex flex-col h-[1050px] md:h-[1050px] 2xl:h-[750px] w-32 mt-8 lg:w-5/6 lg:col-start-1 lg:col-end-2 lg:mx-6'>
+                <div>
+                  {filter.map((category, idx) => (
+                    <>
+                      <button 
+                        onClick={() => handleFilterButtonClick(category)}
+                        className={`flex flex-col font-medium text-md lg:text-xl ${
+                          selectedFilters?.includes(category) ? "text-textcolor-300" : "text-textcolor-750"
+                        }`}
+                        key={`filters-${idx}`}
                       >
-                    </div>
-                  </>
-                ))}
-              </div>
+                        {category}
+                      </button>
+                      <div
+                        className={' bg-background-750 h-[0.5px] lg:h-[2px]'}
+                        >
+                      </div>
+                    </>
+                  ))}
+                </div>
+            </div>
+
           </div>
-          <div className='col-start-2 col-end-7 bg-background-200'>
-              <div className='flex flex-col justify-between md:flex-row lg:mr-12 lg:ml-7'>
+          <div className='col-start-2 col-end-7 bg-background-200 w-full'>
+              <div className='flex flex-col justify-between lg:flex-row lg:mr-12 lg:ml-7'>
                 <div className='text-textcolor-750 font-signika'>
                 <InputGroup>
                   <InputLeftElement pointerEvents='none'>
@@ -95,8 +98,6 @@ export default function Product () {
                 </InputGroup>
                 </div>
                 <div className='flex lg:gap-16 items-center lg:justify-end' >
-                    <h1 className={'text-textcolor-750 text-sm font-bold lg:text-xl font-signika'}> Sort
-                    </h1>
                     <Select 
                     placeholder='Filter' 
                     value={sortOption}
@@ -110,7 +111,7 @@ export default function Product () {
                     </Select>
                 </div>
               </div>
-              <div className='flex flex-col lg:flex-row w-full flex-wrap'>
+              <div className='flex flex-col lg:flex-row w-full flex-wrap items-center lg:items-start'>
                 {filteredItems.map(
                       ({title, category, type, size, price, link_tokopedia, link_shopee, link_blibli, gambar}) => (
                         <Cards
