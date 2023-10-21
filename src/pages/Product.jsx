@@ -13,6 +13,8 @@ export default function Product () {
   const [query, setQuery] = useState('');
   const [sortOption, setSortOption] = useState('');
 
+  let tempItems;
+
   const filter = ['ALL', 'POPULAR', 'BEERS', 'COGNAG', 'GIN', 'MIXERS', 'RUM', 'SAKE', 'SOJU', 'SPIRIT', 'VODKA', 'WINE', 'WHISKY'];
 
   const handleFilterButtonClick = (selectedCategory) => {
@@ -26,7 +28,12 @@ export default function Product () {
 
   useEffect(() => {
     // Apply filter first
-    const tempItems = selectedFilters.length > 0 ? selectedFilters.flatMap((selectedCategory) => datas.filter((item) => item.category === selectedCategory)) : datas;
+    if (selectedFilters.includes('ALL')) {
+      tempItems= datas
+    } 
+    else {
+      tempItems = selectedFilters.length > 0 ? selectedFilters.flatMap((selectedCategory) => datas.filter((item) => item.category === selectedCategory)) : datas;
+    }
 
     // Apply search
     const filteredBySearch = query
@@ -72,9 +79,6 @@ export default function Product () {
                   </>
                 ))}
               </div>
-
-              
-
           </div>
           <div className='col-start-2 col-end-7 bg-background-200'>
               <div className='flex flex-col justify-between md:flex-row lg:mr-12 lg:ml-7'>
