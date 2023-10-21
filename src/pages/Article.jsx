@@ -8,26 +8,24 @@ import Article5 from'../assets/Article5.svg'
 import { Link } from 'react-router-dom'
 
 const Article = () => {
-  const [theme, setTheme] = useContext(DarkModeContext)
   return (
-    <div className='flex flex-col justify-center h-screen'>
+    <div className='bg-background-400 flex flex-col justify-center h-screen'>
       <div className='flex flex-col justify-center items-center lg:mx-48 '>
         <h1
-        className={`
-        ${theme ? "text-light-600" : "text-light-450" } font-bold font-signika text-2xl lg:text-5xl uppercase mb-4`} 
+        className={`text-textcolor-600 font-bold font-signika text-2xl lg:text-5xl uppercase mb-4`} 
         >
         Article
         </h1>
       </div>
         <div className='grid grid-cols-2 mx-48'>
           <Link to='/Article4'>
-            <div className='bg-background-light-200 rounded-lg hover:scale-105 duration-300 hover:cursor-pointer shadow-lg w-[500px] h-[550px]'>
+            <div className='bg-background-200 rounded-lg hover:scale-105 duration-300 hover:cursor-pointer shadow-lg w-[500px] h-[550px]'>
               <div>
                 <img src={Article4} alt="" className='w-[500px] rounded-lg' />
               </div>
               <div className='my-4 mx-5'>
-                <h1 className='text-3xl font-lora font-bold gap-4'>
-                  SEJARAH WINE DARI MASA KE MASA
+                <h1 className='text-2xl font-lora font-bold gap-4 text-center'>
+                  SEJARAH WINE <br />DARI MASA KE MASA
                 </h1>
                 <p className='text-lg font-lora'>
                   Wine merupakan salah satu jenis alkohol yang paling populer di dunia. Jika ditarik mundur sejarahnya, wine telah muncul di daerah Mesopotamia sejak 6000 SM
@@ -38,7 +36,7 @@ const Article = () => {
 
           <div className='grid grid-rows-2 gap-8'>
               <Link to='/Article1'>
-                  <div className=' bg-background-light-200 rounded-lg hover:scale-105 duration-300 hover:cursor-pointer shadow-lg h-[130px] flex flex-row'>
+                  <div className='bg-background-200 rounded-lg hover:scale-105 duration-300 hover:cursor-pointer shadow-lg h-[130px] flex flex-row'>
                     <div>
                       <img src={Article1_Wine} alt="" className='h-[130px] w-[350px] rounded-lg'/>
                     </div>
@@ -55,7 +53,7 @@ const Article = () => {
 
 
             <Link to='/Article2'>
-              <div className=' bg-background-light-200 rounded-lg hover:scale-105 duration-300 hover:cursor-pointer shadow-lg h-[130px] flex flex-row'>
+              <div className='bg-background-200 rounded-lg hover:scale-105 duration-300 hover:cursor-pointer shadow-lg h-[130px] flex flex-row'>
                 <div>
                   <img src={Article2_sake} alt="" className='h-[130px] w-[350px] rounded-lg'/>
                 </div>
@@ -71,7 +69,7 @@ const Article = () => {
             </Link>
 
             <Link to='/Article3'>
-              <div className=' bg-background-light-200 rounded-lg hover:scale-105 duration-300 hover:cursor-pointer shadow-lg h-[130px] flex flex-row'>
+              <div className='bg-background-200 rounded-lg hover:scale-105 duration-300 hover:cursor-pointer shadow-lg h-[130px] flex flex-row'>
                 <div>
                   <img src={Article3_Jantung} alt="" className='h-[130px] w-[350px] rounded-lg'/>
                 </div>
@@ -88,7 +86,7 @@ const Article = () => {
             </Link >
 
             <Link to='/Article5'>
-              <div className=' bg-background-light-200 rounded-lg hover:scale-105 duration-300 hover:cursor-pointer shadow-lg h-[130px] flex flex-row'>
+              <div className='bg-background-200 rounded-lg hover:scale-105 duration-300 hover:cursor-pointer shadow-lg h-[130px] flex flex-row'>
                   <div>
                     <img src={Article5} alt="" className='h-[130px] w-[350px] rounded-lg'/>
                   </div>

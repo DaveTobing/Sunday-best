@@ -7,12 +7,13 @@ import datas from '../database/data'
 import Cards from '../components/Cards'
 import { Input } from '@chakra-ui/react'
 import { Search2Icon } from '@chakra-ui/icons'
+import { useParams } from 'react-router-dom';
 
-export default function Product (temp) {
-  // const { ProductId } = temp.location.state;
+export default function Product () {
   const [theme, setTheme] = useContext(DarkModeContext)
-  
+
   const checkboxes = [
+    { id: 'POPULAR', children:[]},
     { id: 'BEERS', children: [] },
     { id: 'COGNAG', children: [] },
     { id: 'GIN', children: [] },
@@ -52,11 +53,10 @@ export default function Product (temp) {
       );
     }
   });
-
   const initialState = checkboxes.reduce((acc, parent) => {
-    acc[parent.id] = temp === parent.id;
+    acc[parent.id] = false;
     parent.children.forEach(child => {
-      acc[child] = temp === child;
+      acc[child] = false;
     });
     return acc;
   }, {});
@@ -97,7 +97,6 @@ export default function Product (temp) {
   const sortedProducts = [...filteredProducts]; // Create a copy of the array to avoid mutating the original data
 
   if (sortOption === 'Asc'){
-    // Default to 'Alphabet: A-Z' sorting
     sortedProducts.sort((a, b) => a.title.localeCompare(b.title));
   }
   else if (sortOption === 'Desc') {
@@ -108,62 +107,90 @@ export default function Product (temp) {
     sortedProducts.sort((a, b) => a.price - b.price);
   } 
 
-  // useEffect(() => {
-  //   if (temp) {
-  //     const newState = { ...checkedItems };
-  //     newState[ProductId] = true;
-  //     setCheckedItems(newState);
-  //   }
-  // }, [temp]);
-
 
   return (
-    <div className={`
-    ${theme ? "bg-background-light-200" : "bg-background-dark-400" } pt-16`} 
-      >
+    <div className='pt-16'>
         <div className='grid lg:grid-cols-6 flex-row'>
-          <div className={` bg-background-light-300 flex flex-col rounded-lg h-[1050px] md:h-[1050px] 2xl:h-[750px] w-32 mx-3 lg:w-5/6 lg:col-start-1 lg:col-end-2 lg:mx-6 border-solid border-2 `}>
-            <div className='flex justify-center'>
-              <p className={`
-              text-light-600 font-bold text-left text-xl font-signika mb-3 `} 
-                >Categories
-              </p>
-            </div>
-
-              {checkboxes.map(parent => (
-              <div key={parent.id} className='pl-2'>
-                <Checkbox
-                  size='sm'
-                  className={`
-                  text-light-600 font-semibold font-signika`}
-                  isChecked={checkedItems[parent.id]}
-                  isIndeterminate={
-                    parent.children.some(childId => checkedItems[childId]) &&
-                    !parent.children.every(childId => checkedItems[childId])
-                  }
-                  onChange={(e) =>(setParentAndChildren(parent, e.target.checked))}
-                >
-                  {parent.id}
-                  
-                </Checkbox>
-                <Stack pl={6} mt={1} spacing={1}>
-                  {parent.children.map(childId => (
-                    <Checkbox
-                    size='sm'
-                    className={`
-                    text-light-600 font-semibold font-signika`}
-                      key={childId}
-                      isChecked={checkedItems[childId]}
-                      onChange={(e) =>handleChildrenCheckbox(childId, e.target.checked)}
-                    >
-                      {childId}
-                    </Checkbox>
-                  ))}
-                </Stack>
+          <h1 className='mx-6 text-textcolor-400 font-bold text-2xl'>PRODUCT</h1>
+          <div className='flex flex-col rounded-lg h-[1050px] md:h-[1050px] 2xl:h-[750px] w-32 mx-3 mt-8 lg:w-5/6 lg:col-start-1 lg:col-end-2 lg:mx-6'>
+              <div>
+                <h1 className='font-bold text-xl'>ALL</h1>
               </div>
-            ))}
+      
+              <div className='h-[1.5px] bg-black'></div>
+
+              <div>
+                <h1 className='font-medium text-xl'>Popular</h1>
+              </div>
+
+              <div className='h-[1.5px] bg-black'></div>
+
+              <div>
+                <h1 className='font-medium text-xl'>Soju</h1>
+              </div>
+
+              <div className='h-[1.5px] bg-black'></div>
+
+              <div>
+                <h1 className='font-medium text-xl'>Sake</h1>
+              </div>
+
+              <div className='h-[1.5px] bg-black'></div>
+
+              <div>
+                <h1 className='font-medium text-xl'>Wine</h1>
+              </div>
+
+              <div className='h-[1.5px] bg-black'></div>
+
+              <div>
+                <h1 className='font-medium text-xl'>Brandy</h1>
+              </div>
+
+              <div className='h-[1.5px] bg-black'></div>
+
+              <div>
+                <h1 className='font-medium text-xl'>Whisky</h1>
+              </div>
+
+              <div className='h-[1.5px] bg-black'></div>
+
+              <div>
+                <h1 className='font-medium text-xl'>Gin</h1>
+              </div>
+
+              <div className='h-[1.5px] bg-black'></div>
+
+              <div>
+                <h1 className='font-medium text-xl'>vodka</h1>
+              </div>
+
+              <div className='h-[1.5px] bg-black'></div>
+
+              <div>
+                <h1 className='font-medium text-xl'>Rum</h1>
+              </div>
+
+              <div className='h-[1.5px] bg-black'></div>
+
+              <div>
+                <h1 className='font-medium text-xl'>Tequila</h1>
+              </div>
+
+              <div className='h-[1.5px] bg-black'></div>
+
+              <div>
+                <h1 className='font-medium text-xl'>Cognca</h1>
+              </div>
+
+              <div className='h-[1.5px] bg-black'></div>
+
+              <div>
+                <h1 className='font-medium text-xl'>Beers</h1>
+              </div>
+
           </div>
-          <div className='col-start-2 col-end-7'>
+          <div className='col-start-2 col-end-7 bg-background-200'>
               <div className='flex flex-col justify-between md:flex-row lg:mr-12 lg:ml-7'>
                 <div className={` 
                 ${theme ? "text-black" : "text-white" } font-signika`}>

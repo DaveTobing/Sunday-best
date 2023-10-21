@@ -4,6 +4,7 @@ import { useState } from "react"
 import WarningPage from './pages/WarningPage';
 import LandingPage from "./pages/LandingPage";
 import Product from "./pages/Product";
+import Store from "./pages/Store";
 import Partnership from "./pages/Partnership";
 import Article1 from "./components/Article1";
 import Article2 from "./components/Article2";
@@ -41,8 +42,9 @@ function App ()  {
           <Navbar />
           <Routes>
             <Route path='/' element={<LandingPage />} />
-            <Route path='/product' component={Product} element={<Product />} />
+            <Route path='/product' element={<Product />} />
             <Route path='/partnership' element={<Partnership />} />
+            <Route path='/store' element={<Store />} />
             <Route path='/Article1' element={<Article1 />} />
             <Route path='/Article2' element={<Article2 />} />
             <Route path='/Article3' element={<Article3 />} />
