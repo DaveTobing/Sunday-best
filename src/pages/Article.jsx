@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 const Article = () => {
   return (
     <div className='bg-background-400 flex flex-col justify-center'>
-      <div className='flex flex-col justify-center items-center lg:mx-48 '>
+      <div className='flex flex-col justify-center items-center lg:mx-48'>
         <h1
         className={`text-textcolor-600 font-bold font-signika text-2xl lg:text-5xl uppercase mb-4 mt-10`} 
         >

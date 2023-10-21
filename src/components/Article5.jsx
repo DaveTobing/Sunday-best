@@ -6,15 +6,15 @@ const Article5 = () => {
     const [theme, setTheme] = useContext(DarkModeContext)
     return (
         <div className = {`
-        ${theme ? "bg-background-dark-200" : "bg-background-dark-400" } w-full`}>
-            <div className='py-16 px-32'>
+         w-full`}>
+            <div className='py-16 px-10 lg:px-32'>
                 <div className='flex flex-col gap-4'>
                     <h1 className={`
-                        ${theme ? "text-light-600" : "text-light-450" } text-center text-3xl font-lora font-bold mt-3`}>
+                         text-center text-xl lg:text-3xl font-bold mt-3`}>
                         MANFAAT SAKE UNTUK KESEHATAN KULIT
                     </h1>
                     <p className={`
-                        ${theme ? "text-light-600" : "text-light-450" } mt-3 text-xl font-lora`}>
+                        mt-3 text-md lg:text-xl text-center`}>
                         Jika minuman alkohol lain memiliki dampak buruk terhadap kesehatan kulit seperti membuat kulit wajah terlihat tua, sake justru kebalikannya. 
                         Minuman alkohol dari negara Jepang yang dibuat dari beras dan bercita rasa manis ini ternyata memiliki beberapa manfaat untuk kecantikan. 
                         Sake jepang yang kerap kali digunakan oleh perusahaan kosmetik adalah Japanese Sake Extract. Atau dikenal dengan nama latin Leuconostoc Rice 
@@ -26,11 +26,11 @@ const Article5 = () => {
 
                 <div className='flex flex-col gap-4 mt-4'>
                     <h1 className={`
-                        ${theme ? "text-light-600" : "text-light-450" } text-3xl font-lora font-bold mt-3`}>
+                        text-center text-xl lg:text-3xl font-bold mt-3`}>
                         Membantu Mencerahkan Kulit
                     </h1>
                     <p className={`
-                        ${theme ? "text-light-600" : "text-light-450" } mt-3 text-xl font-lora`}>
+                        mt-3 text-md lg:text-xl text-center`}>
                         Manfaat sake jepang untuk kesehatan kulit yang pertama adalah membantu memberi cerah alami pada kulit. Sake jepang mengandung asam kojic, 
                         di mana kandungan tersebut bisa membantu lebih mencerahkan kulit kamu.
                         Kandungan asam kojic ini akan membantu menghambat pembentukan melanin, 
@@ -40,11 +40,11 @@ const Article5 = () => {
 
                 <div className='flex flex-col gap-4 mt-4'>
                     <h1 className={`
-                        ${theme ? "text-light-600" : "text-light-450" } text-3xl font-lora font-bold mt-3`}>
+                        text-center text-xl lg:text-3xl font-bold mt-3`}>
                         Meratakan Warna Kulit
                     </h1>
                     <p className={`
-                        ${theme ? "text-light-600" : "text-light-450" } mt-3 text-xl font-lora`}>
+                        mt-3 text-md lg:text-xl text-center`}>
                         Kandungan asam kojic pada sake jepang masih memiliki peranan penting untuk kulit kamu. Terlebih saat wajah yang 
                         terus-menerus terpapar sinar matahari, dan menjadikan kulit wajah timbut bintik-bitik hitam.
                         Kandungan ini bisa membantu memudarkan bahkan menghilangkan bintik-bintik hitam di wajah, sehingga kulit wajah bisa cerah secara merata, 
@@ -55,11 +55,11 @@ const Article5 = () => {
 
                 <div className='flex flex-col gap-4 mt-4'>
                     <h1 className={`
-                        ${theme ? "text-light-600" : "text-light-450" } text-3xl font-lora font-bold mt-3`}>
+                        text-center text-xl lg:text-3xl font-bold mt-3`}>
                         Dapat Mencegah Timbulnya Jerawat
                     </h1>
                     <p className={`
-                        ${theme ? "text-light-600" : "text-light-450" } mt-3 text-xl font-lora`}>
+                        mt-3 text-md lg:text-xl text-center`}>
                         Manfaat sake jepang untuk kesehatan kulit yang ketiga adalah bisa membantu mencegah timbulnya jerawat pada kulit kamu. 
                         Sekali lagi, karena sake jepang mengandung asam kojic, kandungan tersebut nyatanya juga berguna untuk mencegah timbulnya jerawat.
                         Efek jangka panjang dari asam kojic kemudian menjadikan kulit kamu lebih sehat dan terhindar dari masalah jerawat.
@@ -72,11 +72,11 @@ const Article5 = () => {
 
                 <div className='flex flex-col gap-4 mt-4'>
                     <h1 className={`
-                        ${theme ? "text-light-600" : "text-light-450" } text-3xl font-lora font-bold mt-3`}>
+                        text-center text-xl lg:text-3xl font-bold mt-3`}>
                         Menghidrasi Kulit dengan Baik
                     </h1>
                     <p className={`
-                        ${theme ? "text-light-600" : "text-light-450" } mt-3 text-xl font-lora`}>
+                        mt-3 text-md lg:text-xl text-center`}>
                         Manfaat sake jepang untuk kesehatan kulit yang selanjutnya adalah bisa membantu menghidrasi kulit dengan sangat baik. 
                         Skincare yang mengandung sake jepang nyatanya merupakan pilihan yang tepat untuk si pemiliki kulit kering.
                         Sake jepang ini mengandung asam amino dan gliserol, di mana kedua kandungan tadi sangat bagus dalam membantu menghidrasi kulit kamu. 
@@ -87,11 +87,11 @@ const Article5 = () => {
 
                 <div className='flex flex-col gap-4 mt-4'>
                     <h1 className={`
-                        ${theme ? "text-light-600" : "text-light-450" } text-3xl font-lora font-bold mt-3`}>
+                        text-center text-xl lg:text-3xl font-bold mt-3`}>
                         Dapat Melembutkan Kulit
                     </h1>
                     <p className={`
-                        ${theme ? "text-light-600" : "text-light-450" } mt-3 text-xl font-lora`}>
+                        mt-3 text-md lg:text-xl text-center`}>
                         Manfaat sake jepang untuk kesehatan kulit yang ke enam yaitu dapat membantu melembutkan kulit. Dengan adanya proses fermentasi dari sake jepang ini, 
                         menyebabkan terbentuknya enzim-enzim yang aktif dalam mengangkat sel-sel kulit mati. Dengan adanya enzim-enzim tersebut, sake jepang dapat digunakan untuk 
                         mengeksfoliasi kulit, dan tentunya dari proses tersebut sel-sel kulit mati bisa terangkat dengan baik.
@@ -103,11 +103,11 @@ const Article5 = () => {
 
                 <div className='flex flex-col gap-4 mt-4'>
                     <h1 className={`
-                        ${theme ? "text-light-600" : "text-light-450" } text-3xl font-lora font-bold mt-3`}>
+                        text-center text-xl lg:text-3xl font-bold mt-3`}>
                         Mampu Mencegah Munculnya Tanda-Tanda Penuaan
                     </h1>
                     <p className={`
-                        ${theme ? "text-light-600" : "text-light-450" } mt-3 text-xl font-lora`}>
+                        mt-3 text-md lg:text-xl text-center`}>
                         Manfaat sake jepang untuk kesehatan kulit yang lainnya adalah dengan membantu mencegah tanda-tanda penuaan pada kulit. 
                         Selain asam amino yang terkandung dalam sake jepang, bahan ini kaya akan kandungan asam ferulic. Asam furic ini merupakan antioksidan yang baik dalam 
                         menghalangi sinar UV masuk pada kulit.
@@ -119,11 +119,11 @@ const Article5 = () => {
 
                 <div className='flex flex-col gap-4 mt-4'>
                     <h1 className={`
-                        ${theme ? "text-light-600" : "text-light-450" } text-3xl font-lora font-bold mt-3`}>
+                        text-center text-xl lg:text-3xl font-bold mt-3`}>
                         Menutrisi Kulit
                     </h1>
                     <p className={`
-                        ${theme ? "text-light-600" : "text-light-450" } mt-3 text-xl font-lora`}>
+                        mt-3 text-md lg:text-xl text-center`}>
                         Manfaat sake jepang untuk kesehatan kulit yang terakhir adalah mampu menutrisi kulit. Dari penjelasan di atas dapat dilihat bahwa sake jepang mengandung banyak 
                         sekali manfaat yang bisa membantu mengoptimalkan tampilan kulit. Dengan kandungan-kandungan terbaik tersebut, menjadikan sake jepang juga membantu memberikan nutrisi 
                         untuk kulit. Kulit akan terlihat lebih cerah, 

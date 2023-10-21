@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Soju from '../assets/Soju.png'
 import Sake from '../assets/Sake.png'
 import Wine from '../assets/Wine.png'
