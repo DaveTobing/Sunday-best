@@ -2,8 +2,7 @@
 const data = [
   {
   title: "Chum Apple", 
-  category: "SOJU",
-  type: "SOJU IMPORT", 
+  category: "SOJU", 
   size: "360mL", 
   price: 79.000, 
   link_tokopedia: "https://www.tokopedia.com/sundaybestid/chumchurum-rasa-apple-360ml-import?extParam=src%3Dshop%26whid%3D13446310", 
@@ -14,7 +13,6 @@ const data = [
   {
   title: 'Chum Apple Mango', 
   category: 'SOJU',
-  type: 'SOJU IMPORT', 
   size: '360mL', 
   price: 79.000, 
   link_tokopedia: 'https://www.tokopedia.com/sundaybestid/chumchurum-rasa-apple-mango-360ml-import?extParam=src%3Dshop%26whid%3D13446310', 
@@ -24,8 +22,7 @@ const data = [
   },
   {
   title: 'Chum Blueberry', 
-  category: 'SOJU',
-  type: 'SOJU IMPORT', 
+  category: 'SOJU', 
   size: '360mL', 
   price: 79.000, 
   link_tokopedia: 'https://www.tokopedia.com/sundaybestid/chumchurum-rasa-blueberry-360ml-import?extParam=src%3Dshop%26whid%3D13446310', 
@@ -36,7 +33,6 @@ const data = [
   {
   title: 'Chum Citron', 
   category: 'SOJU',
-  type: 'SOJU IMPORT', 
   size: '360mL', 
   price: 79.000, 
   link_tokopedia: 'https://www.tokopedia.com/sundaybestid/chumchurum-rasa-citron-360ml-import?extParam=src%3Dshop%26whid%3D13446310', 
@@ -47,7 +43,6 @@ const data = [
   {
   title: 'Chum Grape', 
   category: 'SOJU',
-  type: 'SOJU IMPORT', 
   size: '360mL', 
   price: 79.000, 
   link_tokopedia: 'https://www.tokopedia.com/sundaybestid/chumchurum-rasa-grape-360ml-import?extParam=src%3Dshop%26whid%3D13446310', 
@@ -58,7 +53,6 @@ const data = [
   {
   title: 'Chum Original', 
   category: 'SOJU',
-  type: 'SOJU IMPORT', 
   size: '360mL', 
   price: 79.000, 
   link_tokopedia: 'https://www.tokopedia.com/sundaybestid/chumchurum-rasa-original-360ml-import?extParam=src%3Dshop%26whid%3D13446310', 
@@ -69,7 +63,6 @@ const data = [
   {
   title: 'Chum Peach', 
   category: 'SOJU',
-  type: 'SOJU IMPORT', 
   size: '360mL', 
   price: 79.000, 
   link_tokopedia: 'https://www.tokopedia.com/sundaybestid/chumchurum-rasa-peach-360ml-import?extParam=src%3Dshop%26whid%3D13446310', 
@@ -80,7 +73,6 @@ const data = [
   {
   title: 'Chum Strawberry', 
   category: 'SOJU',
-  type: 'SOJU IMPORT', 
   size: '360mL', 
   price: 79.000, 
   link_tokopedia: 'https://www.tokopedia.com/sundaybestid/chumchurum-rasa-strawberry-360ml-import?extParam=src%3Dshop%26whid%3D13446310', 
@@ -91,7 +83,6 @@ const data = [
   {
   title: 'Chum Yogurt', 
   category: 'SOJU',
-  type: 'SOJU IMPORT', 
   size: '360mL', 
   price: 79.000, 
   link_tokopedia: 'https://www.tokopedia.com/sundaybestid/chumchurum-rasa-yogurt-360ml-import?extParam=src%3Dshop%26whid%3D13446310', 
@@ -102,7 +93,6 @@ const data = [
   {
   title: 'Bacardi Carta Blanca', 
   category: 'RUM',
-  type: 'RUM', 
   size: '750mL', 
   price: 253.999, 
   link_tokopedia: 'https://www.tokopedia.com/sundaybestid/bacardi-carta-blanca-750ml?extParam=src%3Dshop%26whid%3D13446310', 
@@ -113,7 +103,6 @@ const data = [
   {
   title: 'Bacardi Spiced Gold Rum', 
   category: 'RUM',
-  type: 'RUM', 
   size: '750mL', 
   price: 259.000, 
   link_tokopedia:'https://www.tokopedia.com/sundaybestid/bacardi-spiced-gold-rum-750ml?extParam=src%3Dshop%26whid%3D13446310', 

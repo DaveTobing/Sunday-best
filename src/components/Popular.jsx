@@ -1,75 +1,57 @@
 import React, { useContext } from 'react'
-import Bottle from '../assets/bottle.svg'
+import { useState } from 'react';
+import Cards from './Cards'; // Jangan lupa untuk mengimpor komponen Cards
+import popularData from '../database/popular.js'; // Gantikan dengan path yang sesuai ke file popular.js Anda
 import { DarkModeContext } from '../context/darkmode'
 
-
 const Popular = () => {
-const [theme, setTheme] = useContext(DarkModeContext)
-  return (
-    <div className={`flex flex-col justify-center bg-background-150`} >
-        <div className='m-10'>
-            <h1
-                className={`text-xl lg:text-5xl font-bold text-center uppercase mb-4`} 
+    const [theme, setTheme] = useContext(DarkModeContext);
+    const [isHovered, setIsHovered] = useState(false);
+
+    return (
+        <div className={`flex flex-col justify-center items-center lg:mx-48`}>
+            <div className='m-10 mt-20'>
+                <h1 className={`text-xl lg:text-5xl font-extrabold text-center uppercase mb-4`}>
+                    Our Popular Booze
+                </h1>
+                <h2 className={`text-md lg:text-xl font-bold italic text-center`}>
+                    Your Premier Destination for Exceptional Spirits. <br />
+                    Offering you wide range of liquor and spirits.
+                </h2>
+            </div>
+
+            <div className='flex flex-wrap justify-center gap-20'>
+                {popularData.map((product, index) => (
+                    <Cards 
+                        key={index}
+                        title={product.title}
+                        price={product.price}
+                        size={product.size}
+                        link_tokopedia={product.link_tokopedia}
+                        link_shopee={product.link_shopee}
+                        link_blibli={product.link_blibli}
+                        gambar={product.gambar}
+                    />
+                ))}
+            </div>
+
+            <div className='flex justify-center mt-4 mb-20'>
+                <button 
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                    style={{
+                        backgroundColor: isHovered ? '#FAE920' : '#02A1E9',
+                        color: isHovered ? '#02A1E9' : '#FAE920',
+                        fontFamily: 'Poppins, sans-serif',
+                        fontWeight: 'bold'
+                    }}
+                    className='mt-4 md:mt-8 px-4 md:px-6 py-1 md:py-2 rounded-lg focus:outline-none transition-colors duration-200'
                 >
-                Our Popular Booze
-            </h1>
-           
-            <h2  className={`text-md lg:text-xl font-semibold text-center uppercase `} >
-                Your Premier Destination for Exceptional Spirits. <br />
-                Offering you wide range of liquor and spirits.
-            </h2>
-        </div>
-
-        <div className='flex flex-col items-center lg:flex-row grid-cols-4 justify-around m-10 gap-4'>  
-            <div className='flex flex-col bg-background-light-250 rounded-xl w-64 relative overflow-clip items-center'>
-                <div className='flex flex-col w-64 relative overflow-clip items-center'>
-                    <img src={Bottle} alt="" className='w-64 filter grayscale' />
-                    <div className='bg-background-250 opacity-50  w-[350px] h-[300px] absolute -bottom-[250px] px-12 items-center'>
-                            <p className='text-center text-xl font-bold my-2'>
-                                    CAPTAIN MORGAN 
-                            </p>
-                    </div>
-                </div>
-            </div>
-            <div className='flex flex-col bg-background-light-250 rounded-xl w-64 relative overflow-clip items-center'>
-                <div className='flex flex-col w-64 relative overflow-clip items-center'>
-                    <img src={Bottle} alt="" className='w-64 filter grayscale' />
-                    <div className='bg-background-250 opacity-50  w-[350px] h-[300px] absolute -bottom-[250px] px-12 items-center'>
-                            <p className='text-center text-xl font-bold my-2'>
-                                    CAPTAIN MORGAN 
-                            </p>
-                    </div>
-                </div>
-            </div>
-            <div className='flex flex-col bg-background-light-250 rounded-xl w-64 relative overflow-clip items-center'>
-                <div className='flex flex-col w-64 relative overflow-clip items-center'>
-                    <img src={Bottle} alt="" className='w-64 filter grayscale' />
-                    <div className='bg-background-250 opacity-50  w-[350px] h-[300px] absolute -bottom-[250px] px-12 items-center'>
-                            <p className='text-center text-xl font-bold my-2'>
-                                    CAPTAIN MORGAN 
-                            </p>
-                    </div>
-                </div>
-            </div>
-            <div className='flex flex-col bg-background-light-250 rounded-xl w-64 relative overflow-clip items-center'>
-                <div className='flex flex-col w-64 relative overflow-clip items-center'>
-                    <img src={Bottle} alt="" className='w-64 filter grayscale' />
-                    <div className='bg-background-250 opacity-50  w-[350px] h-[300px] absolute -bottom-[250px] px-12 items-center'>
-                            <p className='text-center text-xl font-bold my-2'>
-                                    CAPTAIN MORGAN 
-                            </p>
-                    </div>
-                </div>
+                    Buy Now!
+                </button>
             </div>
         </div>
-        <div className='flex justify-center'>
-            <div className='flex justify-center bg-background-750 w-32 h-10 lg:h-14 mb-8'>
-                <button className='text-textcolor-400 text-lg font-bold'>Shop Now</button>
-            </div>
-        </div>
-
-    </div>
-  )
+    )
 }
 
-export default Popular
+export default Popular;

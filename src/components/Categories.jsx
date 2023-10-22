@@ -20,13 +20,13 @@ const Categories = () => {
       <div className='bg-background-400'>
         <div className='flex flex-col justify-center items-center lg:mx-48'>
           <h1
-          className={`text-textcolor-600 font-bold text-2xl lg:text-5xl uppercase mb-4 mt-24`} 
+          className={`text-[#5D4638] font-extrabold text-2xl lg:text-5xl uppercase mb-4 mt-24`} 
           >
           Categories
           </h1>
-          <h2 className={`text-textcolor-600 font-medium italic text-lg lg:text-xl text-center uppercase mb-16`} 
+          <h2 className={`text-[#5D4638] font-bold italic text-lg lg:text-xl text-center mb-16`} 
           >
-            Shop our wide-range of beverages now!
+            Shop Our Wide-range of Beverages Now!
           </h2>
         </div>
 

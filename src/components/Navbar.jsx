@@ -3,7 +3,12 @@ import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import Instagram from '../assets/instagram.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark, faLocationDot, faPhone} from '@fortawesome/free-solid-svg-icons'
+import {
+  faHome,
+  faWineBottle,
+  faStore,
+  faUsers
+} from '@fortawesome/free-solid-svg-icons';
 import { DarkModeContext } from '../context/darkmode'
 
 
@@ -32,7 +37,7 @@ export default function Navbar() {
 
   return (
     <div
-    className={'bg-background-400 flex flex-col justify-center'} 
+    className={'bg-background-400 flex flex-col justify-center z-100'} 
       >
         <div className='flex flex-row mx-4 lg:mx-20 my-4 justify-between items-center'>
           <div className='flex flex-row items-center gap-4 justify-start'>
@@ -57,18 +62,29 @@ export default function Navbar() {
 
         
         {/* mobile menu */}
-        <div className={nav ?         `
-          bg-background-400 fixed left-0 top-0 w-[75%] h-full ease-in-out duration-500 flex flex-col z-[2]` : 'fixed left-[-100%]' }>
+        <div className={nav ? `
+          bg-background-400 fixed left-0 top-0 w-[50%] h-full ease-in-out duration-500 flex flex-col z-[2]` : 'fixed left-[-100%]' }>
         <div className='flex flex-col items-center gap-16 mt-7'>
               <img src={logo} alt="" className='w-14'/>
-              <Link to= '/' className='font-semibold uppercase hover:text-textcolor-300' >Home</Link>
-              <Link to= '/product' className='font-semibold uppercase hover:text-textcolor-300 ' >Product</Link>
-              <Link to= '/store'  className='font-semibold uppercase hover:text-textcolor-300'>Store</Link>
-              <Link to= '/partnership' className='font-semibold uppercase hover:text-textcolor-300' >Partnership</Link>
-            </div>
+              <Link to='/' className='font-semibold uppercase hover:text-textcolor-300 flex items-center gap-2'>
+                <FontAwesomeIcon icon={faHome} />
+                Home
+              </Link>
+              <Link to='/product' className='font-semibold uppercase hover:text-textcolor-300 flex items-center gap-2'>
+                <FontAwesomeIcon icon={faWineBottle} />
+                Product
+              </Link>
+              <Link to='/store' className='font-semibold uppercase hover:text-textcolor-300 flex items-center gap-2'>
+                <FontAwesomeIcon icon={faStore} />
+                Store
+              </Link>
+              <Link to='/partnership' className='font-semibold uppercase hover:text-textcolor-300 flex items-center gap-2'>
+                <FontAwesomeIcon icon={faUsers} />
+                Partnership
+              </Link>
         </div>
+      </div>
     </div>
-
-  )
+  );
 }
 
