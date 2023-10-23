@@ -32,7 +32,9 @@ export default function Product () {
       tempItems= datas
     } 
     else {
-      tempItems = selectedFilters.length > 0 ? selectedFilters.flatMap((selectedCategory) => datas.filter((item) => item.category === selectedCategory)) : datas;
+      tempItems = selectedFilters.length > 0 
+      ? datas.filter((item) => selectedFilters.some((selectedCategory) => item.category.includes(selectedCategory)))
+      : datas;
     }
 
     // Apply search
@@ -59,7 +61,7 @@ export default function Product () {
     <div className='lg:pt-16 pt-10'>
         <div className='flex lg:grid lg:grid-cols-6 flex-row'>
           <div>
-            <h1 className='mx-2 lg:mx-6 text-textcolor-400 font-bold lg:text-3xl text-xl'>PRODUCT</h1>
+            <h1 className='mx-2 lg:mx-6 text-textcolor-400 font-extrabold lg:text-3xl text-xl'>PRODUCT</h1>
             <div className='mx-2 flex flex-col h-[1050px] md:h-[1050px] 2xl:h-[750px] w-32 mt-8 lg:w-5/6 lg:col-start-1 lg:col-end-2 lg:mx-6'>
                 <div>
                   {filter.map((category, idx) => (
@@ -85,7 +87,7 @@ export default function Product () {
           </div>
           <div className='col-start-2 col-end-7 bg-background-200 w-full'>
               <div className='flex flex-col justify-between lg:flex-row lg:mr-12 lg:ml-7'>
-                <div className='text-textcolor-750 font-signika'>
+                <div className='text-textcolor-750'>
                 <InputGroup>
                   <InputLeftElement pointerEvents='none'>
                     <Search2Icon color='gray.300' />
