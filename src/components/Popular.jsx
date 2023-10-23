@@ -3,6 +3,15 @@ import { useState } from 'react';
 import Cards from './Cards'; // Jangan lupa untuk mengimpor komponen Cards
 import popularData from '../database/popular.js'; // Gantikan dengan path yang sesuai ke file popular.js Anda
 import { DarkModeContext } from '../context/darkmode'
+import { Link } from 'react-router-dom';
+
+const handleClick = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
 
 const Popular = () => {
     const [theme, setTheme] = useContext(DarkModeContext);
@@ -36,19 +45,22 @@ const Popular = () => {
             </div>
 
             <div className='flex justify-center mt-4 mb-20'>
-                <button 
-                    onMouseEnter={() => setIsHovered(true)}
-                    onMouseLeave={() => setIsHovered(false)}
-                    style={{
-                        backgroundColor: isHovered ? '#FAE920' : '#02A1E9',
-                        color: isHovered ? '#02A1E9' : '#FAE920',
-                        fontFamily: 'Poppins, sans-serif',
-                        fontWeight: 'bold'
-                    }}
-                    className='mt-4 md:mt-8 px-4 md:px-6 py-1 md:py-2 rounded-lg focus:outline-none transition-colors duration-200'
-                >
-                    Buy Now!
-                </button>
+                <Link to= '/product'>
+                    <button 
+                        onMouseEnter={() => setIsHovered(true)}
+                        onMouseLeave={() => setIsHovered(false)}
+                        onClick={handleClick}
+                        style={{
+                            backgroundColor: isHovered ? '#FAE920' : '#02A1E9',
+                            color: isHovered ? '#02A1E9' : '#FAE920',
+                            fontFamily: 'Poppins, sans-serif',
+                            fontWeight: 'bold'
+                        }}
+                        className='mt-4 md:mt-8 px-4 md:px-6 py-1 md:py-2 rounded-lg focus:outline-none transition-colors duration-200'
+                    >
+                        Buy Now!
+                    </button>
+                </Link>
             </div>
         </div>
     )

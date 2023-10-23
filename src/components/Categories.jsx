@@ -14,6 +14,14 @@ import Brandy from '../assets/Brandy.png'
 import waves from '../assets/wave-haikei.svg'
 import { Link } from 'react-router-dom'
 
+const handleClick = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+}
+
 const Categories = () => {
   return (
     <div>
@@ -31,51 +39,51 @@ const Categories = () => {
         </div>
 
         <div className='flex flex-wrap justify-center gap-4'>
-          <Link>
+          <Link to= '/product' onClick={handleClick}>
               <img src={Soju} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link>
+          <Link to= '/product' onClick={handleClick}>
               <img src={Sake} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link>
+          <Link to= '/product' onClick={handleClick}>
             <img src={Wine} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link>
+          <Link to= '/product' onClick={handleClick}>
             <img src={Brandy} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer' />
           </Link>
 
-          <Link>
+          <Link to= '/product' onClick={handleClick}>
             <img src={Whisky} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link>
+          <Link to= '/product' onClick={handleClick}>
             <img src={Gin} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link>
+          <Link to= '/product' onClick={handleClick}>
             <img src={Vodka} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link>
+          <Link to= '/product' onClick={handleClick}>
             <img src={Rum} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link>
+          <Link to= '/product' onClick={handleClick}>
             <img src={Tequila} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link>
+          <Link to= '/product' onClick={handleClick}>
             <img src={Cognac} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link>
+          <Link to= '/product' onClick={handleClick}>
             <img src={Beers} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link>
+          <Link to= '/product' onClick={handleClick}>
             <img src={Other} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
         </div>
