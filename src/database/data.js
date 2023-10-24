@@ -112,8 +112,8 @@ const data = [
   size: '750 ml', 
   price: 229, 
   link_tokopedia:'https://www.tokopedia.com/sundaybestid/smirnoff-vodka-red-750ml?extParam=src%3Dshop', 
-  link_shopee: 'https://shopee.co.id/Smirnoff-Vodka-Pink-Lemonade-700ML-i.735414402.21979861014?sp_atk=8342efb7-0bbf-48ab-941d-bff26e9f29df&xptdk=8342efb7-0bbf-48ab-941d-bff26e9f29df', 
-  link_blibli: 'https://www.blibli.com/p/smirnoff-vodka-pink-lemonade-700ml/ps--SUI-70129-00420?ds=SUI-70129-00420-00001&source=MERCHANT_PAGE&sid=a25b191194af62e6&cnc=false&pickupPointCode=PP-3338435&pid=SUI-70129-00420', 
+  link_shopee: 'https://shopee.co.id/Smirnoff-Vodka-750ML-i.735414402.19241036746?sp_atk=cb1116b4-5779-41bd-a842-7461f1682b0a&xptdk=cb1116b4-5779-41bd-a842-7461f1682b0a', 
+  link_blibli: 'https://www.blibli.com/p/smirnoff-vodka-750ml/ps--SUI-70129-00146?ds=SUI-70129-00146-00001&source=MERCHANT_PAGE&sid=1a7d77be53d955ee&cnc=false&pickupPointCode=PP-3338435&pid=SUI-70129-00146', 
   gambar: three
   },
 
@@ -133,8 +133,8 @@ const data = [
   category: "WHISKY",
   size: "750 ml",
   price: 229,
-  link_tokopedia: "#",
-  link_shopee: "#",
+  link_tokopedia: "https://www.tokopedia.com/sundaybestid/mr-dowells-whisky-750ml?extParam=src%3Dshop%26whid%3D13446310",
+  link_shopee: "https://shopee.co.id/Mr-Dowells-Whisky-750mL-i.735414402.21162153181?sp_atk=e0d8b2e8-1a86-46a2-a736-34ceda7decbc&xptdk=e0d8b2e8-1a86-46a2-a736-34ceda7decbc",
   link_blibli: "#",
   gambar: five
   },
@@ -144,8 +144,8 @@ const data = [
     category: "GIN",
     size: "350 ml",
     price: 104,
-    link_tokopedia: "#",
-    link_shopee: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/gilbeys-gin-350ml?extParam=src%3Dshop%26whid%3D13446310",
+    link_shopee: "https://shopee.co.id/Gilbeys-Gin-350mL-i.735414402.21191099156?sp_atk=2a814a1d-4e35-4401-abe2-f98d83497677&xptdk=2a814a1d-4e35-4401-abe2-f98d83497677",
     link_blibli: "#",
     gambar: six
   },
@@ -155,7 +155,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 195,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/don-alejandro-sweet-white-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: seven
@@ -166,7 +166,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 195,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/don-alejandro-sweet-red-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: eight
@@ -177,7 +177,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 274,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/albaluna-moscato-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: nine
@@ -188,7 +188,7 @@ const data = [
     category: "VODKA",
     size: "700 ml",
     price: 345,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/poliakov-vodka-700ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: ten
@@ -199,7 +199,7 @@ const data = [
     category: "GIN",
     size: "700 ml",
     price: 760,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/licor-43-original-700ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: eleven
@@ -210,7 +210,7 @@ const data = [
     category: "LIQUEUR",
     size: "700 ml",
     price: 589,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/licor-43-horchata-700ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: twelve
@@ -221,7 +221,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 415,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/porto-cruz-ruby-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: thirteen
@@ -232,7 +232,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 415,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/porto-cruz-tawny-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fourteen
@@ -243,7 +243,7 @@ const data = [
     category: "TEQUILA",
     size: "750 ml",
     price: 1025,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/patron-reposado-tequila-750ml?extParam=whid%3D13446310%26src%3Dshop",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fifteen
@@ -254,7 +254,7 @@ const data = [
     category: "VODKA",
     size: "750 ml",
     price: 925,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/titos-homemade-vodka-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: sixteen
@@ -265,8 +265,8 @@ const data = [
     category: "WHISKY",
     size: "700 ml",
     price: 1925,
-    link_tokopedia: "#",
-    link_shopee: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/bowmore-18-years-700ml?extParam=src%3Dshop%26whid%3D13446310",
+    link_shopee: "https://shopee.co.id/Bowmore-18-YO-700mL-i.735414402.20870974778?sp_atk=e0bdaa32-ece9-4fb9-91e2-3964ad22c7df&xptdk=e0bdaa32-ece9-4fb9-91e2-3964ad22c7df",
     link_blibli: "#",
     gambar: seventeen
   },
@@ -276,9 +276,9 @@ const data = [
     category: "TEQUILA",
     size: "750 ml",
     price: 4369,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/don-julio-1942-anejo-tequila?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
-    link_blibli: "#",
+    link_blibli: "https://www.blibli.com/p/don-julio-1942/ps--SUI-70129-00434?ds=SUI-70129-00434-00001&source=MERCHANT_PAGE&sid=9da9e7ef8945b269&cnc=false&pickupPointCode=PP-3338435&pid=SUI-70129-00434",
     gambar: eighteen
   },
 
@@ -287,9 +287,9 @@ const data = [
     category: "BEERS",
     size: "330 ml",
     price: 20,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/balihai-premium-pint-330ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
-    link_blibli: "#",
+    link_blibli: "https://www.blibli.com/p/balihai-pint-330ml/ps--SUI-70129-00473?ds=SUI-70129-00473-00001&source=MERCHANT_PAGE&sid=ac71756768a173ee&cnc=false&pickupPointCode=PP-3338435&pid=SUI-70129-00473",
     gambar: nineteen
   },
 
@@ -298,7 +298,7 @@ const data = [
     category: "GIN",
     size: "700 ml",
     price: 699,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/mom-love-gin-sweatness-strawberries-700ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: twenty
@@ -309,7 +309,7 @@ const data = [
     category: "GIN",
     size: "700 ml",
     price: 699,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/mom-gin-royal-smoothness-700ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: twentyOne
@@ -320,7 +320,7 @@ const data = [
     category: "WHISKY",
     size: "700 ml",
     price: 1300,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/bladnoch-vinaya-700ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: twentyTwo
@@ -331,7 +331,7 @@ const data = [
     category: "SOJU",
     size: "360 ml",
     price: 60,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/chamjoeun-soju-peach-360ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: twentyThree
@@ -342,7 +342,7 @@ const data = [
     category: "SOJU",
     size: "360 ml",
     price: 60,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/chamjoeun-soju-grape-360ml?extParam=whid%3D13446310%26src%3Dshop",
     link_shopee: "#",
     link_blibli: "#",
     gambar: twentyFour
@@ -353,7 +353,7 @@ const data = [
     category: "SOJU",
     size: "360 ml",
     price: 60,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/chamjoeun-soju-original-360ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: twentyFive
@@ -364,7 +364,7 @@ const data = [
     category: "SOJU",
     size: "360 ml",
     price: 60,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/chamjoeun-soju-lychee-360ml?extParam=src%3Dshop",
     link_shopee: "#",
     link_blibli: "#",
     gambar: twentySix
@@ -375,7 +375,7 @@ const data = [
     category: "RUM",
     size: "700 ml",
     price: 269,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/old-pascas-jamaican-white-rum-700ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: twentySeven
@@ -386,7 +386,7 @@ const data = [
     category: "RUM",
     size: "700 ml",
     price: 269,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/old-pascas-jamaica-dark-rum-700ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: twentyEight
@@ -397,7 +397,7 @@ const data = [
     category: "WHISKY",
     size: "700 ml",
     price: 399,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/glenkenny-blended-malt-scotch-whisky-700ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: twentyNine
@@ -408,7 +408,7 @@ const data = [
     category: "VODKA",
     size: "200 ml",
     price: 74,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/smirnoff-vodka-red-200ml-no-21?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: thirty
@@ -419,7 +419,7 @@ const data = [
     category: "RUM",
     size: "200 ml",
     price: 77,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/captain-morgan-spiced-rum-200ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: thirtyOne
@@ -430,7 +430,7 @@ const data = [
     category: "WHISKY",
     size: "750 ml",
     price: 3050,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/aberfeldy-21-year-old-single-malt-whisky-box-cacat?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: thirtyTwo
@@ -441,7 +441,7 @@ const data = [
     category: "TEQUILA",
     size: "750 ml",
     price: 1050,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/don-julio-blanco-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: thirtyThree
@@ -452,7 +452,7 @@ const data = [
     category: "TEQUILA",
     size: "750 ml",
     price: 1349,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/herradura-tequila-anejo-mexico-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: thirtyFour
@@ -463,9 +463,9 @@ const data = [
     category: "WHISKY",
     size: "700 ml",
     price: 5550,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/balvenie-16-french-oak-700ml?extParam=whid%3D13446310%26src%3Dshop",
     link_shopee: "#",
-    link_blibli: "#",
+    link_blibli: "https://www.blibli.com/p/balvenie-16-year-old-french-oak-700ml/ps--SUI-70129-00396?ds=SUI-70129-00396-00001&source=MERCHANT_PAGE&sid=ce2703a0faee5a3d&cnc=false&pickupPointCode=PP-3338435&pid=SUI-70129-00396",
     gambar: thirtyFive
   },
 
@@ -474,7 +474,7 @@ const data = [
     category: "WHISKY",
     size: "700 ml",
     price: 1735,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/the-balvenie-14-years-old-caribbean-cask-single-malt-whisky-700ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: thirtySix
@@ -485,7 +485,7 @@ const data = [
     category: "COGNAC",
     size: "1000 ml",
     price: 2800,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/martell-vsop-medaillon-1000ml-atau-1l-1-liter?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: thirtySeven
@@ -496,7 +496,7 @@ const data = [
     category: "WHISKY",
     size: "700 ml",
     price: 819,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/nomad-outland-scotch-whisky-700ml-original-100?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: thirtyEight
@@ -507,7 +507,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 254,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/yellow-tail-pinot-noir-red-wine-750ml?extParam=whid%3D13446310%26src%3Dshop",
     link_shopee: "#",
     link_blibli: "#",
     gambar: thirtyNine
@@ -518,7 +518,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 399,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/bodegas-castano-monastrell-red-wine-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: forty
@@ -529,7 +529,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 399,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/bodegas-castano-macabeo-chardonnay-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fortyOne
@@ -540,7 +540,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 379,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/paololeo-varietal-primitivo-igp-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fortyTwo
@@ -551,7 +551,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 379,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/paololeo-varietal-negroamaro-igp-750ml?extParam=whid%3D13446310%26src%3Dshop",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fortyThree
@@ -562,7 +562,7 @@ const data = [
     category: "GIN",
     size: "700 ml",
     price: 1225,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/ki-no-bi-kyoto-kinobi-japanese-dry-gin-700ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fortyFour
@@ -573,7 +573,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 254,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/yellow-tail-merlot-red-wine-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fortyFive
@@ -584,7 +584,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 254,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/yellow-tail-moscato-sweet-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fortySix
@@ -595,7 +595,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 254,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/yellow-tail-red-roo-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fortySeven
@@ -606,7 +606,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 254,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/yellow-tail-shiraz-carbenet-red-wine-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fortyEight
@@ -617,7 +617,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 254,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/yellow-tail-carbenet-sauvignon-red-wine-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fortyNine
@@ -628,7 +628,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 254,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/yellow-tail-big-bold-red-750ml?extParam=src%3Dshop",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fifty
@@ -639,7 +639,7 @@ const data = [
     category: "WINE",
     size: "750 ml",
     price: 254,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/yellow-tail-shiraz-red-wine-750ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fiftyOne
@@ -650,7 +650,7 @@ const data = [
     category: "BEERS",
     size: "330 ml",
     price: 25,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/anker-stout-btl-330ml?extParam=whid%3D13446310%26src%3Dshop",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fiftyTwo
@@ -661,7 +661,7 @@ const data = [
     category: "VODKA",
     size: "350 ml",
     price: 104,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/gilbeys-vodka-350ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fiftyThree
@@ -672,7 +672,7 @@ const data = [
     category: "BEERS",
     size: "620 ml",
     price: 57,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/orang-tua-intisari-620ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fiftyFour
@@ -683,7 +683,7 @@ const data = [
     category: "CIDER",
     size: "330 ml",
     price: 44,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/somersby-apple-cider-330ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fiftyFive
@@ -694,7 +694,7 @@ const data = [
     category: "BEERS",
     size: "330 ml",
     price: 33,
-    link_tokopedia: "#",
+    link_tokopedia: "https://www.tokopedia.com/sundaybestid/beer-san-miguel-dark-lager-cerveza-negra-pint-330ml?extParam=src%3Dshop%26whid%3D13446310",
     link_shopee: "#",
     link_blibli: "#",
     gambar: fiftySix
