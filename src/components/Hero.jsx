@@ -30,7 +30,7 @@ const Hero = () => {
             }}
           >
             <div className='absolute inset-0 bg-white opacity-50'></div>
-            <div className='flex flex-col ml-[150px] md:ml-[200px] lg:ml-[400px] relative'>
+            <div className='flex flex-col ml-[150px] md:ml-[200px] lg:ml-[400px] text-left relative'>
                 <h1 className='text-3xl md:text-4xl lg:text-8xl font-extrabold text-[#5D4638] mb-4'>Cheers to <br /> Excellence</h1>
                 <h2 className='hidden md:block text-2xl lg:text-3xl font-bold text-[#5D4638]'>Where Quality Meets Convenience <br /> at Our Liquor Haven</h2>
                 <Link to= '/product'>
