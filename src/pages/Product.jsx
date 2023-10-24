@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Select } from '@chakra-ui/select'
-import { Checkbox, InputGroup, InputLeftElement } from '@chakra-ui/react'
+import { InputGroup, InputLeftElement } from '@chakra-ui/react'
 import datas from '../database/data'
 import Cards from '../components/Cards'
 import { Input } from '@chakra-ui/react'
@@ -58,82 +58,93 @@ export default function Product () {
   }, [selectedFilters, query, sortOption]);
 
   return (
-    <div className='lg:pt-16 pt-10'>
-        <div className='flex lg:grid lg:grid-cols-6 flex-row'>
-          <div>
-            <h1 className='mx-2 lg:mx-6 text-textcolor-400 font-extrabold lg:text-3xl text-xl'>PRODUCT</h1>
-            <div className='mx-2 flex flex-col h-[1050px] md:h-[1050px] 2xl:h-[750px] w-32 mt-8 lg:w-5/6 lg:col-start-1 lg:col-end-2 lg:mx-6'>
-                <div>
-                  {filter.map((category, idx) => (
-                    <>
-                      <button 
-                        onClick={() => handleFilterButtonClick(category)}
-                        className={`flex flex-col font-medium text-md lg:text-xl ${
-                          selectedFilters?.includes(category) ? "text-textcolor-300" : "text-textcolor-750"
-                        }`}
-                        key={`filters-${idx}`}
-                      >
-                        {category}
-                      </button>
-                      <div
-                        className={' bg-background-750 h-[0.5px] lg:h-[2px]'}
+    <div className='bg-background-200 lg:pt-16'>
+        <div className='lg:grid lg:grid-cols-6'>
+            <div className='hidden lg:inline-block '>
+              <h1 className='mx-2 lg:mx-6 text-textcolor-400 font-extrabold lg:text-3xl text-xl'>PRODUCT</h1>
+              <div className='mx-2 flex flex-col h-[1050px] md:h-[1050px] 2xl:h-[750px] w-32 mt-8 lg:w-5/6 lg:col-start-1 lg:col-end-2 lg:mx-6'>
+                  <div>
+                    {filter.map((category, idx) => (
+                      <>
+                        <button 
+                          onClick={() => handleFilterButtonClick(category)}
+                          className={`flex flex-col font-medium text-md lg:text-xl mb-2 ${
+                            selectedFilters?.includes(category) ? "text-textcolor-300" : "text-textcolor-750"
+                          }`}
+                          key={`filters-${idx}`}
                         >
-                      </div>
-                    </>
-                  ))}
+                          {category}
+                        </button>
+                      </>
+                    ))}
+                  </div>
+              </div>
+            </div>
+            <div className='col-start-2 col-end-7 w-full'>
+              <h1 className='flex justify-center text-textcolor-400 font-extrabold text-2xl py-4 lg:hidden'>PRODUCT</h1>
+                <div className='flex justify-between lg:flex-row lg:mr-12 lg:ml-7 mx-4'>
+                  <div className='text-textcolor-750 mb-4 w-32 lg:w-64'>
+                  <InputGroup>
+                    <InputLeftElement pointerEvents='none'>
+                      <Search2Icon color='gray.300' />
+                    </InputLeftElement>
+                    <Input 
+                    placeholder='Search' 
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    />
+                  </InputGroup>
+                  </div>
+                  <div className='flex lg:gap-16 items-center lg:justify-end mb-4 w-32'>
+                      <Select 
+                      placeholder='Filter' 
+                      value={sortOption}
+                      onChange={(e) => setSortOption(e.target.value)}
+
+                      className={'text-textcolor-750 hover:cursor-pointer'}>
+                          <option value = "Desc">Alphabet: Z-A</option>
+                          <option value = "Asc">Alphabet: A-Z</option>
+                          <option value=  "High">Price: High-Low</option>
+                          <option value = "Low">Price: Low-high</option>
+                      </Select>
+                  </div>
+                </div>
+                <div className='overflow-x-auto flex flex-row gap-8 mx-6 lg:hidden'>
+                    {filter.map((category, idx) => (
+                          <>
+                            <button 
+                              onClick={() => handleFilterButtonClick(category)}
+                              className={`font-medium text-md lg:text-xl ${
+                                selectedFilters?.includes(category) ? "text-textcolor-300" : "text-textcolor-750"
+                              }`}
+                              key={`filters-${idx}`}
+                            >
+                              {category}
+                            </button>
+                          </>
+                        ))}
+                </div>
+                <div className='flex flex-col lg:flex-row w-full flex-wrap items-center lg:items-start'>
+                  {filteredItems.map(
+                        ({title, category, type, size, price, link_tokopedia, link_shopee, link_blibli, gambar}) => (
+                          <Cards
+                            key={Math.random()}
+                            img={gambar}
+                            title={title}
+                            category={category}
+                            type={type}
+                            size={size}
+                            price = {price.toFixed(3)}
+                            link_tokopedia = {link_tokopedia}
+                            link_shopee = {link_shopee}
+                            link_blibli = {link_blibli}
+                            gambar = {gambar}
+                          />
+                        )
+                      )
+                    }
                 </div>
             </div>
-
-          </div>
-          <div className='col-start-2 col-end-7 bg-background-200 w-full'>
-              <div className='flex flex-col justify-between lg:flex-row lg:mr-12 lg:ml-7'>
-                <div className='text-textcolor-750'>
-                <InputGroup>
-                  <InputLeftElement pointerEvents='none'>
-                    <Search2Icon color='gray.300' />
-                  </InputLeftElement>
-                  <Input 
-                  placeholder='Search' 
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  />
-                </InputGroup>
-                </div>
-                <div className='flex lg:gap-16 items-center lg:justify-end' >
-                    <Select 
-                    placeholder='Filter' 
-                    value={sortOption}
-                    onChange={(e) => setSortOption(e.target.value)}
-
-                    className={'text-textcolor-750 hover:cursor-pointer font-signika'}>
-                        <option value = "Desc">Alphabet: Z-A</option>
-                        <option value = "Asc">Alphabet: A-Z</option>
-                        <option value=  "High">Price: High-Low</option>
-                        <option value = "Low">Price: Low-high</option>
-                    </Select>
-                </div>
-              </div>
-              <div className='flex flex-col lg:flex-row w-full flex-wrap items-center lg:items-start'>
-                {filteredItems.map(
-                      ({title, category, type, size, price, link_tokopedia, link_shopee, link_blibli, gambar}) => (
-                        <Cards
-                          key={Math.random()}
-                          img={gambar}
-                          title={title}
-                          category={category}
-                          type={type}
-                          size={size}
-                          price = {price.toFixed(3)}
-                          link_tokopedia = {link_tokopedia}
-                          link_shopee = {link_shopee}
-                          link_blibli = {link_blibli}
-                          gambar = {gambar}
-                        />
-                      )
-                    )
-                  }
-              </div>
-          </div>
         </div>
     </div>
     )

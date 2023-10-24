@@ -11,7 +11,7 @@ function WarningPage({ onVerify }) {
     return (
       <div className='warning-wrapper'>
         <div className='warningPage'>
-          <div className='content font-signika'>
+          <div className='content'>
             <img src={logo} alt='Logo' className='logo' />
             <h1 className='text-black'>Toast to your special day!</h1>
             <p className='text-black'>

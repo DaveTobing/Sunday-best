@@ -18,7 +18,7 @@ const Popular = () => {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <div className={`flex flex-col justify-center items-center lg:mx-48`}>
+        <div className={`flex flex-col justify-center items-center lg:mx-42`}>
             <div className='m-10 mt-20'>
                 <h1 className={`text-xl lg:text-5xl font-extrabold text-center uppercase mb-4`}>
                     Our Popular Booze
