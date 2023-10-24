@@ -6,6 +6,16 @@ import blibli from '../assets/blibli_logo.svg'
 import tokopedia from '../assets/tokopedia_logo.svg'
 import shopee from '../assets/shopee_logo.svg'
 
+function formatPrice(price) {
+  const numPrice = typeof price === "number" ? price : parseFloat(price);
+
+  if (Math.floor(numPrice) !== numPrice) {  // Jika ada desimal
+      return `Rp${numPrice.toFixed(3).replace(/\B(?=(\d{3})+(?!\d))/g, ".")}`;
+  } else {  // Jika tidak ada desimal
+      return `Rp${numPrice.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".")}.000`;
+  }
+}
+
 export default function Cards ({title, price, size, link_tokopedia, link_shopee, link_blibli, gambar}) {
     const[showModal, setShowModal] = useState(false)
 
@@ -34,7 +44,7 @@ export default function Cards ({title, price, size, link_tokopedia, link_shopee,
                   <div className='flex flex-row justify-around my-3 lg:mx-2'>
                     <div>
                       <p className='font-medium text-sm lg:text-lg'>
-                          Rp{price}
+                          {formatPrice(price)}
                       </p>
                     </div>
                     <div>
@@ -73,7 +83,7 @@ export default function Cards ({title, price, size, link_tokopedia, link_shopee,
                   <div className='bg-[#1D1D1D] bg-opacity-20 rounded-lg w-full p-2'>
                     <h1 className={`font-bold ${titleFontSize} text-[#0175B8] text-sm text-center md:text-left`}>{title}</h1>
                     <div className='flex justify-around md:justify-between mt-2'>
-                      <p className='text-[#F1EA3E] text-sm lg:text-xl font-semibold '>Rp{price}</p>
+                      <p className='text-[#F1EA3E] text-sm lg:text-xl font-semibold '>{formatPrice(price)}</p>
                       <p className='text-[#F1EA3E] text-sm lg:text-xl font-semibold '>{size}</p>
                     </div>
                   </div>

@@ -669,7 +669,7 @@ const data = [
 
   {
     title: "Orang Tua Intisari",
-    category: "BEERS",
+    category: "WINE",
     size: "620 ml",
     price: 57.999,
     link_tokopedia: "https://www.tokopedia.com/sundaybestid/orang-tua-intisari-620ml?extParam=src%3Dshop%26whid%3D13446310",
