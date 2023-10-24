@@ -13,14 +13,14 @@ function WarningPage({ onVerify }) {
         <div className='warningPage'>
           <div className='content'>
             <img src={logo} alt='Logo' className='logo' />
-            <h1 className='text-black'>Toast to your special day!</h1>
+            <h1 className='text-black font-semibold'>Toast to your special day!</h1>
             <p className='text-black'>
               We need to verify you're 21 before we let you browse and purchase
               from this website
             </p>
             <div className='buttons'>
-              <button onClick={handleYesClick}>Yes, I'm over 21</button>
-              <button>No, I am not</button>
+              <button onClick={handleYesClick} className='text-black font-semibold'>Yes, I'm over 21</button>
+              <button className='text-black font-semibold'>No, I am not</button>
             </div>
             <div className='socials'>
               <a

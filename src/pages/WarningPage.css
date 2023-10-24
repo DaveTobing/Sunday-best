@@ -85,14 +85,14 @@
 /* Mobile (Android) view styles */
 @media (max-width: 480px) {
     .content {
-        font-size: 59%;
+        font-size: 53%;
     }
 
     .warning-wrapper h1 {  /* Corrected this line */
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .warning-wrapper p {   /* Corrected this line */
-        font-size: 12px;
+        font-size: 11px;
     }
 }
