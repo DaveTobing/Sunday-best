@@ -2,7 +2,7 @@ import React from 'react'
 
 const Store = () => {
   return (
-    <div className='bg-background-400 lg:h-screen'>
+    <div className='bg-background-150 lg:h-screen'>
         <div className='hidden lg:block'>
             <h1 className='text-[#545454] text-5xl font-extrabold text-center uppercase'>
                 Our Store
@@ -22,11 +22,11 @@ const Store = () => {
                     </div>
                     
                     <div className='text-center lg:text-left pl-8 lg:pl-12 mt-3 lg:mt-0'>
-                        <h2 className='font-bold text-3xl text-textcolor-300'>SUNDAYBEST.ID PERMATA HIJAU</h2>
+                        <h2 className='font-bold text-3xl text-textcolor-400'>SUNDAYBEST.ID PERMATA HIJAU</h2>
                         <p className='font-semibold text-xl'>Grand ITC Permata Hijau Jl. Arteri Permata Hijau <br /> No.2, Grogol Utara, Kec. Kby. Lama, Kota Jakarta <br /> Selatan, Daerah Khusus Ibukota Jakarta 12210</p>
                         <a href="https://www.google.com/maps/place/SUNDAYBESTID/@-6.219347,106.783689,14z/data=!4m6!3m5!1s0x2e69f587f268af27:0x66c596fc12810d0b!8m2!3d-6.2210537!4d106.7834317!16s%2Fg%2F11l2cmw998?hl=en&entry=ttu" className='underline text-xl'>Direction</a>
                         <div className='flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-4 mt-4'>
-                            <h2 className='text-3xl text-textcolor-300'>Opening Hours</h2>
+                            <h2 className='text-3xl text-textcolor-400'>Opening Hours</h2>
                             <p className='pl-4 text-xl'>Monday - Sunday <br /> 10.30am - 09.00pm</p>
                         </div>
                     </div>
@@ -46,11 +46,11 @@ const Store = () => {
                     </div>
                     
                     <div className='text-center lg:text-right pl-8 lg:pl-12 mt-5 lg:mt-0'>
-                        <h2 className='font-bold text-3xl text-textcolor-300'>SUNDAYBEST.ID BSD</h2>
+                        <h2 className='font-bold text-3xl text-textcolor-400'>SUNDAYBEST.ID BSD</h2>
                         <p className='font-semibold text-xl'>BSD city, Jl. Anggrek Ungu No.5, RT.1/RW.10, Rawa <br />Buntu, Serpong Sub-District, South Tangerang <br /> City, Banten 15310</p>
                         <a href="https://www.google.com/maps/place/Premiere+Billiard+BSD/@-6.304648,106.6730287,15z/data=!4m6!3m5!1s0x2e69e5588351fd7d:0x3121b709a41a52ca!8m2!3d-6.304648!4d106.6730287!16s%2Fg%2F11mwsv0qs0?entry=ttu" className='underline text-xl'>Direction</a>
                         <div className='flex flex-col lg:flex-row items-center justify-center lg:justify-end gap-4 mt-4'>
-                            <h2 className='text-3xl text-textcolor-300'>Opening Hours</h2>
+                            <h2 className='text-3xl text-textcolor-400'>Opening Hours</h2>
                             <p className='pl-4 text-xl'>SOON!</p>
                         </div>
                     </div>

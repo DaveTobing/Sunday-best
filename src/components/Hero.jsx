@@ -59,7 +59,7 @@ const Hero = () => {
           </div>
 
           <div>
-            <img src={banner2} alt="" />
+            <img src={banner2} alt=""/>
           </div>
 
           <div>

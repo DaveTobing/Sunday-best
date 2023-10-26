@@ -128,7 +128,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link to='mailto:sundaybeststoreid@gmail.com?subject=Having%20Interest'>
-                  <p className='font-semibold text-sm'>sundaybeststoreid@gmail.com</p>
+                  <p className='font-semibold text-sm'>info@sundaybest.id</p>
                 </Link>
               </li>
             </ul>

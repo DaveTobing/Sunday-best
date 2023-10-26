@@ -13,6 +13,7 @@ import Article4 from "./components/Article4";
 import Article5 from "./components/Article5";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Whatsapp from "./components/Whatsappbutton";
 import Cookies from 'js-cookie';
 import { ChakraProvider} from '@chakra-ui/react'
 import { DarkModeProvider } from './context/darkmode'
@@ -40,10 +41,10 @@ function App ()  {
       <DarkModeProvider>
         <BrowserRouter>
           <Navbar />
+          <Whatsapp />
           <Routes>
             <Route path='/' element={<LandingPage />} />
             <Route path='/product' element={<Product />} />
-            {/* <Route path='/product/:category' component={Product} /> */}
             <Route path='/partnership' element={<Partnership />} />
             <Route path='/store' element={<Store />} />
             <Route path='/Article1' element={<Article1 />} />

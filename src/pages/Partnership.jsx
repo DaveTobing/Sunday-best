@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 
 const Partnership = () => {
   return (
-    <div className='bg-background-150 '>
+    <div className='bg-background-150'>
         <div className='hidden lg:block'>
             <div className='flex flex-col lg:grid lg:grid-cols-2 mx-10 lg:mx-48 py-10 gap-6'>
                 <CanvaEmbed />
@@ -179,7 +179,7 @@ const Partnership = () => {
                         <br /> your concept too!
                     </p>
                 </div>
-                <div className='flex flex-col lg:flex-row gap-7 justify-center pt-8 mb-10 items-center'>
+                <div className='flex flex-col lg:flex-row gap-7 justify-center pt-8 pb-10 items-center'>
                     <img src={Netflix} alt=""   className='w-64 lg:w-fit'/>
                     <img src={Listening} alt="" className='w-64 lg:w-fit' />
                     <img src={Billiard} alt=""  className='w-64 lg:w-fit'/>

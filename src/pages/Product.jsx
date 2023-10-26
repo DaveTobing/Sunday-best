@@ -61,14 +61,14 @@ export default function Product () {
     <div className='bg-background-200 lg:pt-16'>
         <div className='lg:grid lg:grid-cols-6'>
             <div className='hidden lg:inline-block '>
-              <h1 className='mx-2 lg:mx-6 text-textcolor-400 font-extrabold lg:text-3xl text-xl'>PRODUCT</h1>
+              <h1 className='mx-2 lg:mx-6 text-textcolor-400 font-extrabold lg:text-2xl text-xl'>PRODUCT</h1>
               <div className='mx-2 flex flex-col h-[1050px] md:h-[1050px] 2xl:h-[750px] w-32 mt-8 lg:w-5/6 lg:col-start-1 lg:col-end-2 lg:mx-6'>
                   <div>
                     {filter.map((category, idx) => (
                       <>
                         <button 
                           onClick={() => handleFilterButtonClick(category)}
-                          className={`flex flex-col font-medium text-md lg:text-xl mb-2 ${
+                          className={`flex flex-col font-medium text-md lg:text-lg mb-2 ${
                             selectedFilters?.includes(category) ? "text-textcolor-300" : "text-textcolor-750"
                           }`}
                           key={`filters-${idx}`}
