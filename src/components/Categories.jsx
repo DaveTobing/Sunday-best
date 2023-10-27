@@ -39,51 +39,51 @@ const Categories = () => {
         </div>
 
         <div className='flex flex-wrap justify-center gap-4'>
-          <Link to= '/product' onClick={handleClick}>
+          <Link to= '/product?id=SOJU' onClick={handleClick}>
               <img src={Soju} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to= '/product' onClick={handleClick}>
+          <Link to= '/product?id=SAKE' onClick={handleClick}>
               <img src={Sake} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to= '/product' onClick={handleClick}>
+          <Link to= '/product?id=WINE' onClick={handleClick}>
             <img src={Wine} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to= '/product' onClick={handleClick}>
+          <Link to= '/product?id=BRANDY' onClick={handleClick}>
             <img src={Brandy} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer' />
           </Link>
 
-          <Link to= '/product' onClick={handleClick}>
+          <Link to= '/product?id=WHISKY' onClick={handleClick}>
             <img src={Whisky} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to= '/product' onClick={handleClick}>
+          <Link to= '/product?id=GIN' onClick={handleClick}>
             <img src={Gin} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to= '/product' onClick={handleClick}>
+          <Link to= '/product?id=VODKA' onClick={handleClick}>
             <img src={Vodka} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to= '/product' onClick={handleClick}>
+          <Link to= '/product?id=RUM' onClick={handleClick}>
             <img src={Rum} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to= '/product' onClick={handleClick}>
+          <Link to= '/product?id=TEQUILA' onClick={handleClick}>
             <img src={Tequila} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to= '/product' onClick={handleClick}>
+          <Link to= '/product?id=COGNAC' onClick={handleClick}>
             <img src={Cognac} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to= '/product' onClick={handleClick}>
+          <Link to= '/product?id=BEERS' onClick={handleClick}>
             <img src={Beers} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
 
-          <Link to= '/product' onClick={handleClick}>
+          <Link to= '/product?id=SOJU' onClick={handleClick}>
             <img src={Other} alt="" className='w-32 lg:w-fit hover:scale-105 duration-300 hover:cursor-pointer'/>
           </Link>
         </div>

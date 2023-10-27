@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route, BrowserRouter, useNavigate } from 'react-router-dom'
 import { useState } from "react"
 import WarningPage from './pages/WarningPage';
 import LandingPage from "./pages/LandingPage";

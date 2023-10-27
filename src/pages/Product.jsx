@@ -5,8 +5,13 @@ import datas from '../database/data'
 import Cards from '../components/Cards'
 import { Input } from '@chakra-ui/react'
 import { Search2Icon } from '@chakra-ui/icons'
+import { useNavigate, useLocation } from 'react-router-dom'
 
-export default function Product () {
+export default function Product () {    
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const idParam = queryParams.get('id');
+  const navigate = useNavigate(); // Get the history object
   const [selectedFilters, setSelectedFilters] = useState([]);
   const [filteredItems, setFilteredItems] = useState(datas);
 
@@ -28,6 +33,10 @@ export default function Product () {
 
   useEffect(() => {
     // Apply filter first
+    if (idParam) {
+      setSelectedFilters([idParam]);
+    }
+    
     if (selectedFilters.includes('ALL')) {
       tempItems= datas
     } 
@@ -36,6 +45,15 @@ export default function Product () {
       ? datas.filter((item) => selectedFilters.some((selectedCategory) => item.category.includes(selectedCategory)))
       : datas;
     }
+
+    if(selectedFilters.length === 0){
+      navigate(`/product`);
+    }
+    else {
+      const newCategories = selectedFilters.join('&');
+      navigate(`/product?category=${newCategories}`);
+    }
+
 
     // Apply search
     const filteredBySearch = query
