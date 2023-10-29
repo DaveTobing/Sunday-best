@@ -31,7 +31,7 @@ export default function Navbar() {
                 bg-background-300 rounded-lg h-7 w-48`} 
                 >   
                 <p className={`
-                text-center mt-0.5 font-bold`} 
+                text-center mt-1 font-bold text-sm`} 
                 > 21+ Legal Drinking Age</p> 
             </div>
             <div className='hidden lg:inline-block'>
@@ -50,12 +50,12 @@ export default function Navbar() {
               </div>
 
               <Link to='https://api.whatsapp.com/send/?phone=62818688448&text&type=phone_number&app_absent=0'>
-                  <FontAwesomeIcon icon={faPhone} style= {{fontSize: '1.5rem'}}/>
+                  <FontAwesomeIcon icon={faPhone} style= {{fontSize: '1.2rem'}}/>
               </Link>
             </div>
             <div className=''>
                   <div className='flex flex-row'>
-                      <p className='hidden lg:inline-block text-sm font-bold'>+62 818-688-448 - WA ONLY</p>
+                      <p className='hidden lg:inline-block text-xs font-bold'>+62 818-688-448 - WA ONLY</p>
                   </div>
             </div>
           </div>
@@ -71,13 +71,12 @@ export default function Navbar() {
             <Link to='/'>
               <img src={logo} className='w-14' />
             </Link>
-            <p className='hidden lg:font-semibold text-2xl'>SundayBest.id</p>
           </div>
             <div className='hidden lg:flex gap-16'>
-              <Link to= '/' className='font-bold  uppercase hover:text-textcolor-300' >Home</Link>
-              <Link to= '/product' className='font-bold  uppercase hover:text-textcolor-300 ' >Product</Link>
-              <Link to= '/store' className='font-bold uppercase hover:text-textcolor-300'>Store</Link>
-              <Link to= '/partnership' className='font-bold uppercase hover:text-textcolor-300' >Partnership</Link>
+              <Link to= '/' className='text-sm font-bold uppercase hover:text-textcolor-300' >Home</Link>
+              <Link to= '/product' className='text-sm font-bold  uppercase hover:text-textcolor-300 ' >Product</Link>
+              <Link to= '/store' className='text-sm font-bold uppercase hover:text-textcolor-300'>Store</Link>
+              <Link to= '/partnership' className='text-sm font-bold uppercase hover:text-textcolor-300' >Partnership</Link>
             </div>
             <div className='mx-0 pr-4 lg:mx-10 lg:pr-0 gap-6 flex flex-row'>
               <label className={`btn-circle swap lg:hidden ${nav ? 'swap-rotate' : ''}  bg-background-400`}>
