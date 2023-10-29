@@ -2,7 +2,7 @@ import React from 'react'
 
 const Store = () => {
   return (
-    <div className='bg-background-150 lg:h-screen'>
+    <div className='bg-background-150 lg:h-screen pt-10'>
         <div className='hidden lg:block'>
             <h1 className='text-[#545454] text-5xl font-extrabold text-center uppercase'>
                 Our Store

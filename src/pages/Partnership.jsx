@@ -39,7 +39,7 @@ const Partnership = () => {
                 <div className='flex flex-col items-center lg:items-start pt-10 lg:pt-0'>
                     <h1 className='text-2xl lg:text-6xl text-textcolor-400 font-bold uppercase'>retail store package</h1>
                     <p className='text-md lg:text-2xl mt-6 text-textcolor-650 italic text-center'>Timeless Elegance : Discover the Retail Heaven</p>
-                    <a href="https://api.whatsapp.com/send/?phone=62818688448&text=Hello%2C%20I%27m%20interested%20in%20a%20partnership%20with%20Sundaybest.%20May%20I%20know%20more%3F&type=phone_number&app_absent=0" className='flex justify-center w-48 h-14 bg-background-750 mt-6 items-center rounded-full'>
+                    <a href="https://forms.gle/vesJVy5ippyv79vq7" className='flex justify-center w-48 h-14 bg-background-750 mt-6 items-center rounded-full'>
                         <p className='text-textcolor-400 lg:text-xl font-bold'>Join Us Now</p>
                     </a>
                     <div className='mt-16'>
